@@ -287,3 +287,10 @@ dialog{background:#f1f1f3}.theme-paper{background:#f1f1f3}
 @media(prefers-reduced-motion:reduce){.dashboard-avatar{transition:none}}
 
 .profile-form{display:grid;grid-template-columns:1fr 110px;gap:24px;align-items:start;margin:26px 0}.profile-avatar-editor{grid-column:2;grid-row:1;text-align:center}.profile-avatar-editor img{width:100px;height:100px;object-fit:cover;border-radius:50%;border:1px solid var(--ink);background:#e3e3e9}.profile-avatar-editor label{display:block;font-size:12px;text-decoration:underline;cursor:pointer;margin-top:8px;padding:8px 0}.profile-avatar-editor input[type=file]{position:absolute;width:1px!important;height:1px;overflow:hidden;clip-path:inset(50%);padding:0!important}.profile-avatar-editor:focus-within{outline:2px solid var(--accent);outline-offset:4px}.profile-fields{grid-column:1;grid-row:1;min-width:0}.profile-fields>label{font-size:13px;font-weight:600}.profile-fields input{font-size:16px}.profile-fields .hint{font-size:11px;line-height:1.5}#account #remove-avatar{font-size:11px;border:0;padding:5px}.account-email{font-size:13px;overflow-wrap:anywhere}.dashboard-avatar img{border-radius:50%;object-fit:cover}@media(max-width:450px){.profile-form{grid-template-columns:1fr;gap:18px}.profile-avatar-editor{grid-column:1;grid-row:1}.profile-fields{grid-column:1;grid-row:2}}
+
+/* A quiet semicircular invitation above the door handle. */
+.door-hint{position:absolute;right:calc(14% - 27.5px);top:calc(54% - 48px);width:100px;height:58px;overflow:visible;pointer-events:none;color:var(--ink);opacity:.7;transition:opacity .3s,translate .4s var(--ease)}
+.door-hint text{fill:currentColor;font-family:var(--body);font-size:9px;font-weight:500;letter-spacing:1.4px}
+.door-button:hover .door-hint,.door-button:focus-visible .door-hint{opacity:1;translate:0 -3px}
+.gallery-door.is-open .door-hint{opacity:0}
+@media(prefers-reduced-motion:reduce){.door-hint{transition:none}}
