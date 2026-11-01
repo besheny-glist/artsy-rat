@@ -220,3 +220,19 @@ dialog{background:#f1f1f3}.theme-paper{background:#f1f1f3}
 @media(max-width:600px){#account{padding:30px 22px}.auth-tabs{gap:10px}.auth-tabs button{font-size:12px}}
 /* Text presentation for directional symbols, including iOS. */
 .blue-orbit b{font-family:Arial,'Apple Symbols','Segoe UI Symbol',sans-serif;font-variant-emoji:text}
+
+/* Small street label, sliding language control and a nibbled wordmark. */
+.window-caption{background:rgb(245 245 247 / .48);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);padding:4px 6px;letter-spacing:.035em;pointer-events:none}
+.room-language{transition:left .8s var(--ease),right .8s var(--ease)}
+.gallery-door.is-open .room-language{left:38%;right:14px}
+.room-language>span{font-size:8px;letter-spacing:.06em;opacity:.65}
+.room-language #language{background:transparent;border:0;border-bottom:1px solid currentColor;padding-left:0;border-radius:0}
+.bitten-letter{display:inline-block}
+.bite-a{-webkit-mask-image:radial-gradient(circle at 16% 66%,transparent 0 .075em,#000 calc(.075em + .6px));mask-image:radial-gradient(circle at 16% 66%,transparent 0 .075em,#000 calc(.075em + .6px))}
+.bite-t{-webkit-mask-image:radial-gradient(circle at 88% 22%,transparent 0 .085em,#000 calc(.085em + .6px));mask-image:radial-gradient(circle at 88% 22%,transparent 0 .085em,#000 calc(.085em + .6px))}
+@media(max-width:800px){
+ .window-caption{top:5px;bottom:auto;left:5px;right:auto;max-width:calc(100% - 10px);font-size:6px;line-height:1.3;padding:3px 4px;white-space:normal}
+ .gallery-door.is-open .room-language{left:35%;right:13px}
+ .room-language #language{min-height:44px;font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){.room-language{transition:none}}
