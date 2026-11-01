@@ -36,4 +36,4 @@ Published stories stay in Supabase. Sending is resumable and separate from publi
 
 [Product scope](docs/product.md) · [Manual UI checks](docs/testing.md)
 
-The Telegram examples can be imported through the administrator studio after backend setup. They are currently static bootstrap content, not posts created through an active admin account. See SETUP.md for the migration button and all three database migrations.
+The administrator studio manages both Exhibitions and Letters & stories. Existing static entries appear in the same list as database posts and are imported on first edit or deletion without sending a newsletter. Both sections support images, rich text, translations, deletion and restoration. See docs/SETUP.md for setup and import behavior.

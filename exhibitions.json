@@ -1,0 +1,113 @@
+[
+  {
+    "id": "folded-light-2026",
+    "title": "Folded Light",
+    "summary": "Gábor György Nagy explores light and geometry, including prints folded into three-dimensional forms.",
+    "body": "Try viewing a folded surface from two angles: where does the shadow become part of the image?\n\nHow much can light change a simple shape?",
+    "language": "en",
+    "published_at": "2026-11-01T12:00:00Z",
+    "images": [],
+    "author": "ARTsyRAT",
+    "source": "https://exindex.hu/en/event/hajtogatott-feny/",
+    "links": [],
+    "design": {
+      "section": "exhibitions",
+      "exhibition": {
+        "venue": "Hegyvidék Gallery · Budapest",
+        "category": "Mixed media",
+        "startDate": "2026-10-15",
+        "endDate": "2026-11-12",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hegyvid%C3%A9k%20Gallery%20%C2%B7%20Budapest",
+        "free": false,
+        "first": true,
+        "demo": false
+      }
+    },
+    "translations": {
+      "hu": {
+        "title": "Hajtogatott fény",
+        "summary": "Nagy Gábor György a fény és a geometria kapcsolatát vizsgálja; egyes nyomatai hajtogatással térbeli formákká válnak.",
+        "body": "Nézz meg egy hajtott felületet két irányból: hol válik az árnyék a kép részévé?\n\nMennyire változtathat meg a fény egy egyszerű formát?"
+      },
+      "ru": {
+        "title": "Сложенный свет",
+        "summary": "Габор Дьёрдь Надь исследует свет и геометрию, превращая в том числе печатные работы в объёмные складчатые формы.",
+        "body": "Посмотрите на складку с двух сторон: где тень становится частью изображения?\n\nНасколько свет может изменить простую форму?"
+      }
+    }
+  },
+  {
+    "id": "pataki-trees-2026",
+    "title": "Can’t see the forest for the trees",
+    "summary": "Luca Pataki uses trees and drawing to explore belonging, growth and change in a site-specific installation.",
+    "body": "Notice the passage between the brighter outer area and the cave-like interior.\n\nWhat makes a place feel like home?",
+    "language": "en",
+    "published_at": "2026-11-01T12:00:00Z",
+    "images": [],
+    "author": "ARTsyRAT",
+    "source": "https://exindex.hu/en/event/nem-latja-a-fatol-az-erdot/",
+    "links": [],
+    "design": {
+      "section": "exhibitions",
+      "exhibition": {
+        "venue": "Rechnitzer Gallery · Budapest",
+        "category": "Installation",
+        "startDate": "2026-09-17",
+        "endDate": "2026-11-04",
+        "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rechnitzer%20Gallery%20%C2%B7%20Budapest",
+        "free": false,
+        "first": true,
+        "demo": false
+      }
+    },
+    "translations": {
+      "hu": {
+        "title": "Nem látja a fától az erdőt",
+        "summary": "Pataki Luca a fa motívumán és a rajzon keresztül vizsgálja az otthon, a növekedés és a változás kérdéseit helyspecifikus installációjában.",
+        "body": "Figyeld meg az átmenetet a világosabb külső rész és a barlangszerű belső tér között.\n\nMitől válik egy hely otthonná?"
+      },
+      "ru": {
+        "title": "За деревьями не видно леса",
+        "summary": "Луца Патаки обращается к образу дерева и рисунку, размышляя о доме, росте и переменах в инсталляции для галереи.",
+        "body": "Обратите внимание на переход от светлой внешней части к похожему на пещеру внутреннему пространству.\n\nЧто превращает место в дом?"
+      }
+    }
+  },
+  {
+    "id": "soft-forms",
+    "title": "Soft forms",
+    "summary": "Everyday materials in unexpected combinations. Explore the border between an object, a sculpture and a memory.",
+    "body": "Walk around the object if the space allows. Touch only with permission from the gallery.\n\nDoes it remind you of childhood, nature or something entirely new?",
+    "language": "en",
+    "published_at": "2026-11-01T12:00:00Z",
+    "images": [],
+    "author": "ARTsyRAT",
+    "source": "",
+    "links": [],
+    "design": {
+      "section": "exhibitions",
+      "exhibition": {
+        "venue": "Demo studio · Pest",
+        "category": "Objects",
+        "startDate": "",
+        "endDate": "",
+        "mapUrl": "",
+        "free": false,
+        "first": false,
+        "demo": true
+      }
+    },
+    "translations": {
+      "hu": {
+        "title": "Lágy formák",
+        "summary": "Hétköznapi anyagok szokatlan párosításban. Tárgy, szobor és emlék határán.",
+        "body": "Járd körbe a tárgyat, ha lehet. Csak a galéria engedélyével érintsd meg.\n\nGyerekkori tárgyra, természeti formára vagy valami teljesen újra emlékeztet?"
+      },
+      "ru": {
+        "title": "Мягкие формы",
+        "summary": "Обычные материалы в непривычных сочетаниях. Граница между вещью, скульптурой и воспоминанием.",
+        "body": "Обойдите объект с разных сторон. Прикасаться можно только с разрешения галереи.\n\nНа что похож объект: на вещь из детства, природную форму или что-то новое?"
+      }
+    }
+  }
+]

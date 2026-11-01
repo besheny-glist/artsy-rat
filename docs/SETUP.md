@@ -71,9 +71,13 @@ The queue uses unique post/user pairs, row locking and Resend idempotency keys. 
 Do not launch broadly before reviewing sender identity/contact details, privacy text, provider plans/limits and the acceptance checks above. No real subscriber emails were sent during development.
 
 
-## Editorial studio and migration of the Telegram examples
+## Editorial studio: exhibitions and stories
 
-After signing in as admin, use **Import the two Telegram stories into my account** once. The operation imports the original text, translations, author, source links and all 12 public photo URLs into Supabase. It publishes without sending emails. Duplicate imports are skipped. The public list suppresses the static bootstrap copy once a corresponding database row exists, including when it is trashed. Existing `#post=telegram-…` links are mapped to the migrated record.
+Both sections use the same `posts` table and admin policies. The section is stored in `design.section` (`journal` or `exhibitions`); exhibition metadata is stored in `design.exhibition`. No additional database migration is required after migration 003.
+
+The studio lists all database posts alongside unmigrated bootstrap entries from `content.json` and `exhibitions.json`. Administrators can edit or trash any item directly. The first action imports a bootstrap entry using its unique `source_id`, publishes it without sending emails, and then applies the requested action. Existing records are reused; deleted imports cannot silently reappear. The optional **Move all existing posts into the database** button imports the remaining entries in one pass. Existing source-ID links remain valid.
+
+Choose **Publish in** to move a post between sections or create a new exhibition. Exhibition fields include gallery/address, category, dates, HTTPS map link, free admission, newcomer recommendation, and demo label. Images and rich text use the same editor in both sections. Translations are edited separately and are never automatically overwritten by editing the original language.
 
 The editor supports rich paragraphs, headings, bold/italic/underline, ordered/unordered lists, quotations, HTTPS links, three themes, two font families, text size/alignment, and optional fade/rise animations. Reduced-motion preferences suppress animation. Rich HTML is rebuilt using an allowlist at display time; arbitrary scripts/styles are not permitted. English/Hungarian/Russian translations are optional plain-text fields.
 
@@ -81,4 +85,4 @@ Upload up to 12 JPEG/PNG/WebP images, each up to 10 MB, to the public `post-imag
 
 Move to trash hides a post and cancels queued deliveries; restore makes it visible without a new newsletter. Already submitted/in-flight emails cannot reliably be recalled. Hard deletion is intentionally not exposed. Trashed records remain editable only after restoration. A public admin/admin login is not created.
 
-Additional acceptance checks: confirm a non-admin cannot upload images, edit published content, trash/restore, or import stories. Confirm trashed imported examples do not reappear from content.json. Test duplicate import, restore, gallery ordering, captions, rich text sanitization and the newsletter snapshot after editing a published post.
+Additional acceptance checks: confirm a non-admin cannot upload images, edit published content, trash/restore, or import stories. Confirm trashed imported examples do not reappear from content.json or exhibitions.json. Test duplicate import, restore, gallery ordering, captions, rich text sanitization and the newsletter snapshot after editing a published post.
