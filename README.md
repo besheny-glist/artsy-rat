@@ -37,3 +37,5 @@ Published stories stay in Supabase. Sending is resumable and separate from publi
 [Product scope](docs/product.md) · [Manual UI checks](docs/testing.md)
 
 The administrator studio manages both Exhibitions and Letters & stories. Existing static entries appear in the same list as database posts and are imported on first edit or deletion without sending a newsletter. Both sections support images, rich text, translations, deletion and restoration. See docs/SETUP.md for setup and import behavior.
+
+Typography: self-hosted Literata and Golos Text (SIL Open Font License). Font files and licenses are in `assets/fonts/`; Cyrillic and extended Latin subsets support RU and HU.
