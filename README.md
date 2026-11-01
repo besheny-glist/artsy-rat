@@ -1,35 +1,37 @@
 # ARTsy RAT
 
-Культурный гид по Будапешту: выбрать выставку → понять, зачем идти → пригласить друга.
+Art discovery in Budapest. Live frontend: https://besheny-glist.github.io/artsy-rat/
 
-Тестовый прототип на HTML/CSS/JavaScript без зависимостей. Рабочее название взято из папки проекта; язык RU — временное решение для обсуждения с основателями.
+## Current version
 
-## Что работает
+English by default, with Hungarian and Russian switching. Fictional exhibition examples, filters, browser-local plans, personal invitation links, account screen and editorial studio preview.
 
-- Адаптивная афиша, поиск, фильтры «Для первого раза», «Бесплатно», «В моих планах».
-- Подробности выставки, простой контекст и вопрос для обсуждения.
-- Планы в localStorage текущего браузера (без аккаунта и синхронизации).
-- Открытки Editorial / Botanical / Romantic, личное сообщение, предпросмотр, копирование ссылки и системный sharing.
-- Получатель открывает приглашение по ссылке, в том числе в другом браузере.
+Prepared integrations: Supabase email/password authentication, password reset/change, server-controlled admin role, draft/preview/publish editor, permanent published stories, opt-in subscriptions, language-specific newsletter queues and Resend delivery with unsubscribe links.
 
-Все выставки вымышлены и явно помечены. Абстрактные изображения созданы средствами CSS; изображения и тексты exindex не копируются.
+**Supabase and Resend are not connected yet.** No real admin account or subscription exists. Account forms are disabled until public configuration is supplied. The editor can be previewed without pretending to publish. [Activation instructions](docs/SETUP.md).
 
-## Ограничения
-
-Рассылка, регистрация, платежи, кабинеты галерей, аналитика, QR и награды не подключены. Сайт не собирает email и не отправляет сообщения. Приглашение содержит текст в URL-фрагменте: это не приватное хранилище и не отзывная ссылка. Не включайте чувствительные данные. Превью в мессенджерах общее для сайта; персонализированное Open Graph потребует отдельного решения. Фильтры и планы — сценарии тестирования, а не актуальная афиша.
-
-## Запуск
+## Development
 
 ```sh
 python3 -m http.server 4173
+node --test tests/*.test.cjs
 ```
 
-Откройте http://localhost:4173. Проверка синтаксиса: `node --check app.js`.
+No build dependencies. GitHub Actions runs tests and publishes only the public HTML, CSS and JavaScript to Pages on push to main. Backend files, tests and documents are not in the Pages artifact.
 
-## GitHub Pages
+## Backend
 
-Workflow `.github/workflows/pages.yml` публикует только index.html, style.css и app.js при push в main. В Settings → Pages выберите GitHub Actions. Дополнительная сборка и секреты не нужны.
+- `supabase/migrations/001_platform.sql`: roles, posts, subscriptions, RLS, publishing transaction and queue leases.
+- `supabase/functions/deliver`: validates admin token and sends queued emails through Resend.
+- `supabase/functions/unsubscribe`: confirmed token-based opt-out.
+- `config.js`: public project URL and anon key only. Never commit service-role or Resend secrets.
 
-## Продукт
+There is no public admin/admin password. Create an email account and assign its UUID to the server-side admin allowlist. Password changes are available in My account after connection.
 
-[Разбор ТЗ и границы MVP](docs/product.md) · [Проверка сценариев](docs/testing.md)
+## Verification and limits
+
+Automated frontend/API contract tests run in CI. Database policies, Edge Functions and real email delivery need the acceptance tests in [SETUP](docs/SETUP.md) against your provisioned project. These have not been integration-tested on a live backend.
+
+Published stories stay in Supabase. Sending is resumable and separate from publication. The browser processes batches while open; admin can resume pending emails. No scheduled background dispatcher or bounce webhook is configured yet. `sent` means provider acceptance. Plans remain local to the browser. Individual invitation Open Graph previews are not implemented.
+
+[Product scope](docs/product.md) · [Manual UI checks](docs/testing.md)

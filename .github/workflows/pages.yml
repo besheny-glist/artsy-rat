@@ -18,10 +18,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Check JavaScript and contracts
+        run: node --test tests/*.test.cjs
       - name: Assemble public site
         run: |
           mkdir -p _site
-          cp index.html style.css app.js _site/
+          cp index.html style.css app.js api.js i18n.js config.js content.json _site/
+          cp -R assets _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

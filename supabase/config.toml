@@ -1,0 +1,4 @@
+[functions.deliver]
+verify_jwt = false
+[functions.unsubscribe]
+verify_jwt = false

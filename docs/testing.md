@@ -10,3 +10,10 @@
 8. Рассылка не должна обещать успешную подписку или собирать email.
 
 Публикация считается завершённой только после успешного deployment и ответа публичного сайта.
+
+## Version 2
+
+- Default language is English. Switching EN / HU / RU translates navigation, examples, dialogs, account and editor labels; the choice survives reload.
+- With config empty, account inputs and publish/save controls are disabled. Editor preview works without creating an account or publishing a post.
+- Untrusted story/message text must render literally, never as HTML.
+- Configured backend checks and real delivery validation are listed in SETUP.md. They require provisioned services; they have not been run against a live project yet.
