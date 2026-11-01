@@ -1,6 +1,12 @@
 'use strict';
 // Both sections share the same admin-only database policies and post lifecycle.
 window.contentModel = {
+ wall(posts) {
+  const eligible=posts.filter(p=>!p.deleted_at&&p.status!=='draft'&&!p.design?.exhibition?.demo);
+  const selected=['left','right'].map(slot=>eligible.find(p=>p.design?.homeSlot===slot));
+  const fallback=eligible.filter(p=>this.section(p)==='journal'&&!selected.some(x=>x?.id===p.id));
+  return selected.map(p=>p||fallback.shift()).filter(Boolean);
+ },
  section: p => p.design?.section === 'exhibitions' ? 'exhibitions' : 'journal',
  merge(remote, bootstrap, imported) {
   const known = new Set([...imported.map(p=>p.source_id), ...remote.map(p=>p.source_id)].filter(Boolean));
