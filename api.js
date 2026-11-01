@@ -24,6 +24,14 @@ window.backend = (()=>{
  importedState:()=>request('/rest/v1/rpc/imported_story_state',{method:'POST',body:{},auth:false}),
  drafts:()=>request('/rest/v1/posts?select=*&order=created_at.desc'),
  save:post=>request('/rest/v1/posts'+(post.id?'?id=eq.'+encodeURIComponent(post.id):''),{method:post.id?'PATCH':'POST',body:{title:post.title,summary:post.summary,body:post.body,language:post.language,images:post.images||[],author:post.author||'',source:post.source||'',links:post.links||[],translations:post.translations||{},rich_body:post.rich_body||'',image_meta:post.image_meta||{},design:post.design||{},...(!post.id&&post.source_id?{source_id:post.source_id}:{})},headers:{Prefer:'return=representation'}}),
+ async uploadAvatar(file){
+ if(!ready||!session)throw Error('NOT_CONFIGURED');
+ if(file.type!=='image/jpeg'||file.size>2097152)throw Error('avatarInvalid');
+ const current=await request('/auth/v1/user');
+ const path=current.id+'/'+crypto.randomUUID()+'.jpg';
+ const res=await fetch(config.supabaseUrl+'/storage/v1/object/avatars/'+path,{method:'POST',headers:{apikey:config.supabaseAnonKey,Authorization:'Bearer '+session.access_token,'Content-Type':'image/jpeg'},body:file});
+ if(!res.ok)throw Error('REQUEST_FAILED');return config.supabaseUrl+'/storage/v1/object/public/avatars/'+path;
+ },
  async upload(file){
  if(!ready||!session)throw Error('NOT_CONFIGURED');
  if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>10485760)throw Error('invalidImage');
