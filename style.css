@@ -236,3 +236,32 @@ dialog{background:#f1f1f3}.theme-paper{background:#f1f1f3}
  .room-language #language{min-height:44px;font-size:12px}
 }
 @media(prefers-reduced-motion:reduce){.room-language{transition:none}}
+
+/* Editorial workspace: content first, optional settings tucked away. */
+#studio{width:min(1240px,96vw);max-height:94vh;padding:36px;background:#f5f5f6}
+#studio>h2{font-size:clamp(28px,4vw,48px);letter-spacing:-.05em;margin:0 0 12px}
+#studio>p{max-width:660px;line-height:1.6}
+.studio-list-heading{display:flex;align-items:center;justify-content:space-between;gap:20px}
+#draft-list .studio-list-heading button{width:auto;text-align:center}
+.studio-maintenance,.studio-trash{margin:16px 0;padding:12px 0;border-top:1px solid var(--line)}
+#studio summary{cursor:pointer;font-size:14px;font-weight:600;min-height:32px;line-height:1.5}
+.studio-maintenance{font-size:13px;color:#56565c}
+#studio .studio-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:32px;border-top:1px solid var(--ink);margin-top:28px;padding-top:28px;align-items:start}
+#post-form>label{display:block;font-size:13px;font-weight:600;margin-bottom:20px}
+#post-form input,#post-form textarea,#post-form select{background:#fff;border:1px solid #c9c9cf;border-radius:6px;color:var(--ink);font:inherit;padding:12px}
+#post-form input[name=title]{font-size:26px;font-weight:650;letter-spacing:-.03em}
+#post-form textarea[name=summary]{min-height:90px}
+#studio .format-toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:8px;background:#e8e8ed;border-radius:8px 8px 0 0;margin-top:20px}
+#studio .format-toolbar button{width:auto;margin:0;padding:8px 10px;border:0;border-radius:4px;font-size:12px;background:transparent}
+#studio .format-toolbar button:hover{background:white}
+#studio .rich-editor{min-height:300px;background:white;padding:24px;line-height:1.75;border:1px solid #c9c9cf;border-radius:0 0 8px 8px}
+.editor-settings{border-bottom:1px solid #c9c9cf;padding:16px 0}
+.editor-settings[open]>summary{margin-bottom:14px}
+#post-form .upload-zone{padding:20px;border:1px dashed #888894;background:white;border-radius:8px}
+#post-preview{background:white;border:1px solid #d3d3d9;border-radius:8px;min-height:320px;overflow:hidden}
+#post-form>.actions{position:sticky;bottom:0;background:#f5f5f6;padding:16px 0;margin:16px 0 0;border-top:1px solid var(--line);z-index:2}
+#studio .post-manager-row{align-items:center;gap:12px;border-bottom:1px solid #d3d3d9;padding:8px 0}
+#studio .post-manager-row button{margin:0;border:0;font-size:14px;line-height:1.5}
+#studio .post-manager-row button[data-edit]{font-weight:600}
+#studio .post-manager-row button[data-delete]{width:auto;font-size:12px;color:#8d3030}
+@media(max-width:800px){#studio{padding:24px 18px}.studio-list-heading{align-items:flex-start}#studio .studio-grid{grid-template-columns:1fr}#post-form input,#post-form textarea,#post-form select{font-size:16px}#post-form>.actions{flex-wrap:wrap}#studio .rich-editor{padding:16px}}
