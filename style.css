@@ -141,3 +141,56 @@ dialog{background:#f7f0e5;color:var(--ink)}dialog h2{font-family:var(--display);
 .room-language #language{display:block;width:100%;min-width:0;min-height:44px;margin:0;padding:8px;background:#f7f7f2;color:var(--ink);border:var(--room-stroke) solid var(--ink);font-family:var(--body);font-size:12px;cursor:pointer}
 #room-menu{bottom:100px}
 @media(max-width:800px){.gallery-room{margin-top:12px}.room-language{left:10px;right:10px;bottom:12px}.room-language>span{font-size:8px}.room-language #language{width:100%;font-size:11px;padding:6px}#room-menu{bottom:92px;top:8px;gap:2px}.gallery-door.is-open #room-menu>a,.gallery-door.is-open #room-menu>button{font-size:14px;min-height:0;padding:6px 0}}
+
+/* Graphite on paper: a shared surface, black typography, electric blue ink. */
+:root{--paper:#ececee;--ink:#171719;--line:#a7a7ad;--accent:#183bf5;--green:#183bf5;--blue:#183bf5;--display:'Golos Text',Arial,sans-serif;--body:'Golos Text',Arial,sans-serif;--fur-paper:linear-gradient(#f0f0f1d9,#f0f0f1d9),url('assets/graphite-fur.png')}
+body{background-color:var(--paper);background-image:var(--fur-paper);background-size:auto,720px 720px;color:var(--ink)}
+::selection{background:var(--accent);color:#fff}
+.gallery-room,.window-wall,.exhibition-wall,.guide,.newsletter,#journal{background:transparent}
+.room-floor{background:#a5a5ad26}.gallery-room:after{display:none}
+.gallery-door{background:#d3d3d8}.door-button{background:#e1e1e5;color:var(--ink)}.door-button:hover{background:#d1d1d7}.door-handle{background:var(--accent);box-shadow:2px 3px 0 var(--ink)}
+.window-wordmark,.logo{font-family:var(--display);font-weight:700;letter-spacing:-.07em;color:var(--ink)}
+.street-window{box-shadow:8px 10px 0 #17171926}.window-caption{background:#eeeeef;color:var(--ink)}
+.window-note{font-family:monospace;font-style:normal;font-size:12px;color:var(--ink)}
+.wall-heading h1{font-weight:700;letter-spacing:-.06em;line-height:1.01;text-wrap:pretty}
+.wall-heading h1>em{font-family:var(--display);font-style:normal;font-weight:700;letter-spacing:inherit;color:var(--ink)}
+.wall-heading>.eyebrow,.wall-caption,.room-scroll,.wall-index,.work-label>span{color:var(--ink);font-family:monospace}
+.work-frame{background:#f6f6f7}.blue-orbit{background:var(--accent);color:#fff;font-family:var(--body);font-style:normal;font-weight:600;box-shadow:none}
+#room-menu>a,#room-menu>button{font-family:var(--body);font-weight:600;letter-spacing:-.04em}
+#room-menu>a:hover,#room-menu>button:hover{color:var(--accent);border-color:var(--accent)}
+#room-menu>a:before,#room-menu>button:before{color:var(--ink)}
+.gallery-intro p{font-weight:500;letter-spacing:-.055em}.gallery-intro>span{color:var(--ink)}
+#journal>h2,.section-head h2,.guide h2,.newsletter h2{font-weight:700;letter-spacing:-.065em;text-transform:uppercase;line-height:.98}
+#journal>h2{font-size:clamp(42px,6.7vw,98px)}
+#journal>.eyebrow,#journal>p:not(.eyebrow),.card p,.demo,.guide .eyebrow,.guide article p{color:var(--ink)}
+.journal-card>a:first-child,.journal-card:nth-child(even)>a:first-child{background:#f3f3f4;box-shadow:none;padding:0}
+.journal-card h3,.card h3{font-weight:600;letter-spacing:-.045em;text-wrap:pretty}
+.journal-card small,.journal-card>a:last-child,.section-head>span{color:var(--ink)}
+.filters button,#search,.card .actions,.card .actions button{border-color:var(--line)}
+.filters button:hover:not(.active){background:var(--accent);color:#fff}
+.guide h2 i,.newsletter h2 i{font-family:var(--body);font-style:normal;font-weight:700}
+.guide article{border-color:var(--line)}.letter-note{background:#f3f3f4;box-shadow:none}
+.dark,button.dark{color:#fff}.dark:hover,button.dark:hover{background:var(--accent)}
+footer{background:var(--ink);color:#eee}footer .logo{color:#eee}footer small{color:#ccc}
+dialog{background:#f1f1f3}.theme-paper{background:#f1f1f3}
+.room-language #language{background:#eeeeef}
+/* Seven shared rows keep images, metadata, titles, descriptions and actions aligned. */
+#cards{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px;row-gap:16px;align-items:stretch}
+#cards>.card{display:grid;grid-row:span 7;grid-template-rows:subgrid;min-width:0;margin:0;padding:0 0 32px;border-bottom:2px solid var(--ink)}
+#cards>.card>*{margin:0;min-width:0}
+#cards>.card>a:first-child{display:block;overflow:hidden;background:#f7f7f7;aspect-ratio:4/3;border:2px solid var(--ink)}
+#cards .exhibition-cover{width:100%;height:100%;object-fit:contain;transition:transform .5s var(--ease)}
+#cards>.card>a:first-child:hover img{transform:scale(1.025)}
+#cards .card-top{align-self:start;gap:12px;min-height:44px}
+#cards h3{font-size:clamp(25px,2.5vw,38px);line-height:1.1;overflow-wrap:anywhere}
+#cards small{line-height:1.5}
+#cards p{min-height:0;line-height:1.6}
+#cards .actions{align-self:end;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 20px;padding-top:16px}
+#cards .actions button{text-align:left;font-size:12px}
+#posts{gap:32px;align-items:stretch}#posts>.journal-card{display:flex;flex-direction:column;padding-top:0}
+#posts .story-cover{height:auto;aspect-ratio:4/3;object-fit:cover;margin-bottom:0}
+#posts>.journal-card>small{margin-top:20px}#posts>.journal-card>a:last-child{margin-top:auto;align-self:start}
+@supports not(grid-template-rows:subgrid){#cards>.card{display:flex;flex-direction:column;gap:16px}#cards .actions{margin-top:auto;width:100%}#cards>.card>a:first-child{flex:none}}
+@media(max-width:800px){.window-note{font-size:10px}.window-wordmark{font-size:29px}.gallery-intro p{font-size:36px}.section-head h2{font-size:40px}.wall-heading h1{font-size:34px}.wall-heading h1>em{font-size:1em}.guide h2,.newsletter h2{font-size:40px}#cards{column-gap:20px}.filters{flex-wrap:wrap}#search{min-width:0;max-width:100%}}
+@media(max-width:600px){#cards{grid-template-columns:minmax(0,1fr);row-gap:14px}#cards>.card{margin-bottom:28px}#cards h3{font-size:28px}.section-head{flex-wrap:wrap}#journal>h2{font-size:44px}.gallery-intro p{font-size:32px}}
+@media(prefers-reduced-motion:reduce){#cards .exhibition-cover{transition:none}}

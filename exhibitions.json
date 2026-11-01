@@ -6,10 +6,17 @@
     "body": "Try viewing a folded surface from two angles: where does the shadow become part of the image?\n\nHow much can light change a simple shape?",
     "language": "en",
     "published_at": "2026-11-01T12:00:00Z",
-    "images": [],
+    "images": [
+      "assets/exhibitions/folded-light.jpg"
+    ],
     "author": "ARTsyRAT",
     "source": "https://exindex.hu/en/event/hajtogatott-feny/",
-    "links": [],
+    "links": [
+      {
+        "label": "Artwork image / source",
+        "url": "https://exindex.hu/en/event/hajtogatott-feny/"
+      }
+    ],
     "design": {
       "section": "exhibitions",
       "exhibition": {
@@ -34,6 +41,12 @@
         "summary": "Габор Дьёрдь Надь исследует свет и геометрию, превращая в том числе печатные работы в объёмные складчатые формы.",
         "body": "Посмотрите на складку с двух сторон: где тень становится частью изображения?\n\nНасколько свет может изменить простую форму?"
       }
+    },
+    "image_meta": {
+      "assets/exhibitions/folded-light.jpg": {
+        "alt": "Nagy Gábor György · Hajtogatott fény — Nagy Humanoid, 2026. Oil and offset on canvas, 105 × 79 cm. Image: exindex.hu.",
+        "caption": "Nagy Gábor György · Hajtogatott fény — Nagy Humanoid, 2026. Oil and offset on canvas, 105 × 79 cm. Image: exindex.hu."
+      }
     }
   },
   {
@@ -43,10 +56,17 @@
     "body": "Notice the passage between the brighter outer area and the cave-like interior.\n\nWhat makes a place feel like home?",
     "language": "en",
     "published_at": "2026-11-01T12:00:00Z",
-    "images": [],
+    "images": [
+      "assets/exhibitions/pataki-trees.jpg"
+    ],
     "author": "ARTsyRAT",
     "source": "https://exindex.hu/en/event/nem-latja-a-fatol-az-erdot/",
-    "links": [],
+    "links": [
+      {
+        "label": "Artwork image / source",
+        "url": "https://rechnitzer.hu/kiallitas-jakub-janovsky-luca-pataki"
+      }
+    ],
     "design": {
       "section": "exhibitions",
       "exhibition": {
@@ -70,6 +90,12 @@
         "title": "За деревьями не видно леса",
         "summary": "Луца Патаки обращается к образу дерева и рисунку, размышляя о доме, росте и переменах в инсталляции для галереи.",
         "body": "Обратите внимание на переход от светлой внешней части к похожему на пещеру внутреннему пространству.\n\nЧто превращает место в дом?"
+      }
+    },
+    "image_meta": {
+      "assets/exhibitions/pataki-trees.jpg": {
+        "alt": "Luca Pataki · Drawing Series, 2026. Acrylic and tempera on paper, 100 × 70 cm. Image: Rechnitzer Gallery.",
+        "caption": "Luca Pataki · Drawing Series, 2026. Acrylic and tempera on paper, 100 × 70 cm. Image: Rechnitzer Gallery."
       }
     }
   },

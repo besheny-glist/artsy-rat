@@ -13,7 +13,7 @@ window.contentModel = {
   if (!row) {
    try {
     const {bootstrap,...data}=post;
-    [row] = await backend.save({...data,id:null,source_id:post.id,images:(post.images||[]).map(u=>new URL(u,baseURL).href)});
+    [row] = await backend.save({...data,id:null,source_id:post.id,images:(post.images||[]).map(u=>new URL(u,baseURL).href),image_meta:Object.fromEntries(Object.entries(post.image_meta||{}).map(([u,meta])=>[new URL(u,baseURL).href,meta]))});
    } catch(error) {
     if(error.status!==409)throw error;
     row=await find();if(!row)throw error;
