@@ -472,3 +472,11 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
 .monitor-source-list article{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0;border-bottom:1px solid #bcbcc5}.monitor-source-list article>div{min-width:0}.monitor-source-list a{overflow-wrap:anywhere}.monitor-source-list .actions{display:flex;gap:8px;flex-shrink:0}
 .source-state{display:inline-block;margin-left:14px;padding:4px 8px;background:#e5e8ff;border-radius:4px;font-size:12px}.source-state.has-error{background:#ffe9df;color:#823920}
 @media(max-width:700px){#monitor-items,.monitor-controls,#studio .form-pair{grid-template-columns:1fr}.monitor-heading,.monitor-source-list article{align-items:flex-start;flex-direction:column}.monitor-item{padding:20px}.studio-masthead .logo{font-size:23px}#studio-nav{gap:6px}#studio-nav button{flex:1;padding:10px}.monitor-source-list .actions{flex-wrap:wrap}}
+
+/* Source management has its own workspace beside the discovery inbox. */
+#sources-panel .monitor-sources{margin-top:0;padding-top:0;border-top:0}
+#sources-panel .monitor-sources>h2{font-size:32px;margin:0 0 12px}
+#sources-panel #source-search{max-width:720px;margin:16px 0 8px}
+#sources-panel .monitor-source-list article[hidden]{display:none}
+#sources-panel .monitor-source-list article strong{font-size:18px}
+@media(max-width:700px){#studio-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}#studio-nav button{min-width:0}#sources-panel .source-state{margin:8px 0;display:table}}
