@@ -17,6 +17,7 @@ window.backend = (()=>{
  reset:email=>request('/auth/v1/recover?redirect_to='+encodeURIComponent(location.origin+location.pathname),{method:'POST',auth:false,body:{email}}),
  async logout(){try{await request('/auth/v1/logout',{method:'POST'});}finally{persist(null);}},
  user:()=>request('/auth/v1/user'),
+ profile:data=>request('/auth/v1/user',{method:'PUT',body:{data:{display_name:data.display_name,avatar_image:data.avatar_image}}}),
  password:password=>request('/auth/v1/user',{method:'PUT',body:{password}}),
  rpc:(name,body={})=>request('/rest/v1/rpc/'+name,{method:'POST',body}),
  posts:()=>request('/rest/v1/posts?status=eq.published&deleted_at=is.null&select=id,title,summary,body,language,published_at,images,author,source,links,translations,source_id,rich_body,image_meta,design&order=published_at.desc',{auth:false}),
