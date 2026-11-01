@@ -431,3 +431,17 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
 #studio .upload-zone{border-color:var(--action-blue);background:#f7f7f9;cursor:pointer}
 #studio .upload-zone:focus-within{outline:3px solid var(--action-blue);outline-offset:4px}
 @media(hover:hover){.filters button:not(.active):hover{border-color:var(--action-blue);color:var(--action-blue);background:var(--action-hover)}.wall-work:hover .work-label h2{text-decoration-thickness:2px}}
+
+/* A composed profile header, with the same wordmark and dropdown as the gallery. */
+.account-masthead{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:28px;padding-bottom:22px;border-bottom:1px solid #17171933}
+#account .account-brand{display:inline-flex;align-items:center;justify-self:start;min-height:44px;color:var(--ink);font-size:28px;font-weight:700;letter-spacing:-1.5px;text-decoration:none;white-space:nowrap}
+#account .account-back{display:flex;gap:8px;margin:0;padding:8px 0;font-size:13px;font-weight:500;line-height:1.4}
+.account-back svg{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.account-locale{position:relative;width:126px}.account-locale>svg{position:absolute;right:14px;top:50%;transform:translateY(-50%);width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.5;pointer-events:none}
+#account .account-locale #account-language{appearance:none;-webkit-appearance:none;display:block;width:100%;max-width:none;min-height:44px;margin:0;padding:11px 35px 11px 15px;background:#e1e1e5;border:1px solid #777780;border-radius:24px;font-size:13px;line-height:20px;cursor:pointer}
+.account-locale:has(#account-locale-slot:empty){visibility:hidden}
+.account-identity{display:flex;align-items:center;gap:24px;margin:40px 0 32px;min-width:0}
+.account-identity>div{min-width:0}.account-identity>img{width:96px;height:96px;flex:none;object-fit:cover;border:1px solid var(--ink);border-radius:50%;background:#e1e1e5}
+#social-account .account-identity h1{font-size:clamp(32px,4vw,54px);line-height:1.08;letter-spacing:-.05em;margin:8px 0 0;overflow-wrap:anywhere}
+.identity-eyebrow{margin:0;color:#52525b;font:11px/1.5 monospace;letter-spacing:.08em;text-transform:uppercase}
+@media(max-width:700px){.account-masthead{grid-template-columns:1fr auto;gap:8px 14px;padding-bottom:18px}#account .account-brand{font-size:25px}.account-locale{grid-column:2;grid-row:1;width:114px}#account .account-back{grid-column:1/-1;grid-row:2;justify-self:start;min-height:40px}.account-identity{gap:16px;margin:28px 0}.account-identity>img{width:72px;height:72px}#social-account .account-identity h1{font-size:clamp(28px,8vw,40px)}.identity-eyebrow{font-size:9px;letter-spacing:.04em}}
