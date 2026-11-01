@@ -45,3 +45,7 @@ Object.assign(window.I18N.hu,{openDoorHint:'NYISD KI AZ AJTÓT'});
 Object.assign(window.I18N.en,{homeWallTitle:'On the homepage · two posts',homeWallHelp:'Choose published stories or exhibitions for the gallery wall. This changes the homepage only and sends no emails.',wallLeft:'Left frame',wallRight:'Right frame',wallAuto:'Automatic · latest story',saveWall:'Save homepage selection',wallDuplicate:'Choose different posts for the two frames.',wallSaved:'Homepage selection saved.'});
 Object.assign(window.I18N.ru,{homeWallTitle:'На главной · два поста',homeWallHelp:'Выберите опубликованные истории или выставки для стены галереи. Меняется только главная; письма не отправляются.',wallLeft:'Левая рамка',wallRight:'Правая рамка',wallAuto:'Автоматически · свежая история',saveWall:'Сохранить выбор для главной',wallDuplicate:'Для рамок нужно выбрать разные посты.',wallSaved:'Выбор для главной сохранён.'});
 Object.assign(window.I18N.hu,{homeWallTitle:'A főoldalon · két bejegyzés',homeWallHelp:'Válassz közzétett történeteket vagy kiállításokat a galéria falára. Csak a főoldal változik, emailt nem küldünk.',wallLeft:'Bal keret',wallRight:'Jobb keret',wallAuto:'Automatikus · legújabb történet',saveWall:'Főoldali válogatás mentése',wallDuplicate:'Válassz két különböző bejegyzést.',wallSaved:'Főoldali válogatás mentve.'});
+
+Object.assign(window.I18N.en,{backToTop:'Back to top'});
+Object.assign(window.I18N.ru,{backToTop:'Вернуться наверх'});
+Object.assign(window.I18N.hu,{backToTop:'Vissza a tetejére'});
