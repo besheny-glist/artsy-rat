@@ -143,7 +143,7 @@ dialog{background:#f7f0e5;color:var(--ink)}dialog h2{font-family:var(--display);
 @media(max-width:800px){.gallery-room{margin-top:12px}.room-language{left:10px;right:10px;bottom:12px}.room-language>span{font-size:8px}.room-language #language{width:100%;font-size:11px;padding:6px}#room-menu{bottom:92px;top:8px;gap:2px}.gallery-door.is-open #room-menu>a,.gallery-door.is-open #room-menu>button{font-size:14px;min-height:0;padding:6px 0}}
 
 /* Graphite on paper: a shared surface, black typography, electric blue ink. */
-:root{--paper:#ececee;--ink:#171719;--line:#a7a7ad;--accent:#183bf5;--green:#183bf5;--blue:#183bf5;--display:'Golos Text',Arial,sans-serif;--body:'Golos Text',Arial,sans-serif;--fur-paper:linear-gradient(#f0f0f1d9,#f0f0f1d9),url('assets/graphite-fur.png')}
+:root{--paper:#ececee;--ink:#171719;--line:#a7a7ad;--accent:#183bf5;--green:#183bf5;--blue:#183bf5;--display:'Golos Text',Arial,sans-serif;--body:'Golos Text',Arial,sans-serif;--fur-paper:linear-gradient(rgb(240 240 241 / 83.5%),rgb(240 240 241 / 83.5%)),url('assets/graphite-fur.png')}
 body{background-color:var(--paper);background-image:var(--fur-paper);background-size:auto,720px 720px;color:var(--ink)}
 ::selection{background:var(--accent);color:#fff}
 .gallery-room,.window-wall,.exhibition-wall,.guide,.newsletter,#journal{background:transparent}
@@ -194,3 +194,6 @@ dialog{background:#f1f1f3}.theme-paper{background:#f1f1f3}
 @media(max-width:800px){.window-note{font-size:10px}.window-wordmark{font-size:29px}.gallery-intro p{font-size:36px}.section-head h2{font-size:40px}.wall-heading h1{font-size:34px}.wall-heading h1>em{font-size:1em}.guide h2,.newsletter h2{font-size:40px}#cards{column-gap:20px}.filters{flex-wrap:wrap}#search{min-width:0;max-width:100%}}
 @media(max-width:600px){#cards{grid-template-columns:minmax(0,1fr);row-gap:14px}#cards>.card{margin-bottom:28px}#cards h3{font-size:28px}.section-head{flex-wrap:wrap}#journal>h2{font-size:44px}.gallery-intro p{font-size:32px}}
 @media(prefers-reduced-motion:reduce){#cards .exhibition-cover{transition:none}}
+
+/* Keep the right wall clear of the redundant floor diagonal. */
+.room-floor:before{display:none}
