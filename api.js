@@ -13,7 +13,7 @@ window.backend = (()=>{
  async initialize(){if(!ready)return; const p=new URLSearchParams(location.hash.slice(1));if(p.has('access_token')&&p.has('refresh_token')){persist({access_token:p.get('access_token'),refresh_token:p.get('refresh_token')});history.replaceState(null,'',location.pathname+location.search+'#account');}
  if(session){try{const refreshed=await request('/auth/v1/token?grant_type=refresh_token',{method:'POST',body:{refresh_token:session.refresh_token},auth:false});persist(refreshed);}catch{persist(null);}}},
  async login(email,password){persist(await request('/auth/v1/token?grant_type=password',{method:'POST',body:{email,password},auth:false}));},
- signup:(email,password)=>request('/auth/v1/signup',{method:'POST',auth:false,body:{email,password}}),
+ async signup(email,password){const result=await request('/auth/v1/signup?redirect_to='+encodeURIComponent(location.origin+location.pathname),{method:'POST',auth:false,body:{email,password}});if(result?.access_token)persist(result);return result;},
  reset:email=>request('/auth/v1/recover?redirect_to='+encodeURIComponent(location.origin+location.pathname),{method:'POST',auth:false,body:{email}}),
  async logout(){try{await request('/auth/v1/logout',{method:'POST'});}finally{persist(null);}},
  user:()=>request('/auth/v1/user'),

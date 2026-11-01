@@ -197,3 +197,26 @@ dialog{background:#f1f1f3}.theme-paper{background:#f1f1f3}
 
 /* Keep the right wall clear of the redundant floor diagonal. */
 .room-floor:before{display:none}
+/* Account entry: one clear action per screen. */
+#account{width:min(540px,94vw);padding:38px;max-height:90dvh}
+.auth-panel h2{font-size:clamp(30px,5vw,42px);font-weight:700;letter-spacing:-.045em;margin:24px 0 12px}
+.auth-panel .eyebrow{font-family:monospace;font-size:10px;margin:0 0 24px}
+.auth-panel p{line-height:1.6}.auth-intro{font-size:14px;margin-bottom:28px}
+.auth-tabs{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line);gap:16px}
+.auth-tabs button{border:0;background:none;padding:12px 0;font-size:13px;text-align:left;border-bottom:3px solid transparent}
+.auth-tabs button[aria-pressed=true]{border-color:var(--accent);font-weight:700}
+#login-form label{display:block;font-size:13px;font-weight:600;margin:20px 0 8px}
+#login-form input{width:100%;min-width:0;min-height:50px;margin:0;padding:12px;background:#fff;border:1px solid #8b8b92;font-size:16px;border-radius:0}
+.auth-password{display:flex;align-items:stretch;position:relative}
+.auth-password input{padding-right:92px!important}
+.auth-password button{position:absolute;right:1px;top:1px;bottom:1px;min-width:80px;padding:8px;background:transparent;border:0;font-size:12px}
+.auth-panel .auth-primary{width:100%;min-height:50px;padding:14px 18px;font-weight:600;border:0}
+.auth-text{border:0;border-bottom:1px solid currentColor;background:none;padding:5px 0;font-size:13px;display:block;margin:18px 0}
+.auth-forgot{margin-left:auto}.auth-panel .hint{font-size:12px;color:#52525b;line-height:1.6}
+#auth-feedback:empty{display:none}#auth-feedback{font-size:13px;border-left:3px solid var(--accent);padding:10px 12px;margin:16px 0;background:#e4e7fa}
+.auth-email{font-weight:600;overflow-wrap:anywhere;padding:16px;border:1px solid var(--line)}
+.auth-local{padding-top:18px;border-top:1px solid var(--line)}
+#account-content:has(.auth-panel)>hr,#account-content:has(.auth-panel)>h3,#account-content:has(.auth-panel)>p,#account-content:has(.auth-panel)>button{display:none}
+@media(max-width:600px){#account{padding:30px 22px}.auth-tabs{gap:10px}.auth-tabs button{font-size:12px}}
+/* Text presentation for directional symbols, including iOS. */
+.blue-orbit b{font-family:Arial,'Apple Symbols','Segoe UI Symbol',sans-serif;font-variant-emoji:text}
