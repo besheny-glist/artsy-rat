@@ -1,0 +1,5 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const vm=require('node:vm');const fs=require('node:fs');
+const ctx={window:{I18N:{en:{},ru:{},hu:{}}},document:{addEventListener(){}},Intl,Date,Error};vm.runInNewContext(fs.readFileSync('social.js','utf8'),ctx);const social=ctx.window.social;
+test('Budapest invitation times use CET in winter and CEST in summer independent of browser zone',()=>{assert.equal(social.budapestISO('2026-11-07T15:00'),'2026-11-07T14:00:00.000Z');assert.equal(social.budapestISO('2027-07-07T15:00'),'2027-07-07T13:00:00.000Z');});
+test('invalid and nonexistent spring DST wall-clock times are rejected',()=>{assert.throws(()=>social.budapestISO('not a date'));assert.throws(()=>social.budapestISO('2027-03-28T02:30'));});
+test('new account and invitation strings cover all three site languages',()=>{assert.deepEqual(Object.keys(ctx.window.I18N.en).sort(),Object.keys(ctx.window.I18N.ru).sort());assert.deepEqual(Object.keys(ctx.window.I18N.en).sort(),Object.keys(ctx.window.I18N.hu).sort());});

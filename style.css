@@ -341,3 +341,39 @@ dialog{background:#f1f1f3}.theme-paper{background:#f1f1f3}
  .gallery-door.is-open{width:158%;box-shadow:-12px 0 24px #17171914}
 }
 @media(max-width:800px) and (prefers-reduced-motion:reduce){.gallery-door{transition:none}}
+
+/* The account is a destination, not a modal. */
+[hidden]{display:none!important}
+.account-page,.invitation-page{max-width:1240px;margin:0 auto;padding:36px clamp(20px,4vw,64px) 80px;min-height:100svh}
+.account-back,.invitation-page header{display:flex;justify-content:space-between;margin-bottom:44px;font-size:14px;font-weight:600}
+#social-account h1{font-size:clamp(38px,6vw,76px);letter-spacing:-.06em;line-height:1.05;margin:20px 0 36px}
+#social-account h1 span{display:block;font-family:monospace;font-size:12px;letter-spacing:.15em;margin-top:18px;color:var(--accent,#183bf5)}
+.account-tabs{display:flex;gap:8px;border-bottom:1px solid #171719;padding-bottom:16px;margin-bottom:36px;flex-wrap:wrap}
+.account-tabs button{border-radius:30px;padding:12px 22px;background:transparent}
+.account-tabs button[aria-pressed=true]{background:#183bf5;color:white;border-color:#183bf5}
+.passport-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(240px,1fr);gap:clamp(24px,5vw,72px)}
+.account-page h2{font-size:32px;letter-spacing:-.04em}.account-page h3{font-size:21px}
+#account-settings{max-width:800px}#account-settings>h2{display:none}
+#account-settings .profile-form{grid-template-columns:160px minmax(0,1fr);gap:28px}
+#account-settings .profile-avatar-editor img{width:140px;height:140px}
+.taste-cards{border:0;padding:0;margin:28px 0}.taste-cards legend{font-weight:700;font-size:21px;margin-bottom:15px}
+.account-page label,.social-composer label,.invitation-response label{display:block;margin:16px 0 8px;font-size:15px}
+.account-page input:not([type=checkbox]):not([type=radio]):not([type=file]),.account-page select,.account-page textarea,.social-composer input,.invitation-response input:not([type=radio]),.invitation-response textarea{display:block;width:100%;padding:13px;border:1px solid #17171955;border-radius:4px;background:#ffffff50;color:#171719;font:inherit;margin-top:7px;box-sizing:border-box}
+.account-page textarea,.invitation-response textarea{resize:vertical;min-height:90px}
+.form-pair{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+#passport-form{border:1px solid #171719;padding:24px;background:#ffffff38}
+#passport-form h3{margin-top:0}.passport-aside{border-left:1px solid #17171944;padding-left:28px}
+.weekly-tasks{padding:0;list-style:none}.weekly-tasks li{display:flex;gap:15px;padding:18px 0;border-bottom:1px solid #17171933;font-size:15px}.weekly-tasks span{font-family:monospace;color:#183bf5;min-width:22px}.weekly-tasks .done{color:#183bf5}
+.passport-stamps{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.stamp{border:1px dashed #17171966;width:108px;min-height:125px;padding:12px;text-align:center;font-family:monospace;font-size:12px;color:#666;display:flex;flex-direction:column;justify-content:space-between;gap:8px}.stamp span{font-size:30px}.stamp small{font-size:9px}.stamp.earned{border:2px solid #183bf5;color:#183bf5;transform:rotate(-4deg)}.stamp.earned:nth-child(2){transform:rotate(4deg)}
+.passport-entries article,.invitation-list article,.received-card{padding:24px 0;border-bottom:1px solid #17171955}.passport-entries p{white-space:pre-wrap}.reaction-label{color:#183bf5}.saved-post{display:block;padding:14px 0;border-bottom:1px solid #17171933}.invitation-list{display:grid;grid-template-columns:1fr 1fr;gap:30px}.invitation-replies{border-left:2px solid #183bf5;padding-left:18px;margin-top:22px}.invitation-replies p{white-space:pre-wrap}
+.invitation-layout{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}.invitation-layout .postcard{margin:0;padding:38px;min-height:520px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid #171719;box-shadow:8px 8px 0 #17171912}.invitation-layout .postcard h1{font-size:clamp(28px,4vw,50px);line-height:1.05;letter-spacing:-.04em}.invitation-layout .postcard>p{white-space:pre-wrap}.postcard.editorial{background:#183bf5;color:#fff}.postcard.botanical{background:#def086;color:#171719}.postcard.romantic{background:#ffc5e3;color:#171719}.postcard time{display:block;font-size:22px;font-weight:700}.postcard small{display:block;margin:12px 0}.postcard>span{margin-top:28px;font-family:monospace;font-size:12px;letter-spacing:.12em}
+.reply-options{border:0;padding:0;margin:24px 0}.reply-options legend{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden}.reply-options label{padding:15px;border:1px solid #17171955;border-radius:8px;display:flex;align-items:center;gap:12px;cursor:pointer}.reply-options label:has(input:checked){border-color:#183bf5;background:#183bf50d}.reply-options input{accent-color:#183bf5;width:18px;height:18px}.share-links{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}.share-links .button{display:inline-flex;align-items:center;border:1px solid #171719;padding:12px;text-decoration:none}.share-url{width:100%;padding:10px;font-size:12px;box-sizing:border-box}.social-composer{border-top:1px solid #17171955;padding-top:20px}.social-composer .hint{display:block}
+.account-page .auth-panel{max-width:480px;margin:60px auto}.account-page>p[role=status]:empty{display:none}
+@media(max-width:700px){.passport-layout,.invitation-layout,.invitation-list{grid-template-columns:1fr}.passport-aside{border-left:0;padding-left:0;border-top:1px solid #17171944;padding-top:24px}.account-tabs{gap:5px}.account-tabs button{padding:10px 14px;font-size:13px}#account-settings .profile-form{grid-template-columns:1fr}#account-settings .profile-avatar-editor{max-width:160px}.invitation-layout .postcard{padding:26px;min-height:450px}.form-pair{grid-template-columns:1fr;gap:0}.account-back{margin-bottom:25px}#passport-form{padding:18px}}
+#account.account-page{width:100%;max-width:1240px;max-height:none;box-sizing:border-box;border:0;position:relative;inset:auto;background:transparent}
+#account-content{max-width:none;width:100%}
+#card-conversation{border-top:1px solid #17171955;margin-top:28px;padding-top:20px}#chat-history{max-height:400px;overflow:auto}.chat-message{padding:12px;margin:12px 0;background:#fff6;border-left:2px solid #17171955}.chat-message.mine{border-color:#183bf5}.chat-message p{white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0}.chat-message small{font-size:11px}
+#account-settings .profile-avatar-editor{grid-column:1;grid-row:1}#account-settings .profile-fields{grid-column:2;grid-row:1}
+@media(max-width:700px){#account-settings .profile-fields{grid-column:1;grid-row:2}}
+#account-language{width:auto;max-width:140px;padding:8px 12px;border:1px solid #17171955;background:#e1e1e5;border-radius:18px;margin:0 0 20px;font-size:13px}
+#account.account-page:has(#social-account)>.account-back{margin-bottom:18px}

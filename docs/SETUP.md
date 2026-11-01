@@ -86,3 +86,14 @@ Upload up to 12 JPEG/PNG/WebP images, each up to 10 MB, to the public `post-imag
 Move to trash hides a post and cancels queued deliveries; restore makes it visible without a new newsletter. Already submitted/in-flight emails cannot reliably be recalled. Hard deletion is intentionally not exposed. Trashed records remain editable only after restoration. A public admin/admin login is not created.
 
 Additional acceptance checks: confirm a non-admin cannot upload images, edit published content, trash/restore, or import stories. Confirm trashed imported examples do not reappear from content.json or exhibitions.json. Test duplicate import, restore, gallery ordering, captions, rich text sanitization and the newsletter snapshot after editing a published post.
+
+## Accounts, invitations and art passport
+
+Apply `006_social.sql` and `007_invitation_conversation.sql` after the earlier migrations (both applied to the current project on 2026-11-01).
+
+- `#account` is the full account page; profile settings retain the existing auth account and avatar.
+- Invitations require a signed-in sender. `#card=<random UUID>` is a bearer link: anyone with that link can read the invitation, but it contains no account email. Cancelling an invitation disables replies.
+- Replies require authentication. Each respondent has one editable response. Owners see replies in Postcards; each owner/respondent conversation is private to that pair. Messages refresh when opening the card or using Refresh (no push notifications yet).
+- Passport entries and cloud bookmarks are private under row-level security. Old browser bookmarks can be explicitly imported. Profile conversation starters are stored in user metadata; public profile discovery is not enabled.
+- Times use Europe/Budapest, with CET/CEST handling. Visits are self-reported. Weekly tasks use Monday–Sunday in Budapest; stamps are derived from visits, not ratings.
+- Run `node --test tests/*.test.cjs`. `tests/social-security.sql` checks the owner/respondent/outsider roles with test fixtures inside a rolled-back transaction; it must never be run with the final rollback removed.
