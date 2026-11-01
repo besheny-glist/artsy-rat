@@ -1,2 +1,2 @@
-// Public configuration only. Never put a service-role key or Resend key here.
-window.ARTSY_CONFIG = { supabaseUrl: '', supabaseAnonKey: '' };
+// Public publishable key, protected by database row-level security.
+window.ARTSY_CONFIG = { supabaseUrl: 'https://xlfvsfkhztqgzqwimjhb.supabase.co', supabaseAnonKey: 'sb_publishable_h3Gy26iE1SQPe4Cc3VWMjA_C_FTpEC9' };
