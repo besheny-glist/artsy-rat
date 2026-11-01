@@ -1,6 +1,11 @@
 'use strict';
 // Both sections share the same admin-only database policies and post lifecycle.
 window.contentModel = {
+ additionalLinks(post) {
+  const key=value=>{try{const u=new URL(value);if(!['http:','https:'].includes(u.protocol))return null;u.pathname=u.pathname.replace(/\/+$/,'')||'/';return u.href;}catch{return null;}};
+  const seen=new Set([key(post.source)]);
+  return (post.links||[]).filter(link=>{const url=key(link.url);if(!url||seen.has(url))return false;seen.add(url);return true;});
+ },
  wall(posts) {
   const eligible=posts.filter(p=>!p.deleted_at&&p.status!=='draft'&&!p.design?.exhibition?.demo);
   const selected=['left','right'].map(slot=>eligible.find(p=>p.design?.homeSlot===slot));
