@@ -20,3 +20,12 @@ body{background:var(--paper)}header,main,footer{max-width:1800px}.logo{font-weig
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.wall-work{transform:none!important}}
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform 1.1s var(--ease)}.reveal.is-visible{opacity:1;transform:none}.wall-work:active .work-frame{transform:scale(.98)}.work-frame{transition:box-shadow .5s,transform .4s var(--ease)}.window-note{top:75%;font-size:17px;width:55%}@media(max-width:800px){.window-note{top:87%;font-size:12px;width:80%}}@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
 .frame-loading{height:260px;border:12px solid #fafaf6;background:#e1e4dc;box-shadow:3px 5px 0 #c4c6be;animation:frame-pulse 1.8s ease-in-out infinite}.frame-loading.work-1{height:210px;margin-top:55px}@keyframes frame-pulse{50%{opacity:.5}}@media(max-width:800px){.frame-loading{height:200px;border-width:7px}.frame-loading.work-1{height:157px;margin-top:40px}}
+/* Keep the menu beyond the open door's projected edge. */
+.gallery-room{transition:grid-template-columns .8s var(--ease)}
+.gallery-room:has(.gallery-door.is-open){grid-template-columns:27% 24% 49%}
+#room-menu{inset:22px 14px 22px 38%;gap:18px;counter-reset:room-link}
+#room-menu>a,#room-menu>button{width:100%;min-height:44px;position:relative;padding:14px 0 7px;border-bottom:1px solid #293a3740;font-size:clamp(15px,1.35vw,22px);font-weight:650;line-height:1.12;letter-spacing:-.5px;overflow-wrap:anywhere;transition:color .25s,transform .4s var(--ease),border-color .3s}
+#room-menu>a:before,#room-menu>button:before{counter-increment:room-link;content:'0' counter(room-link);position:absolute;top:0;left:0;font:9px monospace;letter-spacing:1px;opacity:.65}
+#room-menu>a:hover,#room-menu>button:hover,#room-menu>a:focus-visible,#room-menu>button:focus-visible{color:#075f82;transform:translateX(4px);border-bottom-color:#075f82}
+@media(max-width:800px){.gallery-room:has(.gallery-door.is-open){grid-template-columns:40% 60%}#room-menu{inset:12px 13px 12px 35%;gap:8px}#room-menu>a,#room-menu>button{font-size:15px;min-height:48px;padding-top:13px;letter-spacing:-.35px}.gallery-door.is-open .door-button>span:first-child{font-size:24px}}
+@media(max-width:800px){.gallery-room:has(.gallery-door.is-open) .window-wordmark{font-size:22px;letter-spacing:-1.3px;left:12px}}
