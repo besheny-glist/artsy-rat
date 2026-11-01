@@ -304,3 +304,7 @@ dialog{background:#f1f1f3}.theme-paper{background:#f1f1f3}
 .room-language .language-dropdown #language:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .room-language .language-dropdown #language option{background:#f4f4f6;color:#171719}
 @media(prefers-reduced-motion:reduce){.room-language .language-dropdown #language{transition:none}}
+/* Match the language control to the door surface. */
+.room-language .language-dropdown #language{background:#e1e1e5;box-shadow:none}
+.room-language .language-dropdown #language:hover{background:#d1d1d7}
+.gallery-door.is-open .language-dropdown #language{background:#d3d3d8}
