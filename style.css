@@ -377,3 +377,57 @@ dialog{background:#f1f1f3}.theme-paper{background:#f1f1f3}
 @media(max-width:700px){#account-settings .profile-fields{grid-column:1;grid-row:2}}
 #account-language{width:auto;max-width:140px;padding:8px 12px;border:1px solid #17171955;background:#e1e1e5;border-radius:18px;margin:0 0 20px;font-size:13px}
 #account.account-page:has(#social-account)>.account-back{margin-bottom:18px}
+
+/* Action hierarchy: solid primary, outlined secondary, underlined text links.
+   Scene controls, image links and heart icons keep their own geometry. */
+:root{--action-blue:#183bf5;--action-border:#777780;--action-surface:#f7f7f9;--action-hover:#e9edff}
+:where(.account-page,.invitation-page,#detail,#studio,#invite,#journal) a:not(.button):not(.logo):not(:has(img)){
+ text-decoration-line:underline;text-decoration-thickness:1px;text-underline-offset:.24em;text-decoration-skip-ink:auto;
+}
+:where(.account-page,.invitation-page) a:not(.button):not(:has(img)){color:var(--action-blue)}
+:is(.account-page,.invitation-page) button:where(:not(.auth-text):not([data-auth-show]):not([data-account-tab])),
+dialog button:where(:not(.close):not(.auth-text):not([data-auth-show])),
+.card .actions button,.share-links a.button{
+ border:1px solid var(--action-border);border-radius:8px;background:var(--action-surface);color:var(--ink);
+ min-height:44px;padding:11px 16px;font-weight:500;line-height:1.35;
+ transition:background-color .18s ease,border-color .18s ease,color .18s ease,box-shadow .18s ease;
+}
+:is(.account-page,.invitation-page,dialog) button.dark,
+.card .actions button[data-invite],#account-invites>a{
+ background:var(--action-blue);border:1px solid var(--action-blue);color:#fff;border-radius:8px;
+ min-height:44px;padding:12px 18px;font-weight:600;line-height:1.35;
+}
+#account-invites>a{display:inline-flex;align-items:center;text-decoration:none;margin:0 0 12px;gap:12px}
+.account-tabs button{border:1px solid var(--action-border);background:var(--action-surface);min-height:44px;line-height:1.3;font-weight:500}
+.account-tabs button[aria-pressed=true]{border-color:var(--action-blue);background:var(--action-blue);color:#fff}
+.auth-tabs button{border:1px solid var(--action-border)!important;border-radius:8px!important;padding:12px!important;min-height:44px}
+.auth-tabs button[aria-pressed=true]{background:var(--action-blue)!important;border-color:var(--action-blue)!important;color:#fff!important}
+:is(.account-page,dialog) .auth-text,#account #remove-avatar{
+ background:transparent;border:0;border-radius:0;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.24em;
+ color:var(--action-blue);min-height:44px;padding:10px 0;
+}
+.auth-password button[data-auth-show]{text-decoration:underline;text-underline-offset:.2em;color:var(--action-blue);border-radius:0}
+.profile-avatar-editor label[for=avatar-upload]{color:var(--action-blue);text-decoration:underline;text-underline-offset:.24em;min-height:44px}
+.account-back{width:fit-content;min-height:44px;align-items:center}
+.invitation-page header a{display:inline-flex;align-items:center;min-height:44px}
+.invitation-list a,.received-card a,.invitation-response>a,.journal-card>a:last-child{display:inline-flex;align-items:center;min-height:44px;font-weight:500}
+#room-menu>a,#room-menu>button{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em}
+:is(#studio,#detail) summary{cursor:pointer;text-decoration:underline;text-underline-offset:.24em;min-height:44px;padding-block:12px}
+:is(#studio,#detail) summary::marker{color:var(--action-blue)}
+.close{width:44px;height:44px;border:1px solid var(--action-border);border-radius:50%;background:var(--action-surface);display:grid;place-items:center;padding:0;line-height:1}
+:is(button,a,input,select,textarea,summary,[contenteditable=true]):focus-visible{outline:3px solid var(--action-blue);outline-offset:4px}
+button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
+@media(hover:hover){
+ :where(.account-page,.invitation-page,#detail,#studio,#invite,#journal) a:not(.button):not(:has(img)):hover{color:var(--action-blue);text-decoration-thickness:2px}
+ :is(.account-page,.invitation-page,dialog) button:not(.dark):not(.close):not(:disabled):not([aria-pressed=true]):hover,
+ .card .actions button:not([data-invite]):hover,.share-links a.button:hover{background:var(--action-hover);border-color:var(--action-blue);color:var(--action-blue)}
+ :is(.account-page,.invitation-page,dialog) button.dark:not(:disabled):hover,.card .actions button[data-invite]:hover,#account-invites>a:hover{background:#102bbb;border-color:#102bbb;color:white;text-decoration:none;box-shadow:0 3px 0 #17171920}
+ .close:hover{background:var(--action-hover);border-color:var(--action-blue);color:var(--action-blue)}
+}
+@media(prefers-reduced-motion:reduce){:is(.account-page,.invitation-page,dialog) button,.card .actions button,.share-links a.button{transition:none}}
+.filters button{min-height:44px;background:var(--action-surface);border-color:var(--action-border)}
+.filters button.active{background:var(--action-blue);border-color:var(--action-blue);color:white}
+.wall-work .work-label h2{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em}
+#studio .upload-zone{border-color:var(--action-blue);background:#f7f7f9;cursor:pointer}
+#studio .upload-zone:focus-within{outline:3px solid var(--action-blue);outline-offset:4px}
+@media(hover:hover){.filters button:not(.active):hover{border-color:var(--action-blue);color:var(--action-blue);background:var(--action-hover)}.wall-work:hover .work-label h2{text-decoration-thickness:2px}}
