@@ -2,6 +2,9 @@ name: Publish GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_run:
+    workflows: [Monitor Budapest sources]
+    types: [completed]
   workflow_dispatch:
 permissions:
   contents: read
@@ -12,6 +15,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -23,7 +27,7 @@ jobs:
       - name: Assemble public site
         run: |
           mkdir -p _site
-          cp index.html style.css app.js api.js social.js editor.js i18n.js config.js content-model.js content.json exhibitions.json pending-stories.json _site/
+          cp index.html style.css app.js api.js social.js editor.js i18n.js config.js content-model.js content.json exhibitions.json pending-stories.json monitor.js monitor-sources.json monitor-feed.json _site/
           cp -R assets _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

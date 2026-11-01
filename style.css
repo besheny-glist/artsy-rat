@@ -445,3 +445,30 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
 #social-account .account-identity h1{font-size:clamp(32px,4vw,54px);line-height:1.08;letter-spacing:-.05em;margin:8px 0 0;overflow-wrap:anywhere}
 .identity-eyebrow{margin:0;color:#52525b;font:11px/1.5 monospace;letter-spacing:.08em;text-transform:uppercase}
 @media(max-width:700px){.account-masthead{grid-template-columns:1fr auto;gap:8px 14px;padding-bottom:18px}#account .account-brand{font-size:25px}.account-locale{grid-column:2;grid-row:1;width:114px}#account .account-back{grid-column:1/-1;grid-row:2;justify-self:start;min-height:40px}.account-identity{gap:16px;margin:28px 0}.account-identity>img{width:72px;height:72px}#social-account .account-identity h1{font-size:clamp(28px,8vw,40px)}.identity-eyebrow{font-size:9px;letter-spacing:.04em}}
+
+/* Full-page editorial studio and source inbox. */
+#studio.studio-page{width:min(1440px,100%);max-height:none;margin:0 auto;padding:32px clamp(18px,4vw,64px) 80px;background:transparent;overflow:visible}
+.studio-masthead{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-bottom:24px;margin-bottom:36px;border-bottom:1px solid var(--ink)}
+.studio-masthead .logo{font:700 28px var(--body);color:var(--ink)}
+#studio-nav{display:flex;gap:10px;flex-wrap:wrap;margin:28px 0}
+#studio button{min-height:44px;border:1px solid var(--action-border);border-radius:8px;background:var(--action-surface);color:var(--ink);padding:11px 16px;cursor:pointer;font:500 15px var(--body)}
+#studio button.dark,#studio-nav button[aria-pressed=true]{background:var(--action-blue);border-color:var(--action-blue);color:white}
+#studio button:not(:disabled):hover{border-color:var(--action-blue);box-shadow:0 2px 0 #183bf522}
+#studio button:disabled{opacity:.5;cursor:wait}
+#studio :is(input:not([type=checkbox]):not([type=color]),textarea,select){width:100%;min-width:0;min-height:44px;margin-top:7px;font:inherit;background:#fff;border:1px solid #aaaab2;border-radius:8px;padding:11px 12px;color:var(--ink)}
+#studio label{display:block;margin-bottom:18px}#studio label.check{display:flex;gap:10px;align-items:center}
+#studio .studio-grid[hidden]{display:none}
+#studio .post-manager-row{display:flex;justify-content:space-between;flex-wrap:wrap}
+#studio .post-manager-row [data-edit]{text-align:left;text-decoration:underline;text-underline-offset:4px;flex:1}
+#studio .form-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.monitor-heading{display:flex;justify-content:space-between;gap:24px;align-items:center}.monitor-heading h2{margin:0;font-size:32px}.monitor-heading p{max-width:650px}
+.monitor-controls{display:grid;grid-template-columns:1fr 1fr 2fr;gap:12px;margin:24px 0}
+#monitor-items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.monitor-item{display:flex;flex-direction:column;background:#f8f8fa;border:1px solid #bcbcc5;border-radius:12px;padding:24px;overflow-wrap:anywhere}
+.monitor-item h3{font-size:24px;line-height:1.2;letter-spacing:-.04em;margin:18px 0 12px}.monitor-item p{margin:4px 0 12px}
+.monitor-item-meta{display:flex;justify-content:space-between;gap:14px;font-size:12px}.monitor-item-meta span:last-child{color:var(--action-blue)}
+.monitor-item>a{align-self:flex-start;margin-bottom:24px}.monitor-item .actions{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap}
+.monitor-sources{margin-top:40px;border-top:1px solid var(--ink);padding-top:16px}#monitor-source-form{padding:24px;border:1px solid #bcbcc5;border-radius:12px;background:#f8f8fa;max-width:720px;margin:24px 0}
+.monitor-source-list article{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 0;border-bottom:1px solid #bcbcc5}.monitor-source-list article>div{min-width:0}.monitor-source-list a{overflow-wrap:anywhere}.monitor-source-list .actions{display:flex;gap:8px;flex-shrink:0}
+.source-state{display:inline-block;margin-left:14px;padding:4px 8px;background:#e5e8ff;border-radius:4px;font-size:12px}.source-state.has-error{background:#ffe9df;color:#823920}
+@media(max-width:700px){#monitor-items,.monitor-controls,#studio .form-pair{grid-template-columns:1fr}.monitor-heading,.monitor-source-list article{align-items:flex-start;flex-direction:column}.monitor-item{padding:20px}.studio-masthead .logo{font-size:23px}#studio-nav{gap:6px}#studio-nav button{flex:1;padding:10px}.monitor-source-list .actions{flex-wrap:wrap}}
