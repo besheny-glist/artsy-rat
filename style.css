@@ -333,3 +333,11 @@ dialog{background:#f1f1f3}.theme-paper{background:#f1f1f3}
  .gallery-door.is-open #room-menu>a,.gallery-door.is-open #room-menu>button{display:grid;grid-template-columns:17px minmax(0,1fr);align-items:start;column-gap:6px;min-height:44px;flex-shrink:0;padding:9px 0;font-size:13px;line-height:1.25}
  #room-menu>a:before,#room-menu>button:before{position:static;display:block;padding-top:2px;font-size:8px;line-height:1.5;letter-spacing:0}
 }
+/* Mobile door opens over the room without resizing the street or wordmark. */
+@media(max-width:800px){
+ .gallery-room:has(.gallery-door.is-open){grid-template-columns:62% 38%}
+ .window-wordmark,.gallery-room:has(.gallery-door.is-open) .window-wordmark{font-size:29px;letter-spacing:-2px;left:19px}
+ .gallery-door{justify-self:end;width:100%;transition:width .8s var(--ease)}
+ .gallery-door.is-open{width:158%;box-shadow:-12px 0 24px #17171914}
+}
+@media(max-width:800px) and (prefers-reduced-motion:reduce){.gallery-door{transition:none}}
