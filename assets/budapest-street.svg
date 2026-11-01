@@ -24,7 +24,7 @@
  <path d="M2 603h112m40 0h14" stroke="#f5df95"/><circle cx="28" cy="634" r="11" fill="#363d3c"/><circle cx="144" cy="634" r="11" fill="#363d3c"/>
  <rect x="66" y="539" width="35" height="13" rx="2" fill="#363d3c" stroke="none"/><text x="83.5" y="549" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="12" fill="#fff7d5" stroke="none">56</text></g><circle cx="347" cy="611" r="3" fill="#fff4bb" stroke="none"/></g>
 <!-- Stop marker and boarding figures share the tram's 30-second timeline. -->
-<path d="M295 570v108" fill="none"/><rect x="282" y="556" width="26" height="27" rx="3" fill="#183bf5"/><text x="295" y="575" text-anchor="middle" fill="white" stroke="none" font-family="Arial,sans-serif" font-size="15" font-weight="700">56</text>
+<path d="M295 570v108" fill="none"/><rect x="282" y="556" width="26" height="27" rx="3" fill="#183bf5"/><g stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="288" y="562" width="14" height="14" rx="3"/><path d="M289 569h12m-6-7v7m-3-10h6m-3 0v3m-4 14-2 3m10-3 2 3"/><path d="M291 573h1m6 0h1"/></g>
 <g transform="translate(370 675)"><g class="boarder"><use href="#waiting-person"/></g></g>
 <g transform="translate(390 675)"><g class="boarder two"><use href="#waiting-person"/></g></g>
 <g transform="translate(410 675)"><g class="boarder three"><use href="#waiting-person"/></g></g>
