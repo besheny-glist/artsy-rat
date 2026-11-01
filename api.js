@@ -19,9 +19,17 @@ window.backend = (()=>{
  user:()=>request('/auth/v1/user'),
  password:password=>request('/auth/v1/user',{method:'PUT',body:{password}}),
  rpc:(name,body={})=>request('/rest/v1/rpc/'+name,{method:'POST',body}),
- posts:()=>request('/rest/v1/posts?status=eq.published&select=id,title,summary,body,language,published_at&order=published_at.desc',{auth:false}),
+ posts:()=>request('/rest/v1/posts?status=eq.published&deleted_at=is.null&select=id,title,summary,body,language,published_at,images,author,source,links,translations,source_id,rich_body,image_meta,design&order=published_at.desc',{auth:false}),
+ importedState:()=>request('/rest/v1/rpc/imported_story_state',{method:'POST',body:{},auth:false}),
  drafts:()=>request('/rest/v1/posts?select=*&order=created_at.desc'),
- save:post=>request('/rest/v1/posts'+(post.id?'?id=eq.'+encodeURIComponent(post.id):''),{method:post.id?'PATCH':'POST',body:{title:post.title,summary:post.summary,body:post.body,language:post.language},headers:{Prefer:'return=representation'}}),
+ save:post=>request('/rest/v1/posts'+(post.id?'?id=eq.'+encodeURIComponent(post.id):''),{method:post.id?'PATCH':'POST',body:{title:post.title,summary:post.summary,body:post.body,language:post.language,images:post.images||[],author:post.author||'',source:post.source||'',links:post.links||[],translations:post.translations||{},rich_body:post.rich_body||'',image_meta:post.image_meta||{},design:post.design||{},...(!post.id&&post.source_id?{source_id:post.source_id}:{})},headers:{Prefer:'return=representation'}}),
+ async upload(file){
+ if(!ready||!session)throw Error('NOT_CONFIGURED');
+ if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>10485760)throw Error('invalidImage');
+ const path=crypto.randomUUID()+'.'+({'image/jpeg':'jpg','image/png':'png','image/webp':'webp'}[file.type]);
+ const res=await fetch(config.supabaseUrl+'/storage/v1/object/post-images/'+path,{method:'POST',headers:{apikey:config.supabaseAnonKey,Authorization:'Bearer '+session.access_token,'Content-Type':file.type},body:file});
+ if(!res.ok)throw Error('REQUEST_FAILED');return config.supabaseUrl+'/storage/v1/object/public/post-images/'+path;
+ },
  deliver:()=>request('/functions/v1/deliver',{method:'POST',body:{}}),
  deliveries:()=>request('/rest/v1/deliveries?select=status&limit=10000'),
  };

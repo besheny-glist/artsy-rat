@@ -24,15 +24,19 @@ Deno.serve(async req=>{
    const {data:sub,error:se}=await db.from('subscriptions').select('*').eq('user_id',job.user_id).maybeSingle();
    if(se)throw se;
    if(!sub?.subscribed){const {error:e}=await db.from('deliveries').update({status:'cancelled',lease_until:null}).eq('id',job.id);if(e)throw e;cancelled++;continue;}
-   const {data:post,error:pe}=await db.from('posts').select('*').eq('id',job.post_id).single();if(pe)throw pe;
+   const {data:current,error:pe}=await db.from('posts').select('deleted_at').eq('id',job.post_id).single();if(pe)throw pe;if(current.deleted_at){await db.from('deliveries').update({status:'cancelled'}).eq('id',job.id);cancelled++;continue;}
+   const original=job.post_snapshot;if(!original)throw Error('Missing publication snapshot');const post={...original,...(original.translations?.[job.recipient_language]||{})};
    const {data:recipient,error:ue}=await db.auth.admin.getUserById(job.user_id);if(ue||!recipient.user.email||!recipient.user.email_confirmed_at)throw Error('Recipient unavailable');
    const unsubscribe=url+'/functions/v1/unsubscribe?token='+sub.unsubscribe_token;
    const label={en:'Unsubscribe',hu:'Leiratkozás',ru:'Отписаться'}[post.language as 'en'|'hu'|'ru'];
-   const response=await fetch('https://api.resend.com/emails',{method:'POST',headers:{Authorization:'Bearer '+apiKey,'Content-Type':'application/json','Idempotency-Key':'artsy-'+job.id},body:JSON.stringify({from,to:[recipient.user.email],subject:post.title,text:post.summary+'\n\n'+post.body+'\n\n'+site+'#post='+post.id+'\n\n'+label+': '+unsubscribe})});
+   const escape=(v:unknown)=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
+   const images=(original.images||[]).filter((u:string)=>{try{return new URL(u).protocol==='https:';}catch{return false;}});
+   const html='<h1>'+escape(post.title)+'</h1><p>'+escape(post.summary)+'</p><div style="white-space:pre-wrap">'+escape(post.body)+'</div>'+images.map((u:string)=>'<p><img style="max-width:100%;height:auto" src="'+escape(u)+'" alt="'+escape(original.image_meta?.[u]?.alt||post.title)+'"></p>').join('')+'<p><a href="'+escape(site+'#post='+job.post_id)+'">ARTsy RAT</a></p><p><a href="'+escape(unsubscribe)+'">'+escape(label)+'</a></p>';
+   const response=await fetch('https://api.resend.com/emails',{method:'POST',headers:{Authorization:'Bearer '+apiKey,'Content-Type':'application/json','Idempotency-Key':'artsy-'+job.id},body:JSON.stringify({from,to:[job.recipient_email],subject:post.title,html,text:post.summary+'\n\n'+post.body+'\n\n'+site+'#post='+job.post_id+'\n\n'+label+': '+unsubscribe})});
    if(!response.ok)throw Error('Provider rejected delivery');
-   const result=await response.json();const {error:saveError}=await db.from('deliveries').update({status:'sent',provider_id:result.id,lease_until:null}).eq('id',job.id);if(saveError)throw saveError;sent++;
+   const result=await response.json();const {error:saveError}=await db.from('deliveries').update({status:'sent',provider_id:result.id,lease_until:null}).eq('id',job.id).eq('status','sending');if(saveError)throw saveError;sent++;
   }catch{
-   await db.from('deliveries').update({status:'failed',lease_until:new Date(Date.now()+60000).toISOString()}).eq('id',job.id);failed++;
+   await db.from('deliveries').update({status:'failed',lease_until:new Date(Date.now()+60000).toISOString()}).eq('id',job.id).eq('status','sending');failed++;
   }
   // Keep below the default provider rate limit; 5 messages per invocation.
   await new Promise(r=>setTimeout(r,600));

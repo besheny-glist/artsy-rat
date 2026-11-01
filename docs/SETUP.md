@@ -4,7 +4,7 @@ The public frontend is on GitHub Pages. Supabase and Resend are prepared in sour
 
 ## 1. Supabase project
 
-Create a project in your own Supabase account. Run `supabase/migrations/001_platform.sql` once in SQL Editor. The migration creates posts, subscriptions, an administrator allowlist and a delivery queue with RLS. Keep email confirmation enabled in Authentication. Set the minimum password length to 12 characters.
+Create a project in your own Supabase account. Run all three SQL migrations in order (`001_platform.sql`, `002_editor_media.sql`, `003_rich_editor_trash.sql`) once in SQL Editor. The migration creates posts, subscriptions, an administrator allowlist and a delivery queue with RLS. Keep email confirmation enabled in Authentication. Set the minimum password length to 12 characters.
 
 Authentication → URL Configuration:
 - Site URL: `https://besheny-glist.github.io/artsy-rat/`
@@ -64,8 +64,21 @@ supabase functions deploy unsubscribe --no-verify-jwt
 
 This is an initial editorial integration, not a complete marketing automation service. Publication atomically persists the post and queues recipients. Email errors do not undo publication. Five messages are processed per function call; the browser drains successive batches after publication. If you close the browser, open the editorial studio and process pending emails again. Automatic background scheduling is not configured yet.
 
-Only confirmed, opted-in subscribers whose language matches the post receive it. Publish separate posts for translated editions; automatic translation is not implemented. Published text is immutable in this MVP to keep retries consistent. Drafts may be edited. Saved exhibition plans remain browser-local and do not sync with the account yet.
+Every confirmed, opted-in subscriber is queued. If a complete translation exists for their preferred language, it is used; otherwise the original is sent. Automatic translation is not implemented. Published posts can be edited; the queued publication snapshot remains unchanged to keep retries consistent. Editing/restoring never resends the newsletter. Saved exhibition plans remain browser-local and do not sync with the account yet.
 
 The queue uses unique post/user pairs, row locking and Resend idempotency keys. Uncertain deliveries older than 20 hours enter `review`; reconcile with Resend before taking action. Do not reset them blindly, since provider idempotency keys expire. Delivery failure details and bounce events require checking the provider dashboard; webhook ingestion and automatic suppression are future work.
 
 Do not launch broadly before reviewing sender identity/contact details, privacy text, provider plans/limits and the acceptance checks above. No real subscriber emails were sent during development.
+
+
+## Editorial studio and migration of the Telegram examples
+
+After signing in as admin, use **Import the two Telegram stories into my account** once. The operation imports the original text, translations, author, source links and all 12 public photo URLs into Supabase. It publishes without sending emails. Duplicate imports are skipped. The public list suppresses the static bootstrap copy once a corresponding database row exists, including when it is trashed. Existing `#post=telegram-…` links are mapped to the migrated record.
+
+The editor supports rich paragraphs, headings, bold/italic/underline, ordered/unordered lists, quotations, HTTPS links, three themes, two font families, text size/alignment, and optional fade/rise animations. Reduced-motion preferences suppress animation. Rich HTML is rebuilt using an allowlist at display time; arbitrary scripts/styles are not permitted. English/Hungarian/Russian translations are optional plain-text fields.
+
+Upload up to 12 JPEG/PNG/WebP images, each up to 10 MB, to the public `post-images` Storage bucket. Only administrators can upload. Photos may also be added by HTTPS URL. Use cover/up/down/remove controls to reorder, and set captions and alt text. Removing a photo from a story does not delete its underlying file; this protects restored posts and existing newsletters.
+
+Move to trash hides a post and cancels queued deliveries; restore makes it visible without a new newsletter. Already submitted/in-flight emails cannot reliably be recalled. Hard deletion is intentionally not exposed. Trashed records remain editable only after restoration. A public admin/admin login is not created.
+
+Additional acceptance checks: confirm a non-admin cannot upload images, edit published content, trash/restore, or import stories. Confirm trashed imported examples do not reappear from content.json. Test duplicate import, restore, gallery ordering, captions, rich text sanitization and the newsletter snapshot after editing a published post.

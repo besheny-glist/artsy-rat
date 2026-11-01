@@ -6,7 +6,7 @@ Art discovery in Budapest. Live frontend: https://besheny-glist.github.io/artsy-
 
 English by default, with Hungarian and Russian switching. Fictional exhibition examples, filters, browser-local plans, personal invitation links, account screen and editorial studio preview.
 
-Prepared integrations: Supabase email/password authentication, password reset/change, server-controlled admin role, draft/preview/publish editor, permanent published stories, opt-in subscriptions, language-specific newsletter queues and Resend delivery with unsubscribe links.
+Prepared integrations: Supabase email/password authentication, password reset/change, server-controlled admin role, rich-text editor with photo uploads, typography, animation, preview, publish, trash and restore, permanent published stories, opt-in subscriptions, language-specific newsletter queues and Resend delivery with unsubscribe links.
 
 **Supabase and Resend are not connected yet.** No real admin account or subscription exists. Account forms are disabled until public configuration is supplied. The editor can be previewed without pretending to publish. [Activation instructions](docs/SETUP.md).
 
@@ -35,3 +35,5 @@ Automated frontend/API contract tests run in CI. Database policies, Edge Functio
 Published stories stay in Supabase. Sending is resumable and separate from publication. The browser processes batches while open; admin can resume pending emails. No scheduled background dispatcher or bounce webhook is configured yet. `sent` means provider acceptance. Plans remain local to the browser. Individual invitation Open Graph previews are not implemented.
 
 [Product scope](docs/product.md) · [Manual UI checks](docs/testing.md)
+
+The Telegram examples can be imported through the administrator studio after backend setup. They are currently static bootstrap content, not posts created through an active admin account. See SETUP.md for the migration button and all three database migrations.
