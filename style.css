@@ -537,3 +537,9 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
 #account:has(.auth-stage) .account-masthead{position:relative;z-index:1}
 @media(max-width:600px){.auth-stage{padding:24px 0 32px}#account .auth-panel{padding:24px 20px 20px;border-radius:18px}#account .auth-panel h2{font-size:30px}.auth-tram img{top:45%;width:560px}#account:has(.auth-stage){padding-inline:16px}}
 @media(prefers-reduced-motion:reduce){.auth-tram img{animation:none;left:auto;right:-100px;top:55%;opacity:.08;will-change:auto}#account .auth-tabs button,#account #login-form input{transition:none}}
+
+/* One continuous underline; the arrow stays with the story link. */
+#journal .journal-card>a.story-read{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;min-height:44px;padding:8px 0 5px;border:0;border-bottom:1px solid currentColor;text-decoration:none;font-size:13px;line-height:1.3}
+#journal .story-read svg{width:17px;height:17px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .18s ease}
+#journal .story-read:hover{color:var(--action-blue)}#journal .story-read:hover svg{transform:translate(1px,-1px)}
+@media(prefers-reduced-motion:reduce){#journal .story-read svg{transition:none}}
