@@ -561,3 +561,6 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
  .blue-orbit:hover,.back-to-top:hover{box-shadow:5px 5px 0 var(--accent-pink)}
  #journal .story-read:hover{border-bottom-color:var(--accent-pink)}
 }
+
+/* A single bite on the capitals; lowercase sy stays intact. */
+.bite-r{-webkit-mask-image:radial-gradient(circle at 84% 43%,transparent 0 .075em,#000 calc(.075em + .6px));mask-image:radial-gradient(circle at 84% 43%,transparent 0 .075em,#000 calc(.075em + .6px))}
