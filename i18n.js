@@ -49,3 +49,7 @@ Object.assign(window.I18N.hu,{homeWallTitle:'A főoldalon · két bejegyzés',ho
 Object.assign(window.I18N.en,{backToTop:'Back to top'});
 Object.assign(window.I18N.ru,{backToTop:'Вернуться наверх'});
 Object.assign(window.I18N.hu,{backToTop:'Vissza a tetejére'});
+
+Object.assign(window.I18N.en,{avatarEditShort:'Change',avatarRemoveShort:'Delete'});
+Object.assign(window.I18N.ru,{avatarEditShort:'Изменить',avatarRemoveShort:'Удалить'});
+Object.assign(window.I18N.hu,{avatarEditShort:'Csere',avatarRemoveShort:'Törlés'});
