@@ -507,3 +507,33 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
 @keyframes feedback-in{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
 @media(max-width:600px){.app-notification{inset:calc(12px + env(safe-area-inset-top)) 16px auto 16px}.app-notification button{width:44px;height:44px;min-height:44px}}
 @media(prefers-reduced-motion:reduce){.app-notification{animation:none}}
+
+/* A quiet tram crosses the graphite fur behind a focused sign-in card. */
+.auth-stage{position:relative;isolation:isolate;padding:32px 0 48px}
+.auth-tram{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:-1}
+.auth-tram img{position:absolute;left:0;top:40%;width:clamp(480px,60vw,900px);max-width:none;height:auto;opacity:.13;filter:grayscale(1);animation:auth-tram-pass 32s linear infinite;animation-delay:-8s;will-change:transform}
+@keyframes auth-tram-pass{0%{transform:translateX(-110%)}76%,100%{transform:translateX(calc(100vw + 10%))}}
+#account .auth-panel{position:relative;box-sizing:border-box;width:100%;max-width:440px;margin:0 auto;padding:28px 32px 24px;background:#fafafcee;border:1px solid #ffffff;border-radius:22px;box-shadow:0 16px 60px #1717190d,0 1px 4px #17171908;backdrop-filter:blur(8px)}
+#account .auth-panel>.eyebrow{margin:0 0 22px;font-size:10px;color:#65656d;letter-spacing:.08em}
+#account .auth-tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:0 0 26px;padding:4px;border:0;border-radius:12px;background:#e9e9ee}
+#account .auth-tabs button{border:0!important;border-radius:9px!important;padding:10px 8px!important;margin:0;min-height:44px;line-height:1.2;text-align:center;font-size:13px;font-weight:550;color:#62626a;background:transparent;box-shadow:none;transition:background .18s,color .18s}
+#account .auth-tabs button[aria-pressed=true]{background:#fff!important;color:#171719!important;border:0!important;box-shadow:0 1px 5px #17171912}
+#account .auth-tabs button:not([aria-pressed=true]):hover{color:#183bf5;background:#ffffff55}
+#account .auth-panel h2{font-size:34px;line-height:1.08;letter-spacing:-.055em;margin:0 0 12px;font-weight:700}
+#account .auth-intro{font-size:14px;line-height:1.55;color:#62626a;margin:0 0 24px}
+#account #login-form label{font-size:12px;font-weight:600;margin:18px 0 7px}
+#account #login-form input{min-height:50px;border:1px solid #d2d2da;border-radius:10px;padding:12px 14px;background:#fff;font:400 16px var(--body);transition:border-color .18s,box-shadow .18s}
+#account #login-form input::placeholder{color:#96969f}
+#account #login-form input:focus{outline:none;border-color:#183bf5;box-shadow:0 0 0 3px #183bf51a}
+#account .auth-password button{top:5px;bottom:5px;right:6px;min-width:60px;min-height:40px;margin:0;padding:8px;font-size:12px;text-decoration:none;border-radius:6px}
+#account .auth-password button:hover{background:#183bf50a}
+#account .auth-panel .auth-primary{min-height:50px;border-radius:10px;padding:13px 18px;margin-top:8px;font-size:14px;font-weight:600;box-shadow:0 3px 0 #102bbb18}
+#account .auth-panel .auth-text{font-size:12px;min-height:36px;margin:12px 0;padding:8px 0;line-height:1.4}
+#account .auth-panel .auth-forgot{margin:8px 0 12px auto}
+#account .auth-panel [data-auth-dismiss]{margin:18px auto 0;text-align:center;color:#53535c}
+#account .auth-panel .auth-local{border:0;margin:8px 0 0;padding:0;text-align:center;font-size:11px;color:#787881}
+#account .auth-email{border-radius:10px;background:#fff;font-size:14px}
+#account .auth-panel #auth-feedback{border:0;border-radius:8px;font-size:12px;padding:12px;margin:12px 0}
+#account:has(.auth-stage) .account-masthead{position:relative;z-index:1}
+@media(max-width:600px){.auth-stage{padding:24px 0 32px}#account .auth-panel{padding:24px 20px 20px;border-radius:18px}#account .auth-panel h2{font-size:30px}.auth-tram img{top:45%;width:560px}#account:has(.auth-stage){padding-inline:16px}}
+@media(prefers-reduced-motion:reduce){.auth-tram img{animation:none;left:auto;right:-100px;top:55%;opacity:.08;will-change:auto}#account .auth-tabs button,#account #login-form input{transition:none}}
