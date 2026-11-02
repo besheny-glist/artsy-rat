@@ -564,3 +564,24 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
 
 /* A single bite on the capitals; lowercase sy stays intact. */
 .bite-r{-webkit-mask-image:radial-gradient(circle at 84% 43%,transparent 0 .075em,#000 calc(.075em + .6px));mask-image:radial-gradient(circle at 84% 43%,transparent 0 .075em,#000 calc(.075em + .6px))}
+
+/* Restore the quieter gallery composition; keep current mobile navigation. */
+.gallery-room .door-handle{box-shadow:2px 3px 0 var(--ink)}
+.gallery-room .wall-work .work-label h2{text-decoration:none}
+.gallery-room .wall-work:hover .work-label h2{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em}
+.gallery-room .dashboard-shortcuts>[data-action=studio]{background:var(--accent);color:#fff;box-shadow:none}
+.gallery-room .dashboard-shortcuts>[data-action=studio]:hover{background:#102cce}
+.gallery-room .personal-dashboard{border-top-width:1px}
+.gallery-room .dashboard-avatar{width:56px;height:56px;flex-basis:56px}
+.gallery-room .dashboard-avatar img{width:48px;height:48px}
+.gallery-room .dashboard-profile strong{font-size:clamp(16px,1.5vw,21px)}
+.gallery-room .dashboard-shortcuts>button,.gallery-room .dashboard-shortcuts>a{min-height:74px}
+@media(min-width:1101px){
+ .gallery-room{min-height:675px}
+ .gallery-room .street-window{top:100px;height:51%}
+ .gallery-room .gallery-door{height:65%}
+ .gallery-room .window-note{top:72%}
+ .gallery-room .personal-dashboard{margin-top:26px;padding-top:16px;gap:12px 20px}
+ .gallery-room .exhibition-wall{padding-bottom:70px}
+ .gallery-room .palette-mouse{width:130px;bottom:56px}
+}
