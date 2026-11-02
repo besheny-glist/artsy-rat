@@ -6,7 +6,7 @@
  const close=document.createElement('button');close.type='button';close.textContent='×';box.append(message,close);document.body.append(box);
  const text=k=>window.I18N?.[document.documentElement.lang]?.[k]||window.I18N?.en?.[k]||k;
  function dismiss(){if(box.matches(':popover-open'))box.hidePopover();box.hidden=true;message.textContent='';}
- window.notifyUser=value=>{const valueText=String(value||'').trim();if(!valueText)return;close.setAttribute('aria-label',text('close'));message.textContent=valueText;box.hidden=false;if(box.showPopover&&!box.matches(':popover-open'))box.showPopover();};
+ window.notifyUser=value=>{const valueText=String(value||'').trim();if(!valueText||['busy','imageProcessing'].some(key=>Object.values(window.I18N||{}).some(locale=>locale[key]===valueText)))return;close.setAttribute('aria-label',text('close'));message.textContent=valueText;box.hidden=false;if(box.showPopover&&!box.matches(':popover-open'))box.showPopover();};
  close.onclick=dismiss;document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!box.hidden)dismiss();});
  const previous=new WeakMap();
  const feedback='[role="status"],[role="alert"]';
