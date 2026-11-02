@@ -485,7 +485,7 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
 
 /* Paired avatar actions, aligned and comfortably tappable. */
 #account .avatar-actions{display:flex;justify-content:center;gap:4px;margin-top:12px}
-#account .avatar-actions button{display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:44px;min-width:0;flex:1;padding:8px 5px;margin:0;border:1px solid #17171925;border-radius:8px;background:#f7f7f9;color:var(--ink);font:500 11px var(--body);line-height:1.2;text-decoration:none;white-space:nowrap}
+#account .avatar-actions :is(button,#remove-avatar){display:inline-flex;align-items:center;justify-content:center;gap:5px;min-height:44px;min-width:0;flex:1;padding:8px 5px;margin:0;border:1px solid #17171925;border-radius:8px;background:#f7f7f9;color:var(--ink);font:500 11px var(--body);line-height:1.2;text-decoration:none;white-space:nowrap}
 #account .avatar-actions svg{width:15px;height:15px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 #account .avatar-actions #change-avatar{color:var(--action-blue)}
 #account .avatar-actions button:hover{border-color:currentColor;background:white}
@@ -498,3 +498,12 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
 .account-logout svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 #account .account-logout:hover{color:var(--action-blue);border-color:var(--action-blue)}
 @media(max-width:700px){.account-identity{display:grid;grid-template-columns:72px minmax(0,1fr)}#account .account-logout{grid-column:2;justify-self:start;margin:0}}
+
+/* Visible feedback remains on screen until dismissed or replaced. */
+.app-notification{position:fixed;inset:20px 20px auto auto;z-index:2147483647;margin:0;width:min(420px,calc(100vw - 32px));box-sizing:border-box;display:flex;align-items:flex-start;gap:16px;padding:18px 16px 18px 20px;border:1px solid #ffffff25;border-radius:12px;background:#171719;color:#fff;box-shadow:0 12px 36px #0004;font:400 14px/1.5 var(--body);animation:feedback-in .18s ease-out}
+.app-notification p{margin:0;flex:1;overflow-wrap:anywhere;color:inherit}
+.app-notification button{flex:none;display:grid;place-items:center;width:32px;height:32px;min-height:32px;margin:-4px -4px 0 0;padding:0;border:0;border-radius:6px;background:transparent;color:#fff;font:24px/1 sans-serif;cursor:pointer}
+.app-notification button:hover{background:#ffffff22}.app-notification button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+@keyframes feedback-in{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+@media(max-width:600px){.app-notification{inset:calc(12px + env(safe-area-inset-top)) 16px auto 16px}.app-notification button{width:44px;height:44px;min-height:44px}}
+@media(prefers-reduced-motion:reduce){.app-notification{animation:none}}

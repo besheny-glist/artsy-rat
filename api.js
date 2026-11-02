@@ -31,14 +31,14 @@ window.backend = (()=>{
  if(file.type!=='image/jpeg'||file.size>2097152)throw Error('avatarInvalid');
  const current=await request('/auth/v1/user');
  const path=current.id+'/'+crypto.randomUUID()+'.jpg';
- const res=await fetch(config.supabaseUrl+'/storage/v1/object/avatars/'+path,{method:'POST',headers:{apikey:config.supabaseAnonKey,Authorization:'Bearer '+session.access_token,'Content-Type':'image/jpeg'},body:file});
+ const res=await fetch(config.supabaseUrl+'/storage/v1/object/avatars/'+path,{method:'POST',signal:AbortSignal.timeout(45000),headers:{apikey:config.supabaseAnonKey,Authorization:'Bearer '+session.access_token,'Content-Type':'image/jpeg'},body:file});
  if(!res.ok)throw Error('REQUEST_FAILED');return config.supabaseUrl+'/storage/v1/object/public/avatars/'+path;
  },
  async upload(file){
  if(!ready||!session)throw Error('NOT_CONFIGURED');
- if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>10485760)throw Error('invalidImage');
+ if(file.size>10485760)throw Error('imageTooLarge');if(!['image/jpeg','image/png','image/webp'].includes(file.type))throw Error('imageFormat');
  const path=crypto.randomUUID()+'.'+({'image/jpeg':'jpg','image/png':'png','image/webp':'webp'}[file.type]);
- const res=await fetch(config.supabaseUrl+'/storage/v1/object/post-images/'+path,{method:'POST',headers:{apikey:config.supabaseAnonKey,Authorization:'Bearer '+session.access_token,'Content-Type':file.type},body:file});
+ const res=await fetch(config.supabaseUrl+'/storage/v1/object/post-images/'+path,{method:'POST',signal:AbortSignal.timeout(45000),headers:{apikey:config.supabaseAnonKey,Authorization:'Bearer '+session.access_token,'Content-Type':file.type},body:file});
  if(!res.ok)throw Error('REQUEST_FAILED');return config.supabaseUrl+'/storage/v1/object/public/post-images/'+path;
  },
  deliver:()=>request('/functions/v1/deliver',{method:'POST',body:{}}),
