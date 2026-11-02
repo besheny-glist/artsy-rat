@@ -492,3 +492,9 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
 #account .avatar-actions #remove-avatar:hover{color:#a83232}
 #account .avatar-actions button:focus-visible{outline:2px solid var(--action-blue);outline-offset:3px}
 .profile-avatar-editor:focus-within{outline:none}
+
+/* Sign out is immediately available on every account tab. */
+#account .account-logout{margin-left:auto;flex-shrink:0;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 14px;border:1px solid var(--action-border);border-radius:8px;background:var(--action-surface);font-size:13px;white-space:nowrap}
+.account-logout svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+#account .account-logout:hover{color:var(--action-blue);border-color:var(--action-blue)}
+@media(max-width:700px){.account-identity{display:grid;grid-template-columns:72px minmax(0,1fr)}#account .account-logout{grid-column:2;justify-self:start;margin:0}}
