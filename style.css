@@ -541,3 +541,23 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
 #journal .story-read svg{width:17px;height:17px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .18s ease}
 #journal .story-read:hover{color:var(--action-blue)}#journal .story-read:hover svg{transform:translate(1px,-1px)}
 @media(prefers-reduced-motion:reduce){#journal .story-read svg{transition:none}}
+
+/* Pink print offset gives cobalt actions a warmer, distinctive edge. */
+:root{--accent-pink:#f19bc1;--accent-pink-soft:#f8c5dc}
+:is(.account-page,.invitation-page,dialog) button.dark,
+#account .auth-panel .auth-primary,
+.card .actions button[data-invite],#account-invites>a,
+.account-tabs button[aria-pressed=true],
+.filters button.active,#studio button.dark,#studio-nav button[aria-pressed=true]{
+ box-shadow:3px 3px 0 var(--accent-pink);
+}
+.blue-orbit,.back-to-top{box-shadow:4px 4px 0 var(--accent-pink)}
+.door-handle{box-shadow:3px 4px 0 var(--accent-pink),4px 5px 0 var(--ink)}
+@media(hover:hover){
+ :is(.account-page,.invitation-page,dialog) button.dark:not(:disabled):hover,
+ #account .auth-panel .auth-primary:not(:disabled):hover,
+ .card .actions button[data-invite]:hover,#account-invites>a:hover,
+ #studio button.dark:not(:disabled):hover{box-shadow:4px 4px 0 var(--accent-pink)}
+ .blue-orbit:hover,.back-to-top:hover{box-shadow:5px 5px 0 var(--accent-pink)}
+ #journal .story-read:hover{border-bottom-color:var(--accent-pink)}
+}
