@@ -411,7 +411,7 @@ dialog button:where(:not(.close):not(.auth-text):not([data-auth-show])),
 .account-back{width:fit-content;min-height:44px;align-items:center}
 .invitation-page header a{display:inline-flex;align-items:center;min-height:44px}
 .invitation-list a,.received-card a,.invitation-response>a,.journal-card>a:last-child{display:inline-flex;align-items:center;min-height:44px;font-weight:500}
-#room-menu>a,#room-menu>button{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em}
+#room-menu>a,#room-menu>button{text-decoration:none}
 :is(#studio,#detail) summary{cursor:pointer;text-decoration:underline;text-underline-offset:.24em;min-height:44px;padding-block:12px}
 :is(#studio,#detail) summary::marker{color:var(--action-blue)}
 .close{width:44px;height:44px;border:1px solid var(--action-border);border-radius:50%;background:var(--action-surface);display:grid;place-items:center;padding:0;line-height:1}
