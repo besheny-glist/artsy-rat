@@ -508,11 +508,9 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
 @media(max-width:600px){.app-notification{inset:calc(12px + env(safe-area-inset-top)) 16px auto 16px}.app-notification button{width:44px;height:44px;min-height:44px}}
 @media(prefers-reduced-motion:reduce){.app-notification{animation:none}}
 
-/* A quiet tram crosses the graphite fur behind a focused sign-in card. */
+/* Playful rat silhouettes repeat over the graphite fur behind the sign-in card. */
 .auth-stage{position:relative;isolation:isolate;padding:32px 0 48px}
-.auth-tram{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:-1}
-.auth-tram img{position:absolute;left:0;top:40%;width:clamp(480px,60vw,900px);max-width:none;height:auto;opacity:.13;filter:grayscale(1);animation:auth-tram-pass 32s linear infinite;animation-delay:-8s;will-change:transform}
-@keyframes auth-tram-pass{0%{transform:translateX(-110%)}76%,100%{transform:translateX(calc(100vw + 10%))}}
+.auth-rat-pattern{position:fixed;inset:0;pointer-events:none;z-index:-1;background:url("assets/rat-pattern.svg") repeat;background-size:520px 440px;background-position:16px 20px;opacity:.16;filter:saturate(.65)}
 #account .auth-panel{position:relative;box-sizing:border-box;width:100%;max-width:440px;margin:0 auto;padding:28px 32px 24px;background:#fafafcee;border:1px solid #ffffff;border-radius:22px;box-shadow:0 16px 60px #1717190d,0 1px 4px #17171908;backdrop-filter:blur(8px)}
 #account .auth-panel>.eyebrow{margin:0 0 22px;font-size:10px;color:#65656d;letter-spacing:.08em}
 #account .auth-tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:0 0 26px;padding:4px;border:0;border-radius:12px;background:#e9e9ee}
@@ -535,8 +533,8 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
 #account .auth-email{border-radius:10px;background:#fff;font-size:14px}
 #account .auth-panel #auth-feedback{border:0;border-radius:8px;font-size:12px;padding:12px;margin:12px 0}
 #account:has(.auth-stage) .account-masthead{position:relative;z-index:1}
-@media(max-width:600px){.auth-stage{padding:24px 0 32px}#account .auth-panel{padding:24px 20px 20px;border-radius:18px}#account .auth-panel h2{font-size:30px}.auth-tram img{top:45%;width:560px}#account:has(.auth-stage){padding-inline:16px}}
-@media(prefers-reduced-motion:reduce){.auth-tram img{animation:none;left:auto;right:-100px;top:55%;opacity:.08;will-change:auto}#account .auth-tabs button,#account #login-form input{transition:none}}
+@media(max-width:600px){.auth-stage{padding:24px 0 32px}#account .auth-panel{padding:24px 20px 20px;border-radius:18px}#account .auth-panel h2{font-size:30px}.auth-rat-pattern{background-size:340px 288px;opacity:.13}#account:has(.auth-stage){padding-inline:16px}}
+@media(prefers-reduced-motion:reduce){#account .auth-tabs button,#account #login-form input{transition:none}}
 
 /* One continuous underline; the arrow stays with the story link. */
 #journal .journal-card>a.story-read{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;min-height:44px;padding:8px 0 5px;border:0;border-bottom:1px solid currentColor;text-decoration:none;font-size:13px;line-height:1.3}
