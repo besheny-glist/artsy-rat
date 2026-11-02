@@ -561,7 +561,3 @@ button:disabled{cursor:not-allowed;opacity:.5;box-shadow:none}
  .blue-orbit:hover,.back-to-top:hover{box-shadow:5px 5px 0 var(--accent-pink)}
  #journal .story-read:hover{border-bottom-color:var(--accent-pink)}
 }
-
-/* One small circular bite per letter of the wordmark. */
-.bitten-letter{--bite-x:16%;--bite-y:66%;-webkit-mask-image:radial-gradient(circle at var(--bite-x) var(--bite-y),transparent 0 .065em,#000 calc(.065em + .5px));mask-image:radial-gradient(circle at var(--bite-x) var(--bite-y),transparent 0 .065em,#000 calc(.065em + .5px))}
-.bite-r{--bite-x:84%;--bite-y:43%}.bite-t{--bite-x:88%;--bite-y:22%}.bite-s{--bite-x:83%;--bite-y:51%}.bite-y{--bite-x:23%;--bite-y:48%}
