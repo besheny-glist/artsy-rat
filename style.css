@@ -312,9 +312,9 @@ dialog{background:#f1f1f3}.theme-paper{background:#f1f1f3}
 .home-wall-settings{padding:22px;border:1px solid var(--line);border-radius:10px;margin:24px 0;background:#ffffff65}.home-wall-settings h3{margin:0;font-size:20px}.home-wall-selects{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}.home-wall-selects label{font-size:13px;min-width:0}.home-wall-selects select{display:block;width:100%;min-width:0;padding:12px;margin-top:7px;background:#f5f5f6;border:1px solid var(--line);border-radius:7px;font:inherit}#draft-list .home-wall-settings button{width:auto}.home-wall-settings [role=status]{margin-bottom:0;font-size:13px}@media(max-width:600px){.home-wall-selects{grid-template-columns:1fr}}
 
 /* One heart outline in both states, without replacing the card. */
-.save{width:36px;height:36px;flex:0 0 36px;display:inline-grid;place-items:center;padding:5px;color:var(--ink);line-height:1}
+.save{width:36px;height:36px;flex:0 0 36px;display:inline-grid;place-items:center;padding:5px;color:#c44782;line-height:1}
 .save svg{width:26px;height:26px;display:block;overflow:visible;fill:transparent;stroke:currentColor;stroke-width:1.5;stroke-linejoin:round;transition:fill .15s,color .15s}
-.save[aria-pressed=true]{color:var(--accent)}
+.save[aria-pressed=true]{color:#c44782}
 .save[aria-pressed=true] svg{fill:currentColor}
 .save:active{transform:none}
 @media(prefers-reduced-motion:reduce){.save svg{transition:none}}
