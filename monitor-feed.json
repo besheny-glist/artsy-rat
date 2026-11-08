@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T13:30:13.615229+00:00",
+  "generated_at": "2026-11-08T22:11:21.343969+00:00",
   "schedule": "06:17 / 18:17 UTC",
   "sources": [
     {
@@ -13,7 +13,7 @@
       "address": "cím: address: Budapest IX. Ráday u.47",
       "official_url": "http://www.2b-org.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:25:49.505753+00:00",
+      "checked_at": "2026-11-08T22:06:38.898042+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "fb1fd348cb01a2a013d0b867f03eb4b2dfdf27e98e2d6fd0d510fef46c04adaf"
@@ -29,7 +29,7 @@
       "address": "cím: address: Budapest, VI. Király utca 76.",
       "official_url": "",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:25:49.506053+00:00",
+      "checked_at": "2026-11-08T22:06:38.898311+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "f55631968bf639de6a89655bb38a4dea49ed890adfb9a0a6eb515d30cfa49747"
@@ -45,7 +45,7 @@
       "address": "cím: address: Budapest VI. ker., Király u. 76. F. 14.",
       "official_url": "https://acbgaleria.hu/index.php?&language=hu&language=en",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:25:49.506314+00:00",
+      "checked_at": "2026-11-08T22:06:38.898498+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "280b92bdb43a3d92c0b2d46a179636d0ec9bb453d1509b40280a9ddc698a711c"
@@ -61,7 +61,7 @@
       "address": "cím: address: Budapest, IX. Ráday u. 47.",
       "official_url": "",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:25:49.506519+00:00",
+      "checked_at": "2026-11-08T22:06:38.898653+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "bfe4bd5eaea91a329c2783785b1cd5ac8e47b72d4f69cae5ce4893745e45107b"
@@ -77,7 +77,7 @@
       "address": "cím: address: Budapest XI. Sztregova u. 7.",
       "official_url": "http://www.artus.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:25:49.506646+00:00",
+      "checked_at": "2026-11-08T22:06:38.898800+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "5c600d2e6c28a30668f5251a1fd155e7079cc91d22d2eb0746c98d38494ee2ec"
@@ -93,7 +93,7 @@
       "address": "cím: address: Budapest, XI. Bartók Béla út 32.",
       "official_url": "http://ujbudakulti.hu/B32kulturter.html",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:25:56.310112+00:00",
+      "checked_at": "2026-11-08T22:06:46.428593+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "9cc6048276c388e511ff73432745eba0c1d1c8f2a35c0cd8647feed11decb5e6"
@@ -109,7 +109,7 @@
       "address": "cím: address: Budapest VI. Andrássy út 69-71.",
       "official_url": "",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:25:59.210347+00:00",
+      "checked_at": "2026-11-08T22:06:49.565634+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "b13fd377896cbb6d8f3627791d7cd1596a22dcf070151e5e5f4c33496e55c084"
@@ -125,7 +125,7 @@
       "address": "cím: address: Budapest, XI. Bartók Béla út 1.",
       "official_url": "",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:02.885318+00:00",
+      "checked_at": "2026-11-08T22:06:53.875820+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "cfeb7a4658e8589d4dbfc8426d1b83d78179d9fcba3f2230c050a3b0bfe28f84"
@@ -141,7 +141,7 @@
       "address": "cím: address: Budapest III. Lajos u. 158.",
       "official_url": "http://www.budapestgaleria.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:07.362649+00:00",
+      "checked_at": "2026-11-08T22:06:58.946852+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "5fab769af77407f04fd525e69e70c6a45b5704b045c79ae925abe7d6aada375a"
@@ -157,7 +157,7 @@
       "address": "cím: address: Budapest Arany János u. 32.",
       "official_url": "https://galeriacentralis.archivum.org/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:09.665883+00:00",
+      "checked_at": "2026-11-08T22:07:01.966853+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "ddb90060cd98c232c13b5903372fac8dd08309c647a3de9d0bbbf8b942aaa4ee"
@@ -173,7 +173,7 @@
       "address": "cím: address: Budapest V. Nador u. 11",
       "official_url": "",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:14.158594+00:00",
+      "checked_at": "2026-11-08T22:07:06.434724+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "eee1e5bc6d8d1ca19255f3c16c449ffd971d7b468a4e10c82d80187707abd114"
@@ -189,7 +189,7 @@
       "address": "cím: address: Budapest VI. Mozsár utca 1.",
       "official_url": "http://www.deakerikagaleria.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:17.084563+00:00",
+      "checked_at": "2026-11-08T22:07:09.766415+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "cc415c5025a8acc74f2aa62135179556e7db16ab4e0fe9a4c7435613bf8a21a4"
@@ -205,7 +205,7 @@
       "address": "cím: address: Budapest, XI. Bartók Béla u 25.",
       "official_url": "http://www.galeriafaur.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:21.080833+00:00",
+      "checked_at": "2026-11-08T22:07:13.971237+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "a6913f13e4490f162ee696c15be8aa5e8cd7851e854886c882ea18ae7f9f74b9"
@@ -221,7 +221,7 @@
       "address": "cím: address: Budapest III. Kiscelli u. 108.",
       "official_url": "http://fovarosikeptar.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:26.394496+00:00",
+      "checked_at": "2026-11-08T22:07:20.029707+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "4cf8f8875f835b979ce716469fdc6a42bb2bfb6785e39ca6591e88005f508a64"
@@ -237,7 +237,7 @@
       "address": "cím: address: Budapest, V. Petőfi Sándor utca 5.",
       "official_url": "https://fuga.org.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:29.004438+00:00",
+      "checked_at": "2026-11-08T22:07:23.107260+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "d8ffc42fcb15f17158c92768c36c22f57f9e564c1767f0e415c2c53bd1f59446"
@@ -253,7 +253,7 @@
       "address": "cím: address: Budapest, XI. Bartók Béla út 11.",
       "official_url": "http://www.godot.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:30.892699+00:00",
+      "checked_at": "2026-11-08T22:07:25.352667+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "7efb544bcdf14562e21ee65f22c1ceb3659e9f7083026498a01bb2924eda846c"
@@ -269,7 +269,7 @@
       "address": "cím: address: Budapest III. Fényes Adolf utca 21.",
       "official_url": "https://www.gica.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:34.807172+00:00",
+      "checked_at": "2026-11-08T22:07:29.766852+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "1ca0f9694348f3e3baefa27b49a2256eae9d0747ea7fad2f1fdb7b09ba10eb32"
@@ -285,7 +285,7 @@
       "address": "cím: address: Budapest III. Fényes Adolf utca 21",
       "official_url": "https://www.godotlabor.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:38.474466+00:00",
+      "checked_at": "2026-11-08T22:07:33.439107+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "87f05bc31ce4a53185bf2284c1d31f5d075aec5507060c70633cf47eced0cac1"
@@ -301,7 +301,7 @@
       "address": "cím: address: Budapest, XI. Bartók Béla út 37.",
       "official_url": "https://www.37gallery.com/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:42.157739+00:00",
+      "checked_at": "2026-11-08T22:07:37.173305+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "3f8998370820d309b51c9c6f3947938a4bd991dcf04ced64dd3231d95d02c120"
@@ -317,7 +317,7 @@
       "address": "cím: address: Budapest IX. Ráday utca 40.",
       "official_url": "https://heartandcherry.com/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:48.027446+00:00",
+      "checked_at": "2026-11-08T22:07:43.451682+00:00",
       "status": "ok",
       "count": 3,
       "fingerprint": "98a8aa4b0e77a6ec9cd365aa1c9bb80cc08ea415330873ff7bf2a9fffbfc93fa"
@@ -333,7 +333,7 @@
       "address": "cím: address: Budapest, XII. Böszörményi út 13-15",
       "official_url": "https://hegyvidekgaleria.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:52.519881+00:00",
+      "checked_at": "2026-11-08T22:07:48.266315+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "89df878a9b7a2ee4af6ed7e959fa0e0b1d5515e3cf43c76035690dde5977756c"
@@ -349,7 +349,7 @@
       "address": "cím: address: Budapest, VI. Zichy Jenő u. 32.",
       "official_url": "http://www.horizontgaleria.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:54.359410+00:00",
+      "checked_at": "2026-11-08T22:07:50.149862+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "ff8bfe42ba4992b3b3a49315edea31e6665cb26abcb1b9d89e23b347fecd45b1"
@@ -365,7 +365,7 @@
       "address": "cím: address: Budapest, VI. Király u. 34. II. 4.",
       "official_url": "http://www.indagaleria.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:56.284916+00:00",
+      "checked_at": "2026-11-08T22:07:52.582492+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "8a2a3a0ad8f516384bae354d3725e986652ff8876db9fb46373c3b7fda9d9f9a"
@@ -381,7 +381,7 @@
       "address": "cím: address: Budapest VIII. Víg utca 2.",
       "official_url": "https://www.isbnbooks.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:26:58.834362+00:00",
+      "checked_at": "2026-11-08T22:07:55.125337+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "2630ce2771ecc9a6ef9bc75b7d8952ead3bc87e393d8546c32d17297d5532979"
@@ -397,7 +397,7 @@
       "address": "cím: address: Budapest, XI Bartók Béla út 9.",
       "official_url": "(Magyar) http://www.kasgaleria.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:00.574090+00:00",
+      "checked_at": "2026-11-08T22:07:56.968288+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "3b2fb7d705d6e1893c52698e1f633ef1ce5f2c970f487f8954ea0c5df3a80a77"
@@ -413,7 +413,7 @@
       "address": "cím: address: Budapest, XI. Karinthy Frigyes út 22.",
       "official_url": "",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:03.697060+00:00",
+      "checked_at": "2026-11-08T22:08:00.122699+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "522d6696c013da06e10f354ce4cc1691e8bbbf7bc43e5ff9b20c53eb6e4366b9"
@@ -429,7 +429,7 @@
       "address": "cím: address: Budapest III. Fő tér 1.",
       "official_url": "http://www.kassakmuzeum.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:06.431685+00:00",
+      "checked_at": "2026-11-08T22:08:02.943225+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "44ef5fc304471c4fbb1fc6dc65e9b92005ce3e3f33950713323b82096a4e8534"
@@ -445,7 +445,7 @@
       "address": "cím: address: Budapest, IX. Ráday utca 33/B – entrance from Kinizsi street",
       "official_url": "http://www.kisterem.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:10.128766+00:00",
+      "checked_at": "2026-11-08T22:08:06.797650+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "11e74b1169a12b3936bcc64200b0e369de748684a932b819ee4d8796ee1a5c63"
@@ -461,7 +461,7 @@
       "address": "cím: address: Budapest VI. Liszt Ferenc tér 10.",
       "official_url": "(Magyar) http://www.knollgaleria.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:13.153835+00:00",
+      "checked_at": "2026-11-08T22:08:10.018164+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "4a2182bccf69db05e541b002cb3ad3f45f5fcb03161bfe9eb028a802170f4e79"
@@ -477,7 +477,7 @@
       "address": "cím: address: Budapest VII Klauzál Square, Market Hall, 1st floor",
       "official_url": "https://ladogaleria.hu/en/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:18.482972+00:00",
+      "checked_at": "2026-11-08T22:08:15.407449+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "f4e5337b96b3579e0b56dc2cfe4637c9b399811e17283bae1b8b042ecd660d34"
@@ -493,7 +493,7 @@
       "address": "cím: address: Budapest XIV. Ajtósi Dürer sor 5.",
       "official_url": "http://www.c3.hu/~ligal/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:21.781958+00:00",
+      "checked_at": "2026-11-08T22:08:18.692512+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "721f85a5e7935965e7fbac9a0a50d18d0a8cb81a20215ff60a9f03436ee99bab"
@@ -509,7 +509,7 @@
       "address": "cím: address: Budapest I. Mészáros utca 38.",
       "official_url": "https://www.longtermhandstand.art/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:24.028393+00:00",
+      "checked_at": "2026-11-08T22:08:21.197252+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "7b1d5faff5373db30fe8a1e8cec098432a5595f419f0ff043076464e2eba16e8"
@@ -525,7 +525,7 @@
       "address": "cím: address: Budapest IX. Komor Marcell u. 1.",
       "official_url": "http://www.ludwigmuseum.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:27.464478+00:00",
+      "checked_at": "2026-11-08T22:08:24.772330+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "afe6a79f137625cd597f567132ffefd5526d2cd85c5550920ad500819f99c4c7"
@@ -541,7 +541,7 @@
       "address": "cím: address: Budapest VI. Nagymező u. 20.",
       "official_url": "http://www.maimano.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:30.706615+00:00",
+      "checked_at": "2026-11-08T22:08:28.469321+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "347be431227547844e73739c26872007c96127b2c38f2de1f82409fc4e93cfc7"
@@ -557,7 +557,7 @@
       "address": "cím: address: Budapest VII. Akácfa utca 20,",
       "official_url": "http://www.magyarmuhely.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:32.532827+00:00",
+      "checked_at": "2026-11-08T22:08:30.357424+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "6a956de91e72970c3f40be159f2da8a00aad18b613dc47a59dcb494704dc6afb"
@@ -573,7 +573,7 @@
       "address": "cím: address: Budapest I. Budavári Palota",
       "official_url": "http://www.mng.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:37.422724+00:00",
+      "checked_at": "2026-11-08T22:08:35.420589+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "81b92ed1353b1d8bc32b3a1c8c20fd84e13adb1718ca803776539dfc51e4f4ba"
@@ -589,7 +589,7 @@
       "address": "cím: address: Budapest VII, Damjanich u. 39. / Lejárat a Murányi utcából",
       "official_url": "http://mamu.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:39.543147+00:00",
+      "checked_at": "2026-11-08T22:08:37.690307+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "1b6669e57ff8c2ce106a28159aa9caee1aa68bd3cdf4516d49c7f77a3ff8779f"
@@ -605,7 +605,7 @@
       "address": "cím: address: Budapest, XI. Bölcső u. 9",
       "official_url": "http://www.elektrografia.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:45.205541+00:00",
+      "checked_at": "2026-11-08T22:08:43.529018+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "466d2bef4d4a46ae5edf3f711e376b291b03606730e4e3a8a44866560884a9b5"
@@ -621,7 +621,7 @@
       "address": "cím: address: Budapest V. Falk Miksa utca 30.",
       "official_url": "http://www.missionart.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:50.464822+00:00",
+      "checked_at": "2026-11-08T22:08:48.993225+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "a0580a74b624451c1a6b4b65cead5f419ca343ae47ad93676cc97d97c575c8b5"
@@ -637,7 +637,7 @@
       "address": "cím: address: Budapest, VIII. Bródy Sándor u. 36.",
       "official_url": "http://molnaranigaleria.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:55.660686+00:00",
+      "checked_at": "2026-11-08T22:08:54.077002+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "042eef0a392c7084e1d46408ea31cb55fde24c0c022128ad3c0a4039914aca10"
@@ -653,7 +653,7 @@
       "address": "cím: address: Budapest XIV. Dózsa György út 37.",
       "official_url": "http://www.mucsarnok.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:27:58.087188+00:00",
+      "checked_at": "2026-11-08T22:08:56.771526+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "63b9ff991fba31a7f395c7f21e87166dd6db5adbdf0866ffecebe6c017443f99"
@@ -669,7 +669,7 @@
       "address": "cím: address: Budapest V. Falk Miksa u. 13.",
       "official_url": "https://naco.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:03.676876+00:00",
+      "checked_at": "2026-11-08T22:09:02.524486+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "aa79f54be4c344ffb31c82a56d3827186efa3948a768bf5e110e09ed9c22de11"
@@ -685,7 +685,7 @@
       "address": "cím: address: 1146 Budapest, Olof Palme sétány 1.",
       "official_url": "https://neo.millenniumhaza.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:07.457000+00:00",
+      "checked_at": "2026-11-08T22:09:05.427118+00:00",
       "status": "ok",
       "count": 4,
       "fingerprint": "78eab3ce5dbc8b6af00288244ad9de35c0ce344809bdecb107ef091f6f2765b3"
@@ -701,7 +701,7 @@
       "address": "cím: address: Budapest, I. Táncsics Mihály utca 17.",
       "official_url": "https://galerianeon.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:10.301615+00:00",
+      "checked_at": "2026-11-08T22:09:08.366629+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "6a818a98c84d0db3a67134fc917849846f4c47179edb381c2b3b5d5f4bac8883"
@@ -717,7 +717,7 @@
       "address": "cím: address: Budapest III. Kiskorona u.7.",
       "official_url": "http://www.obudaitarsaskor.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:13.221068+00:00",
+      "checked_at": "2026-11-08T22:09:11.399502+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "f9d7b61e4a3271357d0ac2a8bc82320ae82549f8dfba2cd5a701d66c7b46b6bc"
@@ -733,7 +733,7 @@
       "address": "cím: address: Budapest, MKE, Epreskert VI. Kmety György u. 26-28",
       "official_url": "",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:19.995134+00:00",
+      "checked_at": "2026-11-08T22:09:18.204013+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "c4110e265ccd45036ca34275e16840cc54ba9ec9f54918b6b138f57022d37a4d"
@@ -749,7 +749,7 @@
       "address": "cím: address: Budapest V. Vigadó tér 2.",
       "official_url": "(Magyar) http://vigado.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:22.272427+00:00",
+      "checked_at": "2026-11-08T22:09:20.545645+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "cd9b889523b3a494c7dd07b8c63fc73677a1872ae7a7b872524e9ed479eb48f8"
@@ -765,7 +765,7 @@
       "address": "cím: address: Budapest V. Perczel Mór u. 4.",
       "official_url": "https://rechnitzer.hu/en",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:24.025852+00:00",
+      "checked_at": "2026-11-08T22:09:22.431490+00:00",
       "status": "ok",
       "count": 5,
       "fingerprint": "d711ede358ab541aa3d2d30982cd907428ec74f03aefa7c0f769cd50cc595c04"
@@ -781,7 +781,7 @@
       "address": "cím: address: Budapest XI. Bartók Béla street 39.",
       "official_url": "https://residentart.com/en/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:27.154966+00:00",
+      "checked_at": "2026-11-08T22:09:25.715646+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "c4ec37fedce02689c9f1c6cd3ec9b4f8ca7d868cb2809d395f739743ae705d0e"
@@ -797,7 +797,7 @@
       "address": "cím: address: Budapest, VI. Nagymező utca 8.",
       "official_url": "http://capacenter.hu/en/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:31.203290+00:00",
+      "checked_at": "2026-11-08T22:09:30.051154+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "22bcedab89549a0c46af7f13029ba3b8734b77529705deed3d464955545925bc"
@@ -813,7 +813,7 @@
       "address": "cím: address: Budapest VII. Rottenbiller u. 35. (bejárat a Rottenbiller és a Damjanich utca sarkán)",
       "official_url": "http://studio.c3.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:36.380783+00:00",
+      "checked_at": "2026-11-08T22:09:35.433282+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "6befdac031d46c2c9ddf4408a31ce4c1d805df4fdd26d0064ded6797bbcfba92"
@@ -829,7 +829,7 @@
       "address": "cím: address: Budapest XIV. Dózsa György út 41.",
       "official_url": "http://www.szepmuveszeti.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:40.526947+00:00",
+      "checked_at": "2026-11-08T22:09:39.869035+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "513f4c22905bf92526b4d9229ce9530e0c88eba2677a9f7b7fb4a684a70853d6"
@@ -845,7 +845,7 @@
       "address": "cím: address: Budapest V. Vármegye utca 7.",
       "official_url": "https://szikrabudapest.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:42.330640+00:00",
+      "checked_at": "2026-11-08T22:09:41.666938+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "3f8d1bc6566b8525a88556323c65e679aa37471c2a1ea6baed5993a8cfb53396"
@@ -861,7 +861,7 @@
       "address": "cím: address: Budapest, VII. Madách út 8.",
       "official_url": "",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:44.252563+00:00",
+      "checked_at": "2026-11-08T22:09:43.622472+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "419444ea1bc8bced617d23cb02329f2e39536cac270965ab8d29f13717421270"
@@ -877,7 +877,7 @@
       "address": "cím: address: 1015 Budapest, Hattyú utca 16. fszt 4. (csengő: 53.)",
       "official_url": "http://www.thespace.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:47.749727+00:00",
+      "checked_at": "2026-11-08T22:09:47.358436+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "466f37d1d01c4bd0a4a219dbca68c6e651754391731d143599c619d5dd68f570"
@@ -893,7 +893,7 @@
       "address": "cím: address: Budapest, VIII. Bródy Sándor utca 36.",
       "official_url": "http://tobegallery.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:53.191479+00:00",
+      "checked_at": "2026-11-08T22:09:53.933803+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "47a2bc1fe2f4a7ce13cf3b748abbe9196004e2799c7da86761bf298d66c5011a"
@@ -909,7 +909,7 @@
       "address": "cím: address: Budapest IX. Liliom u. 41.",
       "official_url": "http://www.trafo.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:55.430837+00:00",
+      "checked_at": "2026-11-08T22:09:57.116950+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "977526f606a9812a52f1e6027c4df55cb408c8bb760d877d5ef2ebe5a02ef1fc"
@@ -925,7 +925,7 @@
       "address": "cím: address: Budapest, I. Várfok u. 14.",
       "official_url": "http://www.varfok-galeria.hu//?lang=angol",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:57.620917+00:00",
+      "checked_at": "2026-11-08T22:10:00.170754+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "b0bb3b3c72f4d4e11dc5af14ea82a3876608e30409a8131376e627a6da57cf4c"
@@ -941,7 +941,7 @@
       "address": "cím: address: Budapest I. Várfok u. 11.",
       "official_url": "http://www.varfok-galeria.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:28:59.928556+00:00",
+      "checked_at": "2026-11-08T22:10:02.934365+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "a33d383cda6afc76b9faec253c01bfcecd456d1102163adc30d632c03a626b59"
@@ -957,7 +957,7 @@
       "address": "cím: address: Budapest VI. Vasvári Pál utca 1.",
       "official_url": "",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:29:02.122184+00:00",
+      "checked_at": "2026-11-08T22:10:05.972547+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "e04a237cfe2596321d22e79eb4f172b3170e6a2bc27b8f18d22d9fe1f14f24a1"
@@ -973,7 +973,7 @@
       "address": "cím: address: Budapest V. Magyar u. 26.",
       "official_url": "http://www.vintage.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:29:04.447621+00:00",
+      "checked_at": "2026-11-08T22:10:08.780491+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "8866210447ddc5aa12a9319220e94427a68503c84a46702ac3d14825d9c3ccd8"
@@ -989,7 +989,7 @@
       "address": "cím: address: Budapest II. Kapás u. 55.",
       "official_url": "",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:29:08.731535+00:00",
+      "checked_at": "2026-11-08T22:10:13.369997+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "d3651d983accc6819b3727041167f499646b5df07251c68312337047ab34fa3c"
@@ -1005,7 +1005,7 @@
       "address": "cím: address: (Magyar) Budapest VI. Király utca 76.",
       "official_url": "(Magyar) https://www.acbgaleria.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:29:11.641777+00:00",
+      "checked_at": "2026-11-08T22:10:16.677402+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "6b920f431365d4fd8242461affacc94047ad793fbf0f76813a16609a84fd83e5"
@@ -1021,7 +1021,7 @@
       "address": "cím: address: Budapest VI. Király utca 76.",
       "official_url": "https://www.acbgaleria.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:29:15.431773+00:00",
+      "checked_at": "2026-11-08T22:10:20.848693+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "598b55b929851781197ecac21515cf063c2b22c1db4d311bd2abafd45a8cb264"
@@ -1037,7 +1037,7 @@
       "address": "cím: address: Budapest, VIII. Bródy Sándor utca 22.",
       "official_url": "http://molnaranigaleria.hu",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:29:18.724390+00:00",
+      "checked_at": "2026-11-08T22:10:24.038776+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "dfc9ac645f94fbe77c5480fca486ea9d57d8f1659b9cb01416eeab81f2e9e2db"
@@ -1053,7 +1053,7 @@
       "address": "cím: address: Budapest, V. Hold utca 12.",
       "official_url": "https://www.einspach.com/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:29:22.244091+00:00",
+      "checked_at": "2026-11-08T22:10:28.080291+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "99eddf51f3bd240b4fd5635a51b86349da397959c8ab4bc6ee5c240ee138d4e7"
@@ -1069,7 +1069,7 @@
       "address": "cím: address: Budapest VI. Andrássy út 112.",
       "official_url": "https://arthab.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:29:26.897588+00:00",
+      "checked_at": "2026-11-08T22:10:32.858441+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "1a82fb593b7d0f02c2d6c678804c2d77cda2454e248739a3819ef4fb7a8b2fdf"
@@ -1085,10 +1085,10 @@
       "address": "cím: address: Budapest V. Falk Miksa utca 19.",
       "official_url": "(Magyar) https://www.kieselbachkortars.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:29:28.655374+00:00",
+      "checked_at": "2026-11-08T22:10:35.159299+00:00",
       "status": "ok",
-      "count": 2,
-      "fingerprint": "1a46b4ccc2662be51147b89a85f5b62142237bb0680cfaded6567e9421321281"
+      "count": 4,
+      "fingerprint": "1d39d1afa92d390eb0ff862554e4920a6dbebcccb9b5572f7439a21112039449"
     },
     {
       "id": "9d3b83eeb2d59eda8ff41aa40c9b5151b400965bbd5ff4180a0e99bf80d5bcb3",
@@ -1101,7 +1101,7 @@
       "address": "cím: address: 1053 Budapest, Képíró u. 6.",
       "official_url": "http://labor.c3.hu/",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:29:30.784642+00:00",
+      "checked_at": "2026-11-08T22:10:37.902837+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "1e6fb789428113ae00cf385bdabd2c8e54473d64f43fd018d5f30b269b0ff986"
@@ -1117,7 +1117,7 @@
       "address": "cím: address: Budapest, VI. Andrássy út 32.",
       "official_url": "",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:29:32.697600+00:00",
+      "checked_at": "2026-11-08T22:10:40.312630+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "c1696c1552af2d699e67ec4badda501183a335965dd3ffa22309cb874c2a1e49"
@@ -1133,7 +1133,7 @@
       "address": "cím: address: Budapest Szentlélek tér 6.",
       "official_url": "",
       "provenance": "https://exindex.hu/en/kiallitohelyek/",
-      "checked_at": "2026-11-08T13:29:35.692042+00:00",
+      "checked_at": "2026-11-08T22:10:43.772234+00:00",
       "status": "ok",
       "count": 8,
       "fingerprint": "17f045ac5b727d7e7d78e2f7cf5e87ac86280b30bb7023f99125ffe0910ace12"
@@ -1147,7 +1147,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/hungarian-national-museum",
-      "checked_at": "2026-11-08T13:29:37.691155+00:00",
+      "checked_at": "2026-11-08T22:10:46.152246+00:00",
       "status": "ok",
       "count": 12,
       "fingerprint": "76f905a089df8a197c648e8d78163c5afc6bb5fd0092f8a9dd824d7ede685fba"
@@ -1161,7 +1161,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/hungarian-national-gallery-1",
-      "checked_at": "2026-11-08T13:29:39.493793+00:00",
+      "checked_at": "2026-11-08T22:10:48.026802+00:00",
       "status": "ok",
       "count": 5,
       "fingerprint": "3a8f69edf6ef37d4942b3df10f3fd0a12f6de203008f7bea4cd49e6ba7752f9e"
@@ -1175,7 +1175,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/ludwig-museum",
-      "checked_at": "2026-11-08T13:29:41.117792+00:00",
+      "checked_at": "2026-11-08T22:10:49.612309+00:00",
       "status": "ok",
       "count": 11,
       "fingerprint": "9e171a14b0b06092b576f14d2b1590a6007ffcba292fa6bb052f207d5eeda80f"
@@ -1189,7 +1189,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/museum-of-ethnography",
-      "checked_at": "2026-11-08T13:29:41.246127+00:00",
+      "checked_at": "2026-11-08T22:10:49.782707+00:00",
       "status": "ok",
       "count": 12,
       "fingerprint": "d4d38220713c3282526ae425acbf1baf12812462938cd9f7f64dd58d2b5b5283"
@@ -1203,7 +1203,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/house-of-terror-museum",
-      "checked_at": "2026-11-08T13:29:42.668738+00:00",
+      "checked_at": "2026-11-08T22:10:51.287686+00:00",
       "status": "ok",
       "count": 7,
       "fingerprint": "54f8fc013e295b5e9a3a69b477ebcc5ab0e07fffd203a3405ea203a8044ff32b"
@@ -1217,7 +1217,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/hospital-in-the-rock-nuclear-bunker-museum-1",
-      "checked_at": "2026-11-08T13:29:42.797357+00:00",
+      "checked_at": "2026-11-08T22:10:51.416290+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "e9ffa5dba8179427edc1dd1f599655318b6b0455ea76afd134c35c23676cd476"
@@ -1231,7 +1231,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/house-of-unicum-2025",
-      "checked_at": "2026-11-08T13:29:44.396168+00:00",
+      "checked_at": "2026-11-08T22:10:53.754931+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "a7fe5624cc0ad419d8bbb415d9bdb5113c3e888506383862f35dba2af7bd2fb5"
@@ -1245,7 +1245,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/szamos-chocolate-museum",
-      "checked_at": "2026-11-08T13:29:45.074853+00:00",
+      "checked_at": "2026-11-08T22:10:53.949314+00:00",
       "status": "ok",
       "count": 1,
       "fingerprint": "df0529ce0dce92852eae5a263bbdbdde4f96819ca7d0a37dd522958535b5a66e"
@@ -1259,7 +1259,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/the-house-of-hungarian-photographers-mai-mano-house-2",
-      "checked_at": "2026-11-08T13:29:45.205013+00:00",
+      "checked_at": "2026-11-08T22:10:54.036222+00:00",
       "status": "ok",
       "count": 12,
       "fingerprint": "7cda30db0982ea5ed8376ee49915e4bccdfdb2f3ee38752b6c730d66631c67c5"
@@ -1273,10 +1273,10 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/vasarely-museum-budapest-1",
-      "checked_at": "2026-11-08T13:29:45.338435+00:00",
+      "checked_at": "2026-11-08T22:10:54.468795+00:00",
       "status": "ok",
       "count": 3,
-      "fingerprint": "ad0d744505b0122e95c6eaa68673971088c256aa71aa41ceea9b00b44ce439f9"
+      "fingerprint": "39497ae2b868d353509da3b4b516513e9fd5e8fc9a752f918e89ca10107d7632"
     },
     {
       "id": "9571dbf381187533b6db83ecb173c2bda5d452e6c39cde25e0e86649fe5550cb",
@@ -1287,7 +1287,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/madame-tussauds-budapest-1",
-      "checked_at": "2026-11-08T13:29:46.864120+00:00",
+      "checked_at": "2026-11-08T22:10:56.857978+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "40e7c05228e8714af42d650394fe11ef1b8b019dab8579ccfeb9c1e9b6609268"
@@ -1301,7 +1301,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/light-art-museum-lam",
-      "checked_at": "2026-11-08T13:29:47.664915+00:00",
+      "checked_at": "2026-11-08T22:10:57.352801+00:00",
       "status": "ok",
       "count": 4,
       "fingerprint": "82c74b87ed66f800f1aa858fc05044ad4fca6784c6e1ed349461570a20700fde"
@@ -1315,7 +1315,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/a-special-journey-of-the-senses-discover-the-world-of-cinema-mystica",
-      "checked_at": "2026-11-08T13:29:47.853829+00:00",
+      "checked_at": "2026-11-08T22:10:57.964980+00:00",
       "status": "ok",
       "count": 1,
       "fingerprint": "48444a6e2f855c128b857d95edd9145d9a7f3ce06ed40e12114ad6671015bdd4"
@@ -1329,7 +1329,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/ikono-budapest-1",
-      "checked_at": "2026-11-08T13:29:48.406465+00:00",
+      "checked_at": "2026-11-08T22:10:58.080537+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "88609bcb2cafa29747db6b075dfdd8bc8e5f2159577642739a771af909405d8c"
@@ -1343,7 +1343,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/obuda-museum1",
-      "checked_at": "2026-11-08T13:29:50.592297+00:00",
+      "checked_at": "2026-11-08T22:10:58.460449+00:00",
       "status": "ok",
       "count": 4,
       "fingerprint": "fe6c072ad0421a54847d1df447836352ca9a48467e129006117c2b2392a7cc16"
@@ -1357,7 +1357,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/hungarian-jewish-museum-and-archives-2025",
-      "checked_at": "2026-11-08T13:29:50.747491+00:00",
+      "checked_at": "2026-11-08T22:11:00.737657+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "a71a85818950cebe7a9723e348eef066636ca7ab5c4bc5ebfea6e06988d1d24d"
@@ -1371,7 +1371,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/hungarian-museum-of-trade-and-tourism-22",
-      "checked_at": "2026-11-08T13:29:51.030744+00:00",
+      "checked_at": "2026-11-08T22:11:02.397157+00:00",
       "status": "error",
       "count": 0,
       "error": "robots_blocked"
@@ -1385,7 +1385,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/goldberger-textile-industry-collection-obuda-museum",
-      "checked_at": "2026-11-08T13:29:51.978892+00:00",
+      "checked_at": "2026-11-08T22:11:03.067032+00:00",
       "status": "ok",
       "count": 12,
       "fingerprint": "41c061ce50a560c31de674fb86e98db375adea899c9d3002067afbc865037f16"
@@ -1399,7 +1399,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/hungarian-railway-history-park",
-      "checked_at": "2026-11-08T13:29:52.020807+00:00",
+      "checked_at": "2026-11-08T22:11:03.554296+00:00",
       "status": "ok",
       "count": 4,
       "fingerprint": "a5a1dd5ddd2be6aa71772b04cd19922c85b89d96a440523e01749213b05feb66"
@@ -1413,7 +1413,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/petofi-museum-of-literature",
-      "checked_at": "2026-11-08T13:29:53.496198+00:00",
+      "checked_at": "2026-11-08T22:11:04.240648+00:00",
       "status": "ok",
       "count": 10,
       "fingerprint": "f573ca64f8f58acd836dea916e8f5671e0a4fc1f3a3e02753c27d6e8449af939"
@@ -1427,7 +1427,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/hungarian-agricultural-museum-and-library",
-      "checked_at": "2026-11-08T13:29:54.354595+00:00",
+      "checked_at": "2026-11-08T22:11:04.992563+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1441,7 +1441,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/hungarian-natural-history-museum",
-      "checked_at": "2026-11-08T13:29:56.213172+00:00",
+      "checked_at": "2026-11-08T22:11:07.355498+00:00",
       "status": "ok",
       "count": 10,
       "fingerprint": "f1a1d8e3748d76b55ee253727dea02049d07d147c0dd934673e895cca8e20e8f"
@@ -1455,7 +1455,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/franz-liszt-memorial-museum-and-research-centre",
-      "checked_at": "2026-11-08T13:29:56.912447+00:00",
+      "checked_at": "2026-11-08T22:11:08.516585+00:00",
       "status": "ok",
       "count": 12,
       "fingerprint": "2cb8b92338c1b5511fdd1489c6fc27340444276f1984aed9b868970f403cc77a"
@@ -1469,7 +1469,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/ferenc-hopp-museum-of-asiatic-arts",
-      "checked_at": "2026-11-08T13:29:57.046340+00:00",
+      "checked_at": "2026-11-08T22:11:08.602739+00:00",
       "status": "error",
       "count": 0,
       "error": "robots_blocked"
@@ -1483,10 +1483,10 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/museum-of-illusions-2025",
-      "checked_at": "2026-11-08T13:29:57.185446+00:00",
+      "checked_at": "2026-11-08T22:11:08.802772+00:00",
       "status": "watching_page",
       "count": 0,
-      "fingerprint": "25510305c932cefa22b13412ea675905097da439548468cc9ff3cea5db8b774c"
+      "fingerprint": "6615857864834aaeab8cab644aa1fa5ff86c788889c8adf6ec5adf79bd5e5937"
     },
     {
       "id": "a973e57bf4bda413b08086952b1993ca684d0fb60ef23fe954f16b0bf6266f52",
@@ -1497,7 +1497,7 @@
       "enabled": true,
       "city": "Budapest",
       "provenance": "https://www.budapestinfo.hu/en/fradi-museum-2025",
-      "checked_at": "2026-11-08T13:29:58.009044+00:00",
+      "checked_at": "2026-11-08T22:11:09.596312+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "913f733c763deba51819848fbea838047eebda530e6823f32963a9411629b4d9"
@@ -1511,13 +1511,46 @@
       "city": "Budapest",
       "enabled": true,
       "provenance": "https://www.mfab.hu/",
-      "checked_at": "2026-11-08T13:29:58.724202+00:00",
+      "checked_at": "2026-11-08T22:11:10.335647+00:00",
       "status": "ok",
       "count": 11,
       "fingerprint": "dd7d09c5bb2f0ac790166f5271d69acb6ff08ee5f55bfde6e90e1f0f42f17249"
     }
   ],
   "items": [
+    {
+      "id": "e8cb612793a357cbe4eb4457f4d526e8f1824755c5d32e48771a7882cc7a1d3a",
+      "title": "CLAIRE – Metamorphoses",
+      "url": "https://en.vasarely.hu/exhibitions/claire-metamorphoses",
+      "date_label": "",
+      "source_id": "e3c18d7970b1d5372ce089c05d9a39652f03fc03f1c50800f5f5fbfe5573ebbc",
+      "source_name": "Vasarely Museum Budapest",
+      "category": "museum",
+      "discovered_at": "2026-11-08T22:10:54.468795+00:00",
+      "kind": "webpage"
+    },
+    {
+      "id": "fe41fa2874f2691e158321c7c9079d262e7e588733f655d856eadf212edaf6c1",
+      "title": "Freedom & Longevity",
+      "url": "https://exindex.hu/en/event/freedom-longevity",
+      "date_label": "13. November 2026. — 15. January 2027.",
+      "source_id": "2a8ae32660902360acd5000579f568c000b00f5d0b8f28d913bd58d455f24392",
+      "source_name": "K2",
+      "category": "gallery",
+      "discovered_at": "2026-11-08T22:10:35.159299+00:00",
+      "kind": "exindex"
+    },
+    {
+      "id": "df49ccea6984f7439d2f2a8b6b1321474884223fe26832199f0053fbf863cb99",
+      "title": "(Magyar) Puha kép",
+      "url": "https://exindex.hu/en/event/puha-kep",
+      "date_label": "13. November 2026. — 15. January 2027.",
+      "source_id": "2a8ae32660902360acd5000579f568c000b00f5d0b8f28d913bd58d455f24392",
+      "source_name": "K2",
+      "category": "gallery",
+      "discovered_at": "2026-11-08T22:10:35.159299+00:00",
+      "kind": "exindex"
+    },
     {
       "id": "33d6e3988b0a66a4d5711417e28eafaa3939d7a21534b418f6d36e487dec052e",
       "title": "Guided tour of the Rituals of Beauty 13/November/2026 16:30 - 17:30",
