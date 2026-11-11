@@ -37,5 +37,23 @@ begin
  if exists(select 1 from public.place_statistics()) then raise exception 'Unlinked member can read stats';end if;
 end;$$;
 reset role;
+select set_config('request.jwt.claim.sub',(select user_id::text from public.admins limit 1),true);
+set local role authenticated;
+do $$declare submission public.content_submissions; event_id uuid; note_id uuid; invitation uuid;
+begin
+ select * into strict submission from public.content_submissions where title='QA pending' and status='pending';
+ event_id=public.review_submission(submission.id,true,'Reviewed');
+ if not exists(select 1 from public.posts where id=event_id and status='draft' and design->>'section'='events') then raise exception 'Expected an Art Club draft';end if;
+ perform public.publish_post(event_id,false);
+ insert into public.content_submissions(place_id,target_post_id,kind,title,body) values(submission.place_id,event_id,'notes','QA note','QA detail') returning id into note_id;
+ note_id=public.review_submission(note_id,true,'');
+ perform public.publish_post(note_id,false);
+ if not exists(select 1 from public.public_catalog() where id=note_id and design->>'parentPostId'=event_id::text) then raise exception 'Note lost its parent';end if;
+ insert into public.art_passport(post_id,saved) values(event_id,true);
+ if not exists(select 1 from public.save_counts() where post_id=event_id and saves=1) then raise exception 'Event saves failed';end if;
+ insert into public.art_invitations(post_id,sender_name,message,style,starts_at) values(event_id,'QA','QA postcard','editorial',now()+interval '1 day') returning id into invitation;
+ if public.read_art_invitation(invitation)->>'post_id'<>event_id::text then raise exception 'Postcard failed';end if;
+end;$$;
+reset role;
 rollback;
 select 'PASS: catalogue, member gate, publication without email, newsletter drafts, submission permissions' as result;
