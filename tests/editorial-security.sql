@@ -5,6 +5,7 @@ do $$begin
  if (select count(*) from public.places)<>86 then raise exception 'Wrong catalogue size';end if;
  if exists(select 1 from public.monitor_source_directory() where retired or place_id is null) then raise exception 'Legacy source exposed';end if;
  if (select count(*) from public.public_catalog() where coalesce(design->>'section','journal')='journal' and body<>'')<>1 then raise exception 'Expected one free story';end if;
+ if (select count(*) from public.posts where coalesce(design->>'section','journal')='journal')<>1 then raise exception 'Legacy API story visibility incorrect';end if;
  if exists(select 1 from public.public_catalog() where design->>'membersOnly'='true' and (body<>'' or rich_body<>'')) then raise exception 'Member text exposed';end if;
 end;$$;
 reset role;
