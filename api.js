@@ -17,15 +17,16 @@ window.backend = (()=>{
  reset:email=>request('/auth/v1/recover?redirect_to='+encodeURIComponent(location.origin+location.pathname),{method:'POST',auth:false,body:{email}}),
  async logout(){try{await request('/auth/v1/logout',{method:'POST'});}finally{persist(null);}},
  user:()=>request('/auth/v1/user'),
- profile:data=>request('/auth/v1/user',{method:'PUT',body:{data:{display_name:data.display_name,avatar_image:data.avatar_image,...(data.taste_cards?{taste_cards:data.taste_cards}:{})}}}),
+ profile:data=>request('/auth/v1/user',{method:'PUT',body:{data:{...(data.profile_kind?{profile_kind:data.profile_kind}:{}),display_name:data.display_name,avatar_image:data.avatar_image,...(data.taste_cards?{taste_cards:data.taste_cards}:{})}}}),
  password:password=>request('/auth/v1/user',{method:'PUT',body:{password}}),
  socialRows:(table,query='')=>request('/rest/v1/'+table+'?select=*'+query),
  socialSave:(table,row,conflict)=>request('/rest/v1/'+table+(conflict?'?on_conflict='+conflict:''),{method:'POST',body:row,headers:{Prefer:conflict?'resolution=merge-duplicates,return=representation':'return=representation'}}),
  rpc:(name,body={})=>request('/rest/v1/rpc/'+name,{method:'POST',body}),
- posts:()=>request('/rest/v1/posts?status=eq.published&deleted_at=is.null&select=id,title,summary,body,language,published_at,images,author,source,links,translations,source_id,rich_body,image_meta,design&order=published_at.desc',{auth:false}),
+ posts:()=>request('/rest/v1/rpc/public_catalog',{method:'POST',body:{}}),
  importedState:()=>request('/rest/v1/rpc/imported_story_state',{method:'POST',body:{},auth:false}),
  drafts:()=>request('/rest/v1/posts?select=*&order=created_at.desc'),
  save:post=>request('/rest/v1/posts'+(post.id?'?id=eq.'+encodeURIComponent(post.id):''),{method:post.id?'PATCH':'POST',body:{title:post.title,summary:post.summary,body:post.body,language:post.language,images:post.images||[],author:post.author||'',source:post.source||'',links:post.links||[],translations:post.translations||{},rich_body:post.rich_body||'',image_meta:post.image_meta||{},design:post.design||{},...(!post.id&&post.source_id?{source_id:post.source_id}:{})},headers:{Prefer:'return=representation'}}),
+ async uploadSubmission(file){if(!session)throw Error('loginRequired');if(file.size>10485760)throw Error('imageTooLarge');if(!['image/jpeg','image/png','image/webp'].includes(file.type))throw Error('imageFormat');const u=await request('/auth/v1/user');const path=u.id+'/'+crypto.randomUUID()+'.'+file.type.split('/')[1];const r=await fetch(config.supabaseUrl+'/storage/v1/object/submission-images/'+path,{method:'POST',headers:{apikey:config.supabaseAnonKey,Authorization:'Bearer '+session.access_token,'Content-Type':file.type},body:file,signal:AbortSignal.timeout(45000)});if(!r.ok)throw Error('imageUploadFailed');return config.supabaseUrl+'/storage/v1/object/public/submission-images/'+path;},
  async uploadAvatar(file){
  if(!ready||!session)throw Error('NOT_CONFIGURED');
  if(file.type!=='image/jpeg'||file.size>2097152)throw Error('avatarInvalid');

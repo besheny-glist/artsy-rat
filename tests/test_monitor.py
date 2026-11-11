@@ -4,12 +4,16 @@ from unittest.mock import patch
 spec=importlib.util.spec_from_file_location('monitor',Path(__file__).parents[1]/'scripts/monitor_sources.py')
 m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 class MonitorTests(unittest.TestCase):
- def test_budapest_only(self):
+ def test_curated_catalogue_both_sheets(self):
   sources=json.loads((m.ROOT/'monitor-sources.json').read_text())
+  places=json.loads((m.ROOT/'places.json').read_text())
+  ids={p['id'] for p in places}
+  self.assertEqual(len(places),len(ids))
+  self.assertEqual(len(places),86)
+  self.assertTrue(any('Sheet2' in p['origin'] for p in places))
+  self.assertIn('Debrecen',{p['city'] for p in places})
   self.assertEqual(len(sources),len({s['id'] for s in sources}))
-  for s in sources:
-   self.assertEqual(s['city'],'Budapest')
-   if s['kind']=='exindex':self.assertIn('budapest',s['address'].lower())
+  for s in sources:self.assertIn(s['place_id'],ids)
  def test_exindex_dates_and_dedup(self):
   block='<div class="event-item"><h2 class="entry-title"><a href="/en/event/light/">Folded Light</a></h2><div class="event-on-view">2026-11-01</div></div>'
   items,_,_=m.parse(block*2,'https://exindex.hu/en/venue/sample/','exindex')

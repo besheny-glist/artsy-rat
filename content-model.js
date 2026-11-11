@@ -7,12 +7,12 @@ window.contentModel = {
   return (post.links||[]).filter(link=>{const url=key(link.url);if(!url||seen.has(url))return false;seen.add(url);return true;});
  },
  wall(posts) {
-  const eligible=posts.filter(p=>!p.deleted_at&&p.status!=='draft'&&!p.design?.exhibition?.demo);
+  const eligible=posts.filter(p=>!p.deleted_at&&p.status!=='draft'&&!p.design?.exhibition?.demo&&['journal','exhibitions','events'].includes(this.section(p)));
   const selected=['left','right'].map(slot=>eligible.find(p=>p.design?.homeSlot===slot));
   const fallback=eligible.filter(p=>this.section(p)==='journal'&&!selected.some(x=>x?.id===p.id));
   return selected.map(p=>p||fallback.shift()).filter(Boolean);
  },
- section: p => p.design?.section === 'exhibitions' ? 'exhibitions' : 'journal',
+ section: p => ['exhibitions','events','notes','newsletter'].includes(p.design?.section) ? p.design.section : 'journal',
  merge(remote, bootstrap, imported) {
   const known = new Set([...imported.map(p=>p.source_id), ...remote.map(p=>p.source_id)].filter(Boolean));
   return [...remote, ...bootstrap.filter(p=>!known.has(p.id))].sort((a,b)=>new Date(b.published_at)-new Date(a.published_at));

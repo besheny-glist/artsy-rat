@@ -27,7 +27,9 @@ jobs:
       - name: Assemble public site
         run: |
           mkdir -p _site
-          cp index.html style.css app.js api.js social.js editor.js i18n.js config.js content-model.js content.json exhibitions.json pending-stories.json monitor.js notifications.js monitor-sources.json monitor-feed.json _site/
+          cp index.html style.css app.js api.js social.js editor.js i18n.js config.js content-model.js exhibitions.json monitor.js notifications.js monitor-sources.json monitor-feed.json platform.js places.json _site/
+          printf '[]\n' > _site/content.json
+          printf '[]\n' > _site/pending-stories.json
           cp -R assets _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

@@ -135,9 +135,9 @@ def scan(source,old):
 def main():
  sources=json.loads((ROOT/'monitor-sources.json').read_text());config_error=None
  try:
-  overrides=load_overrides();byid={s['id']:s for s in sources}
-  for s in overrides:byid[s['id']]={**byid.get(s['id'],{}),**s}
-  sources=[s for s in byid.values() if s.get('city')=='Budapest']
+  overrides=load_overrides()
+  sources=[s for s in overrides if s.get('place_id') and not s.get('retired')]
+  if not sources:raise RuntimeError('Curated source registry is empty; refusing legacy sources')
  except Exception as e:
   # Never silently reactivate paused sources when configuration is unavailable.
   raise RuntimeError('Cannot read source settings; retaining previous scan') from e
