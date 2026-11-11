@@ -1,4 +1,4 @@
-import { createClient } from 'npm:@supabase/supabase-js@2';
+import { createClient } from 'npm:@supabase/supabase-js@2.118.0';
 const site = Deno.env.get('SITE_URL') || 'https://besheny-glist.github.io/artsy-rat/';
 const origin = new URL(site).origin;
 const cors = {'Access-Control-Allow-Origin':origin,'Access-Control-Allow-Headers':'authorization, apikey, content-type','Access-Control-Allow-Methods':'POST, OPTIONS','Vary':'Origin'};
@@ -6,7 +6,7 @@ const reply=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status
 Deno.serve(async req=>{
  if(req.method==='OPTIONS')return new Response(null,{headers:cors});
  if(req.method!=='POST')return reply({error:'Method not allowed'},405);
- const url=Deno.env.get('SUPABASE_URL')!, key=Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
+ const url=Deno.env.get('SUPABASE_URL')!, key=(Object.values(JSON.parse(Deno.env.get('SUPABASE_SECRET_KEYS')||'{}'))[0] as string || Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!);
  const db=createClient(url,key,{auth:{persistSession:false}});
  const token=req.headers.get('Authorization')?.replace(/^Bearer /,'');
  if(!token)return reply({error:'Unauthorized'},401);
