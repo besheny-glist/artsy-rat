@@ -1,5 +1,5 @@
 import { createClient } from 'npm:@supabase/supabase-js@2.118.0';
-const site = Deno.env.get('SITE_URL') || 'https://besheny-glist.github.io/artsy-rat/';
+const site = Deno.env.get('SITE_URL') || 'https://artsyrat.eu/';
 const origin = new URL(site).origin;
 const cors = {'Access-Control-Allow-Origin':origin,'Access-Control-Allow-Headers':'authorization, apikey, content-type','Access-Control-Allow-Methods':'POST, OPTIONS','Vary':'Origin'};
 const reply=(body:unknown,status=200)=>new Response(JSON.stringify(body),{status,headers:{...cors,'Content-Type':'application/json'}});
