@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T23:38:53.875998+00:00",
+  "generated_at": "2026-11-23T18:12:01.414132+00:00",
   "schedule": "06:17 / 18:17 UTC",
   "sources": [
     {
@@ -12,7 +12,7 @@
       "enabled": true,
       "place_id": "place-82851e16-98a6-4464-ac97-c557ab6db085",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:21.623715+00:00",
+      "checked_at": "2026-11-23T18:10:30.183222+00:00",
       "status": "ok",
       "count": 3,
       "fingerprint": "10826157d453106a949edc6d99ad73b2705cc14cbc73bfd9ab39c0b1896a942d"
@@ -27,7 +27,7 @@
       "enabled": true,
       "place_id": "place-ed21c9537004b9633162",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:21.623998+00:00",
+      "checked_at": "2026-11-23T18:10:30.183555+00:00",
       "status": "ok",
       "count": 3,
       "fingerprint": "10826157d453106a949edc6d99ad73b2705cc14cbc73bfd9ab39c0b1896a942d"
@@ -42,7 +42,7 @@
       "enabled": true,
       "place_id": "place-82851e16-98a6-4464-ac97-c557ab6db085",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:21.624229+00:00",
+      "checked_at": "2026-11-23T18:10:30.183789+00:00",
       "status": "manual",
       "count": 0
     },
@@ -56,7 +56,7 @@
       "enabled": true,
       "place_id": "place-ed21c9537004b9633162",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:21.624376+00:00",
+      "checked_at": "2026-11-23T18:10:30.184019+00:00",
       "status": "manual",
       "count": 0
     },
@@ -70,7 +70,7 @@
       "enabled": true,
       "place_id": "place-127fae36f2529a03ba91",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:21.624396+00:00",
+      "checked_at": "2026-11-23T18:10:30.184047+00:00",
       "status": "ok",
       "count": 3,
       "fingerprint": "14cfc4cfbff59e0a2fc6645b4835531d92681cbd729c646a4d402f8bcb8dfadb"
@@ -85,7 +85,7 @@
       "enabled": true,
       "place_id": "place-45917daecb8d01c0bf0d",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:21.624655+00:00",
+      "checked_at": "2026-11-23T18:10:30.184384+00:00",
       "status": "ok",
       "count": 2,
       "fingerprint": "c8ead895bae3a10f99187cda85607589d8d06d4f40a0dd3459b4d836ac0cfe46"
@@ -100,10 +100,10 @@
       "enabled": true,
       "place_id": "place-1005504a77ca9f0ea75c",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:21.624804+00:00",
+      "checked_at": "2026-11-23T18:10:30.184579+00:00",
       "status": "ok",
       "count": 12,
-      "fingerprint": "6cfd6f4be577d1a9f24872184e614896c20bb227d24808e8d28402d6f61786aa"
+      "fingerprint": "9c115c40d1f2e72500e6a9538af594c791628cfc863b1da3d27cdb8272090f67"
     },
     {
       "id": "source-0270b853e012781d93f8a13d10fa5acc",
@@ -115,10 +115,10 @@
       "enabled": true,
       "place_id": "place-3c7905802da464c5ebeb",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:23.442619+00:00",
+      "checked_at": "2026-11-23T18:10:31.819136+00:00",
       "status": "ok",
       "count": 1,
-      "fingerprint": "dac00bf48d4875f945d289df1f29e9ad5891c91f37ee6470aaa75d25ca324b89"
+      "fingerprint": "7440891073ab7b133535cd532bcc2ae1d2365a5eed9693a2f1066922ead70768"
     },
     {
       "id": "source-079ffe1d612b368bd4c488cd9fc9f03d",
@@ -130,7 +130,7 @@
       "enabled": true,
       "place_id": "place-93a6dedda6a69bbcf27a",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:23.510459+00:00",
+      "checked_at": "2026-11-23T18:10:32.455949+00:00",
       "status": "ok",
       "count": 12,
       "fingerprint": "a6faa6785766fa0e0b34c0760671713509141a43c3ca4cd0ababafafd72dcc89"
@@ -145,7 +145,7 @@
       "enabled": true,
       "place_id": "place-be2319f1bd7b8fa60b20",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:24.249905+00:00",
+      "checked_at": "2026-11-23T18:10:33.734469+00:00",
       "status": "manual",
       "count": 0
     },
@@ -159,7 +159,7 @@
       "enabled": true,
       "place_id": "place-79eb9a7155d69467f1e1",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:24.249924+00:00",
+      "checked_at": "2026-11-23T18:10:33.734489+00:00",
       "status": "error",
       "count": 0,
       "error": "[Errno -2] Name or service not known"
@@ -174,7 +174,7 @@
       "enabled": true,
       "place_id": "place-36cf6d301406ab8e5601",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:24.328055+00:00",
+      "checked_at": "2026-11-23T18:10:34.064879+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest III. Kiskorona u.7.",
@@ -191,7 +191,7 @@
       "enabled": true,
       "place_id": "place-ec7ba6da47adbf73d8b9",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:24.351439+00:00",
+      "checked_at": "2026-11-23T18:10:34.627200+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest V. Magyar u. 26.",
@@ -208,7 +208,7 @@
       "enabled": true,
       "place_id": "place-0c4a882c7321649c49af",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:25.926640+00:00",
+      "checked_at": "2026-11-23T18:10:34.721372+00:00",
       "status": "ok",
       "count": 12,
       "fingerprint": "4962be840b7e8543a8e6aee531218137a48f7f1fcc0104638e027a8292ebf50b"
@@ -223,7 +223,7 @@
       "enabled": true,
       "place_id": "place-3c7905802da464c5ebeb",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:26.181085+00:00",
+      "checked_at": "2026-11-23T18:10:35.448761+00:00",
       "status": "manual",
       "count": 0
     },
@@ -237,10 +237,10 @@
       "enabled": true,
       "place_id": "place-8395340d6b0676a9a83c",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:26.181104+00:00",
+      "checked_at": "2026-11-23T18:10:35.448784+00:00",
       "status": "ok",
       "count": 12,
-      "fingerprint": "6585edc267bb1941062ca67702775895a869c20041b7916b73bfff2925827a4f"
+      "fingerprint": "3536c258cd86e6133243f2830a85dfc7ef70fe9cda2322f68cc0c4342e953ace"
     },
     {
       "id": "source-16a8a5f2db618f147853c1434900ebde",
@@ -252,7 +252,7 @@
       "enabled": true,
       "place_id": "place-0c4a882c7321649c49af",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:27.072966+00:00",
+      "checked_at": "2026-11-23T18:10:36.795515+00:00",
       "status": "manual",
       "count": 0
     },
@@ -266,7 +266,7 @@
       "enabled": true,
       "place_id": "place-1e0133c3dbceaec133f2",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:27.072987+00:00",
+      "checked_at": "2026-11-23T18:10:36.795537+00:00",
       "status": "ok",
       "count": 3,
       "fingerprint": "10826157d453106a949edc6d99ad73b2705cc14cbc73bfd9ab39c0b1896a942d"
@@ -281,7 +281,7 @@
       "enabled": true,
       "place_id": "place-cbf6e2a84e5e70ce7920",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:27.688389+00:00",
+      "checked_at": "2026-11-23T18:10:38.524167+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Veszprém, Vár utca 29.",
@@ -298,7 +298,7 @@
       "enabled": true,
       "place_id": "place-00ad6034690c5e37a6e4",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:28.502227+00:00",
+      "checked_at": "2026-11-23T18:10:39.657495+00:00",
       "status": "manual",
       "count": 0
     },
@@ -312,7 +312,7 @@
       "enabled": true,
       "place_id": "place-974f7c76dc87bae3db7a",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:28.502246+00:00",
+      "checked_at": "2026-11-23T18:10:39.657518+00:00",
       "status": "manual",
       "count": 0
     },
@@ -326,7 +326,7 @@
       "enabled": true,
       "place_id": "place-ae302d89621accc24b8a",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:28.502252+00:00",
+      "checked_at": "2026-11-23T18:10:39.657525+00:00",
       "status": "manual",
       "count": 0
     },
@@ -340,10 +340,10 @@
       "enabled": true,
       "place_id": "place-b92921e6697d4e0e2356",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:28.502259+00:00",
+      "checked_at": "2026-11-23T18:10:39.657532+00:00",
       "status": "ok",
       "count": 12,
-      "fingerprint": "c5da98994a862a80664cbd404fad7a805c3772e2bda9511d128b21e8940fcba9"
+      "fingerprint": "58fea183eb438aae520045ac7083f56de46a3c45eeed4298ee2a1096e71b34dc"
     },
     {
       "id": "source-293632f1f2f021703da1acd52a7e1913",
@@ -355,7 +355,7 @@
       "enabled": true,
       "place_id": "place-f825dc50f78957b1c65a",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:30.650642+00:00",
+      "checked_at": "2026-11-23T18:10:40.643925+00:00",
       "status": "ok",
       "count": 1,
       "fingerprint": "91d814e975227fe10310b403a528cf65c215b05f600347da66b8264ae0a6162b"
@@ -370,7 +370,7 @@
       "enabled": true,
       "place_id": "place-695a4601357056ce7ded",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:30.797389+00:00",
+      "checked_at": "2026-11-23T18:10:42.375586+00:00",
       "status": "manual",
       "count": 0
     },
@@ -384,7 +384,7 @@
       "enabled": true,
       "place_id": "place-1001b70aab7052a4899f",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:30.797410+00:00",
+      "checked_at": "2026-11-23T18:10:42.375607+00:00",
       "status": "manual",
       "count": 0
     },
@@ -398,7 +398,7 @@
       "enabled": true,
       "place_id": "place-10d34deeb2c01fe90f3e",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:30.797417+00:00",
+      "checked_at": "2026-11-23T18:10:42.375615+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest, VII. Madách út 8.",
@@ -415,7 +415,7 @@
       "enabled": true,
       "place_id": "place-457475011ec1c7129382",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:31.984957+00:00",
+      "checked_at": "2026-11-23T18:10:43.288132+00:00",
       "status": "error",
       "count": 0,
       "error": "[Errno -2] Name or service not known"
@@ -430,10 +430,10 @@
       "enabled": true,
       "place_id": "place-6de8007552451d657c47",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:32.373948+00:00",
+      "checked_at": "2026-11-23T18:10:43.635454+00:00",
       "status": "ok",
-      "count": 8,
-      "fingerprint": "7a919a277b0471b0780fe990f5fb088bf9ae203dca71e29e912a6336fec0eb98"
+      "count": 9,
+      "fingerprint": "a18cd8d50e76b1d35cf43d2ab5c5baac1cc0e19b74bd3645b29488aa98781666"
     },
     {
       "id": "source-32067cd27e63b6f38fedbb0df5a7cb77",
@@ -445,7 +445,7 @@
       "enabled": true,
       "place_id": "place-4c38ef4a3a950fb15ab6",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:34.390955+00:00",
+      "checked_at": "2026-11-23T18:10:43.802667+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Pécs Zsolnay Kulturális Negyed",
@@ -462,10 +462,10 @@
       "enabled": true,
       "place_id": "place-89de34581e05b353b809",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:34.563316+00:00",
+      "checked_at": "2026-11-23T18:10:44.227323+00:00",
       "status": "ok",
       "count": 7,
-      "fingerprint": "285a26831669176a06641e86d07e0ad989340dc08b71758d3d8e3f3fe19a1e23"
+      "fingerprint": "dabb454305589b9f94bf86b5355e167abee2ee9c15c9ef1e47a4b2ba8bf31a4f"
     },
     {
       "id": "source-3402fd0fdc434ce31ad800078bc2f432",
@@ -477,7 +477,7 @@
       "enabled": true,
       "place_id": "place-b3d7b6d2846acbef93f3",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:35.745132+00:00",
+      "checked_at": "2026-11-23T18:10:46.034808+00:00",
       "status": "ok",
       "count": 3,
       "address": "cím: address: Pécs Papnövelde u. 5.",
@@ -494,7 +494,7 @@
       "enabled": true,
       "place_id": "place-02a989df40de4832b33a",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:37.482520+00:00",
+      "checked_at": "2026-11-23T18:10:46.902383+00:00",
       "status": "ok",
       "count": 1,
       "fingerprint": "dbfacd79a2fa572eebbd394a7756bf04dd0aba8aefa271ac316b6cc75e3472f8"
@@ -509,7 +509,7 @@
       "enabled": true,
       "place_id": "place-2a1ac404a2232d6a1eab",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:37.519961+00:00",
+      "checked_at": "2026-11-23T18:10:48.051629+00:00",
       "status": "error",
       "count": 0,
       "error": "The read operation timed out"
@@ -524,7 +524,7 @@
       "enabled": true,
       "place_id": "place-ae302d89621accc24b8a",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:39.194549+00:00",
+      "checked_at": "2026-11-23T18:10:48.257883+00:00",
       "status": "ok",
       "count": 6,
       "fingerprint": "5509e32daa4eb7ff288c6055fa95c31489d893ba2a91a4702ca3f61ef01aa679"
@@ -539,7 +539,7 @@
       "enabled": true,
       "place_id": "place-d82bb971422e628b151a",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:39.903130+00:00",
+      "checked_at": "2026-11-23T18:10:49.454245+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "08afdfaa78203543edbd6fc3f038d13a75bba283c8cf82eeb336548eb3cdfe69"
@@ -554,7 +554,7 @@
       "enabled": true,
       "place_id": "place-8d95af31d22fd9156498",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:43.211437+00:00",
+      "checked_at": "2026-11-23T18:10:51.136187+00:00",
       "status": "ok",
       "count": 6,
       "address": "cím: address: Budapest V. Perczel Mór u. 4.",
@@ -571,7 +571,7 @@
       "enabled": true,
       "place_id": "place-974f7c76dc87bae3db7a",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:43.301597+00:00",
+      "checked_at": "2026-11-23T18:10:52.931996+00:00",
       "status": "ok",
       "count": 1,
       "fingerprint": "a56d24d820625021a1105968d16aa4cfeb491c987f1a83ac48e46e46ff061965"
@@ -586,10 +586,10 @@
       "enabled": true,
       "place_id": "place-e83f1cedc120995d177b",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:44.720533+00:00",
+      "checked_at": "2026-11-23T18:10:53.220196+00:00",
       "status": "ok",
-      "count": 12,
-      "fingerprint": "a2b5e6d1682499fe56e773e5f9b97350387315e1fd8b86bb13501bae41252348"
+      "count": 10,
+      "fingerprint": "2723360d344a2d9bc05820e69d4b1b604dede81e20746d390088463e598a213a"
     },
     {
       "id": "source-5309c38d33fe3e10670f2a5338269171",
@@ -601,7 +601,7 @@
       "enabled": true,
       "place_id": "place-a15553b5e642968acdb5",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:45.512662+00:00",
+      "checked_at": "2026-11-23T18:10:55.202322+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest VI. Vasvári Pál utca 1.",
@@ -618,7 +618,7 @@
       "enabled": true,
       "place_id": "place-9c20ed1b0b9f30568439",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:47.502823+00:00",
+      "checked_at": "2026-11-23T18:10:56.140187+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest VI. Andrássy út 112.",
@@ -635,7 +635,7 @@
       "enabled": true,
       "place_id": "place-e4e49a0e34fcedaa08ee",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:49.368200+00:00",
+      "checked_at": "2026-11-23T18:10:57.615527+00:00",
       "status": "error",
       "count": 0,
       "error": "robots_blocked"
@@ -650,7 +650,7 @@
       "enabled": true,
       "place_id": "place-c3f2e9eff2a0f52ced29",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:49.634148+00:00",
+      "checked_at": "2026-11-23T18:10:57.810634+00:00",
       "status": "ok",
       "count": 12,
       "fingerprint": "8f296ac50b91db493ca448df83c8aa010c117c4f4619e41053eb87714cf083d6"
@@ -665,7 +665,7 @@
       "enabled": true,
       "place_id": "place-1e0133c3dbceaec133f2",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:50.171885+00:00",
+      "checked_at": "2026-11-23T18:10:58.525251+00:00",
       "status": "manual",
       "count": 0
     },
@@ -679,7 +679,7 @@
       "enabled": true,
       "place_id": "place-8fce0c327a7f85acf55e",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:50.171913+00:00",
+      "checked_at": "2026-11-23T18:10:58.525273+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest VII. Rottenbiller u. 35. (bejárat a Rottenbiller és a Damjanich utca sarkán)",
@@ -696,7 +696,7 @@
       "enabled": true,
       "place_id": "place-184290d94e0c07deac88",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:50.678721+00:00",
+      "checked_at": "2026-11-23T18:11:00.258821+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Székesfehérvár Országzászló tér 3.",
@@ -713,7 +713,7 @@
       "enabled": true,
       "place_id": "place-d50114ea5169c0e89788",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:51.991781+00:00",
+      "checked_at": "2026-11-23T18:11:01.180093+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest, V. Hold utca 12.",
@@ -730,7 +730,7 @@
       "enabled": true,
       "place_id": "place-ffef6ea54c4f0afd5bcb",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:53.013330+00:00",
+      "checked_at": "2026-11-23T18:11:03.127494+00:00",
       "status": "ok",
       "count": 5,
       "address": "cím: address: Szentendre Hunyadi utca 1.",
@@ -747,7 +747,7 @@
       "enabled": true,
       "place_id": "place-0e62c28e1373716c2f60",
       "retired": false,
-      "checked_at": "2026-11-22T23:37:58.734275+00:00",
+      "checked_at": "2026-11-23T18:11:08.991050+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Győr Király u. 17.",
@@ -764,7 +764,7 @@
       "enabled": true,
       "place_id": "place-e2adc46468c9f95d26d6",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:01.177942+00:00",
+      "checked_at": "2026-11-23T18:11:12.148258+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest, MKE, Epreskert VI. Kmety György u. 26-28",
@@ -781,7 +781,7 @@
       "enabled": true,
       "place_id": "place-89de34581e05b353b809",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:01.767053+00:00",
+      "checked_at": "2026-11-23T18:11:14.588996+00:00",
       "status": "manual",
       "count": 0
     },
@@ -795,10 +795,10 @@
       "enabled": true,
       "place_id": "place-f0a4b12cfad5fff0b96d",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:01.767075+00:00",
+      "checked_at": "2026-11-23T18:11:14.589021+00:00",
       "status": "error",
       "count": 0,
-      "error": "<urlopen error [Errno 101] Network is unreachable>"
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.kiscellimuzeum.hu'. (_ssl.c:1011)>"
     },
     {
       "id": "source-6e9bd9e5d97c1528d38c78fe0edd29fc",
@@ -810,7 +810,7 @@
       "enabled": true,
       "place_id": "place-cdb27ade3565d85e6a74",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:04.940986+00:00",
+      "checked_at": "2026-11-23T18:11:14.935427+00:00",
       "status": "ok",
       "count": 1,
       "fingerprint": "efc9c618836b09c0f635013a85677c4faf1b9cfbf070baecba53eadcd9a8907a"
@@ -825,7 +825,7 @@
       "enabled": true,
       "place_id": "place-c3f2e9eff2a0f52ced29",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:05.623458+00:00",
+      "checked_at": "2026-11-23T18:11:15.414858+00:00",
       "status": "manual",
       "count": 0
     },
@@ -839,7 +839,7 @@
       "enabled": true,
       "place_id": "place-8f7b712a63ee6a25e887",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:05.623476+00:00",
+      "checked_at": "2026-11-23T18:11:15.414882+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: 1015 Budapest, Hattyú utca 16. fszt 4. (csengő: 53.)",
@@ -856,10 +856,10 @@
       "enabled": true,
       "place_id": "place-be2319f1bd7b8fa60b20",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:06.769038+00:00",
+      "checked_at": "2026-11-23T18:11:15.472137+00:00",
       "status": "ok",
       "count": 12,
-      "fingerprint": "4f44c55925a54175856c17ac2600339b13376a8a45419bb729f794366781097a"
+      "fingerprint": "ddcc62d21ba5aecda621e9d79f4584289dbe67bc1fc41412b2bba87ec9c77f78"
     },
     {
       "id": "source-735fbd3bdc0e875163cd233db00323ff",
@@ -871,7 +871,7 @@
       "enabled": true,
       "place_id": "place-bd7865c0cca55dbb9309",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:09.105841+00:00",
+      "checked_at": "2026-11-23T18:11:17.239848+00:00",
       "status": "manual",
       "count": 0
     },
@@ -885,7 +885,7 @@
       "enabled": true,
       "place_id": "place-d740916c17c7162e34e5",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:09.105866+00:00",
+      "checked_at": "2026-11-23T18:11:17.239870+00:00",
       "status": "manual",
       "count": 0
     },
@@ -899,7 +899,7 @@
       "enabled": true,
       "place_id": "place-015f7e6bc5aeaf483724",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:09.105872+00:00",
+      "checked_at": "2026-11-23T18:11:17.239878+00:00",
       "status": "ok",
       "count": 4,
       "address": "cím: address: Budapest V. Falk Miksa utca 19.",
@@ -916,7 +916,7 @@
       "enabled": true,
       "place_id": "place-ad988080095449a5391b",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:10.422428+00:00",
+      "checked_at": "2026-11-23T18:11:17.401193+00:00",
       "status": "manual",
       "count": 0
     },
@@ -930,7 +930,7 @@
       "enabled": true,
       "place_id": "place-3a9886e05ec3f4e85159",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:10.422452+00:00",
+      "checked_at": "2026-11-23T18:11:17.401217+00:00",
       "status": "manual",
       "count": 0
     },
@@ -944,7 +944,7 @@
       "enabled": true,
       "place_id": "place-570bbf448ace356f69d2",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:10.422458+00:00",
+      "checked_at": "2026-11-23T18:11:17.401225+00:00",
       "status": "error",
       "count": 0,
       "error": "<urlopen error [Errno 111] Connection refused>"
@@ -959,7 +959,7 @@
       "enabled": true,
       "place_id": "place-d740916c17c7162e34e5",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:10.999774+00:00",
+      "checked_at": "2026-11-23T18:11:17.932333+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "c36b9aa3dfdc9ebb22c755fab48af4345e439428f238e3ac644dab5615bc4a7a"
@@ -974,7 +974,7 @@
       "enabled": true,
       "place_id": "place-1001b70aab7052a4899f",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:15.715037+00:00",
+      "checked_at": "2026-11-23T18:11:20.794180+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest, VIII. Bródy Sándor utca 22.",
@@ -991,7 +991,7 @@
       "enabled": true,
       "place_id": "place-02a989df40de4832b33a",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:17.850454+00:00",
+      "checked_at": "2026-11-23T18:11:26.148254+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1005,7 +1005,7 @@
       "enabled": true,
       "place_id": "place-f0a4b12cfad5fff0b96d",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:17.850474+00:00",
+      "checked_at": "2026-11-23T18:11:26.148278+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1019,7 +1019,7 @@
       "enabled": true,
       "place_id": "place-9c612e5cab60682aeb5e",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:17.850479+00:00",
+      "checked_at": "2026-11-23T18:11:26.148286+00:00",
       "status": "ok",
       "count": 12,
       "fingerprint": "8f296ac50b91db493ca448df83c8aa010c117c4f4619e41053eb87714cf083d6"
@@ -1034,7 +1034,7 @@
       "enabled": true,
       "place_id": "place-3b5180f8760c46f509cf",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:18.868957+00:00",
+      "checked_at": "2026-11-23T18:11:26.337733+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1048,7 +1048,7 @@
       "enabled": true,
       "place_id": "place-127fae36f2529a03ba91",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:18.868976+00:00",
+      "checked_at": "2026-11-23T18:11:26.337755+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1062,7 +1062,7 @@
       "enabled": true,
       "place_id": "place-399e2f29fc39813ce676",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:18.868982+00:00",
+      "checked_at": "2026-11-23T18:11:26.337764+00:00",
       "status": "error",
       "count": 0,
       "error": "<urlopen error [Errno 111] Connection refused>"
@@ -1077,10 +1077,10 @@
       "enabled": true,
       "place_id": "place-f7a363dc41f15661168d",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:19.167355+00:00",
+      "checked_at": "2026-11-23T18:11:26.659449+00:00",
       "status": "ok",
-      "count": 7,
-      "fingerprint": "9efc96cd8f2eee352ed79b6c91b65cf250522e93f458fc1b2753f61466c49f8f"
+      "count": 6,
+      "fingerprint": "4797c71971cca6ffdee80d7432bb6ef3f2930b4695d1d9689831b4879cbfddf9"
     },
     {
       "id": "source-af21f53505ac5d78d94ddd90161f4753",
@@ -1092,7 +1092,7 @@
       "enabled": true,
       "place_id": "place-164ebe0f85b91c9055b2",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:19.938508+00:00",
+      "checked_at": "2026-11-23T18:11:27.131564+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1106,7 +1106,7 @@
       "enabled": true,
       "place_id": "place-35bdc5c10d86ed7fcc64",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:19.938529+00:00",
+      "checked_at": "2026-11-23T18:11:27.131587+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1120,7 +1120,7 @@
       "enabled": true,
       "place_id": "place-d77dd7ce2ac1bfbfb1d0",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:19.938535+00:00",
+      "checked_at": "2026-11-23T18:11:27.131595+00:00",
       "status": "ok",
       "count": 3,
       "fingerprint": "10826157d453106a949edc6d99ad73b2705cc14cbc73bfd9ab39c0b1896a942d"
@@ -1135,7 +1135,7 @@
       "enabled": true,
       "place_id": "place-f825dc50f78957b1c65a",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:20.790546+00:00",
+      "checked_at": "2026-11-23T18:11:28.174838+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1149,7 +1149,7 @@
       "enabled": true,
       "place_id": "place-4040bf394230c68db6b4",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:20.790564+00:00",
+      "checked_at": "2026-11-23T18:11:28.174861+00:00",
       "status": "error",
       "count": 0,
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'miskolcigaleria.hu'. (_ssl.c:1011)>"
@@ -1164,7 +1164,7 @@
       "enabled": true,
       "place_id": "place-a3846039a9c882e959dc",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:21.198071+00:00",
+      "checked_at": "2026-11-23T18:11:28.915930+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Veszprém Vár u. 3-5-7.",
@@ -1181,7 +1181,7 @@
       "enabled": true,
       "place_id": "place-ea505dc94f208a53f988",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:22.273364+00:00",
+      "checked_at": "2026-11-23T18:11:29.853061+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "860fc4c9a2fed94f8a7da7e85f73890a40e44a5be0aad441ef2a375170b038c3"
@@ -1196,7 +1196,7 @@
       "enabled": true,
       "place_id": "place-6d0275e0e511e91991fe",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:22.378987+00:00",
+      "checked_at": "2026-11-23T18:11:30.447647+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1210,7 +1210,7 @@
       "enabled": true,
       "place_id": "place-ea505dc94f208a53f988",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:22.379006+00:00",
+      "checked_at": "2026-11-23T18:11:30.447672+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1224,10 +1224,10 @@
       "enabled": true,
       "place_id": "place-3299219ecdbf1b558ce0",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:22.379012+00:00",
+      "checked_at": "2026-11-23T18:11:30.447681+00:00",
       "status": "ok",
       "count": 12,
-      "fingerprint": "6ed2bc55c3a252105a1649e4f92027f5674c87184800f4b2365521db2e314817"
+      "fingerprint": "2ca14e7e49e683214e8a992437b14c83842e3a43299740fe671167f92542dd62"
     },
     {
       "id": "source-c64fc57426005eb712603ec12701183f",
@@ -1239,10 +1239,10 @@
       "enabled": true,
       "place_id": "place-4ec2f83a0a469908c5c2",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:23.059725+00:00",
+      "checked_at": "2026-11-23T18:11:30.665917+00:00",
       "status": "ok",
       "count": 4,
-      "fingerprint": "725b5835ffa0a64d99da241a661f29484094c043784fc957edc17dca0fded303"
+      "fingerprint": "a55a243ca17065920bc6859003982e856ed248161f8dfa5929768cad48ceda38"
     },
     {
       "id": "source-c8115ad7fcff59a3fb9781ef844b4d64",
@@ -1254,7 +1254,7 @@
       "enabled": true,
       "place_id": "place-20fad4642e3414e6f6b1",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:24.701652+00:00",
+      "checked_at": "2026-11-23T18:11:30.967977+00:00",
       "status": "ok",
       "count": 5,
       "address": "cím: address: Pécs, Jókai tér 4.",
@@ -1271,10 +1271,10 @@
       "enabled": true,
       "place_id": "place-0b4653c757c21be99641",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:24.939258+00:00",
+      "checked_at": "2026-11-23T18:11:31.876626+00:00",
       "status": "ok",
       "count": 12,
-      "fingerprint": "6cfd6f4be577d1a9f24872184e614896c20bb227d24808e8d28402d6f61786aa"
+      "fingerprint": "9c115c40d1f2e72500e6a9538af594c791628cfc863b1da3d27cdb8272090f67"
     },
     {
       "id": "source-d16caf550b4004ae781f4d5afcb42b2a",
@@ -1286,7 +1286,7 @@
       "enabled": true,
       "place_id": "place-d77dd7ce2ac1bfbfb1d0",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:25.138316+00:00",
+      "checked_at": "2026-11-23T18:11:32.982882+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1300,7 +1300,7 @@
       "enabled": true,
       "place_id": "place-ad988080095449a5391b",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:25.138334+00:00",
+      "checked_at": "2026-11-23T18:11:32.982904+00:00",
       "status": "ok",
       "count": 1,
       "fingerprint": "ba3bf4370c3d5fe11c10c232d4306c993aed54d16e7d29da4f9f6ebf30dd710c"
@@ -1315,7 +1315,7 @@
       "enabled": true,
       "place_id": "place-00ad6034690c5e37a6e4",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:25.378884+00:00",
+      "checked_at": "2026-11-23T18:11:33.208557+00:00",
       "status": "ok",
       "count": 12,
       "fingerprint": "e7d542e47ee6f0cf5563cce0cfb0c93aa8b2d03238f0cd2ce29d4c10fd624524"
@@ -1330,7 +1330,7 @@
       "enabled": true,
       "place_id": "place-c615a123849d100c4aad",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:25.929206+00:00",
+      "checked_at": "2026-11-23T18:11:33.551164+00:00",
       "status": "error",
       "count": 0,
       "error": "[Errno -2] Name or service not known"
@@ -1345,7 +1345,7 @@
       "enabled": true,
       "place_id": "place-415c6df1c741866c2954",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:26.294911+00:00",
+      "checked_at": "2026-11-23T18:11:33.575354+00:00",
       "status": "error",
       "count": 0,
       "error": "[Errno -2] Name or service not known"
@@ -1360,7 +1360,7 @@
       "enabled": true,
       "place_id": "place-ffcd7abfae7b4df5108c",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:26.341601+00:00",
+      "checked_at": "2026-11-23T18:11:33.898468+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "5496bb2bfed6609fe49d2a7019bc91322441ba43a519301d8313e6ecabf10b0c"
@@ -1375,7 +1375,7 @@
       "enabled": true,
       "place_id": "place-b369ae65897d2fd431a1",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:26.490717+00:00",
+      "checked_at": "2026-11-23T18:11:33.901337+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1389,7 +1389,7 @@
       "enabled": true,
       "place_id": "place-164ebe0f85b91c9055b2",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:26.490735+00:00",
+      "checked_at": "2026-11-23T18:11:33.901354+00:00",
       "status": "ok",
       "count": 12,
       "fingerprint": "12cdf8c3ec5b3c59ac020bca65e7e62316fb017dcb9769035f2516b6bac8a014"
@@ -1404,7 +1404,7 @@
       "enabled": true,
       "place_id": "place-2b86e1503e3580ee211f",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:26.490880+00:00",
+      "checked_at": "2026-11-23T18:11:33.997978+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest V. Vármegye utca 7.",
@@ -1421,7 +1421,7 @@
       "enabled": true,
       "place_id": "place-370ca90ade0158799290",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:26.686498+00:00",
+      "checked_at": "2026-11-23T18:11:35.008364+00:00",
       "status": "ok",
       "count": 12,
       "fingerprint": "8f296ac50b91db493ca448df83c8aa010c117c4f4619e41053eb87714cf083d6"
@@ -1436,7 +1436,7 @@
       "enabled": true,
       "place_id": "place-8972c25fe3c13b8e0619",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:27.289648+00:00",
+      "checked_at": "2026-11-23T18:11:35.722961+00:00",
       "status": "ok",
       "count": 12,
       "fingerprint": "aaedce4d2071af9f6de05139037c1dbf1b9c40b207cb21ecce4a813b45d7ba9d"
@@ -1451,7 +1451,7 @@
       "enabled": true,
       "place_id": "place-ffcd7abfae7b4df5108c",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:27.719933+00:00",
+      "checked_at": "2026-11-23T18:11:36.163911+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1465,7 +1465,7 @@
       "enabled": true,
       "place_id": "place-7670e90062fe9b0babf6",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:27.719954+00:00",
+      "checked_at": "2026-11-23T18:11:36.163934+00:00",
       "status": "ok",
       "count": 5,
       "fingerprint": "0b812270c0ba13a785a559b4b31f21ba44e734a3094396df508edcc9b3e7d93a"
@@ -1480,7 +1480,7 @@
       "enabled": true,
       "place_id": "place-1b590789ae3f0827a3d5",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:28.597907+00:00",
+      "checked_at": "2026-11-23T18:11:36.805743+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Veszprém Vár u. 17.",
@@ -1497,7 +1497,7 @@
       "enabled": true,
       "place_id": "place-3236c2112dab28cc4189",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:28.937670+00:00",
+      "checked_at": "2026-11-23T18:11:37.590210+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: 1053 Budapest, Képíró u. 6.",
@@ -1514,7 +1514,7 @@
       "enabled": true,
       "place_id": "place-e4e49a0e34fcedaa08ee",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:30.091855+00:00",
+      "checked_at": "2026-11-23T18:11:37.677165+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1528,7 +1528,7 @@
       "enabled": true,
       "place_id": "place-3a9886e05ec3f4e85159",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:30.091877+00:00",
+      "checked_at": "2026-11-23T18:11:37.677190+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "566850f17e1cca0e1a378373f4e4cb4af5c86a655f34bec924f51d9b0e641839"
@@ -1543,7 +1543,7 @@
       "enabled": true,
       "place_id": "place-2a1ac404a2232d6a1eab",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:30.392825+00:00",
+      "checked_at": "2026-11-23T18:11:37.781298+00:00",
       "status": "manual",
       "count": 0
     },
@@ -1557,7 +1557,7 @@
       "enabled": true,
       "place_id": "place-a0f166453c849cb5fe93",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:30.392844+00:00",
+      "checked_at": "2026-11-23T18:11:37.781320+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest XI. Bartók Béla street 39.",
@@ -1574,7 +1574,7 @@
       "enabled": true,
       "place_id": "place-03566f6563c6b6975cb8",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:31.174071+00:00",
+      "checked_at": "2026-11-23T18:11:38.669932+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Szentendre Péter-Pál u.6.",
@@ -1591,7 +1591,7 @@
       "enabled": true,
       "place_id": "place-ee3f9c0eee6c632bbacc",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:32.303230+00:00",
+      "checked_at": "2026-11-23T18:11:39.933185+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest, VIII. Bródy Sándor utca 36.",
@@ -1608,7 +1608,7 @@
       "enabled": true,
       "place_id": "place-6d0275e0e511e91991fe",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:33.345038+00:00",
+      "checked_at": "2026-11-23T18:11:40.899908+00:00",
       "status": "ok",
       "count": 2,
       "fingerprint": "abed72fd66850e84282916d5e70249ffd1ceb0cf41f1b3a7f6534046b6ff7783"
@@ -1623,7 +1623,7 @@
       "enabled": true,
       "place_id": "place-3b5180f8760c46f509cf",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:34.490090+00:00",
+      "checked_at": "2026-11-23T18:11:43.279381+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "f8da2909d32102365f316653787f4bbc0b724846200f10929029cff449393835"
@@ -1638,7 +1638,7 @@
       "enabled": true,
       "place_id": "place-00fa8498c072a7250bff",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:36.295573+00:00",
+      "checked_at": "2026-11-23T18:11:43.480197+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest, VI. Andrássy út 32.",
@@ -1655,7 +1655,7 @@
       "enabled": true,
       "place_id": "place-79eb9a7155d69467f1e1",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:36.354853+00:00",
+      "checked_at": "2026-11-23T18:11:45.318771+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "1c157592a625516aa091d7065ffdec75c036c59a8d950b310e916548089c29e2"
@@ -1670,7 +1670,7 @@
       "enabled": true,
       "place_id": "place-39bac9cf3350792be06b",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:37.909726+00:00",
+      "checked_at": "2026-11-23T18:11:46.049406+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest, I. Táncsics Mihály utca 17.",
@@ -1687,7 +1687,7 @@
       "enabled": true,
       "place_id": "place-bd7865c0cca55dbb9309",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:39.460805+00:00",
+      "checked_at": "2026-11-23T18:11:48.322398+00:00",
       "status": "ok",
       "count": 1,
       "fingerprint": "87e6dd30b485ee3af364adf8999e51d1a1f91cc601cd297b7bfed5aff7c6dcea"
@@ -1702,7 +1702,7 @@
       "enabled": true,
       "place_id": "place-695a4601357056ce7ded",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:41.487355+00:00",
+      "checked_at": "2026-11-23T18:11:48.425652+00:00",
       "status": "watching_page",
       "count": 0,
       "fingerprint": "cb1d9223c05ac83c38edbbcedbbcd3463ab48bb1e5726e6aff0174aae327be4f"
@@ -1717,7 +1717,7 @@
       "enabled": true,
       "place_id": "place-5794dd94e68a8c0e6994",
       "retired": false,
-      "checked_at": "2026-11-22T23:38:41.847713+00:00",
+      "checked_at": "2026-11-23T18:11:50.617944+00:00",
       "status": "ok",
       "count": 8,
       "address": "cím: address: Budapest II. Kapás u. 55.",
@@ -1726,6 +1726,83 @@
     }
   ],
   "items": [
+    {
+      "id": "a00d82f92172aed47a82d6d02a282b362dfbb60c26030cee98e94c5139d34e9a",
+      "title": "16.00 Tárlatvezetés a Big Bang. Táguló gyűjteményi horizontok című kiállításban",
+      "url": "https://www.ludwigmuseum.hu/program/tarlatvezetes-big-bang-tagulo-gyujtemenyi-horizontok-cimu-kiallitasban-15",
+      "date_label": "",
+      "source_id": "source-70a4ada1f349e92d6ab37c46c5c86a3d",
+      "source_name": "Ludwig Museum – Museum of Contemporary Art",
+      "category": "museum",
+      "discovered_at": "2026-11-23T18:11:15.472137+00:00",
+      "kind": "webpage"
+    },
+    {
+      "id": "f683a85913ecbecedc837ffde7f8c09c0c8888aab8b0313467f86913ca7ea20e",
+      "title": "André Kertész, László Moholy-Nagy, Robert Capa: New Perspectives, Distinct Paths",
+      "url": "https://capacenter.hu/kiallitasok/new-perspectives-distinct-paths",
+      "date_label": "",
+      "source_id": "source-316714ea0174b7230305edf290453070",
+      "source_name": "Robert Capa Contemporary Photography Center",
+      "category": "gallery",
+      "discovered_at": "2026-11-23T18:10:43.635454+00:00",
+      "kind": "webpage"
+    },
+    {
+      "id": "0aea4307880815937d0a7cb3fbdc7ec195be74d99a202aa389b100af715774bc",
+      "title": "Nyitó kurátori tárlatvezetés Markovits Évával Árkossy István Időutazás c. kiállításán",
+      "url": "https://www.mucsarnok.hu/program/programok.php?mid=9X2q1yeq1JOlox7I7HnFsk",
+      "date_label": "",
+      "source_id": "source-27cc22b05e78acd084f4c36f100f4583",
+      "source_name": "Mucsarnok / Kunsthalle",
+      "category": "gallery",
+      "discovered_at": "2026-11-23T18:10:39.657532+00:00",
+      "kind": "webpage"
+    },
+    {
+      "id": "b22d1dfaab01e6eff2fc0c8df0c1070e167bdf3b4e258d2aaf00595d855dab59",
+      "title": "A MUCSARNOK.HU sorozat első tíz kötete",
+      "url": "https://www.mucsarnok.hu/hirek/hir.php?mid=pGq91fjhnoBXlQe23EpOJb",
+      "date_label": "",
+      "source_id": "source-27cc22b05e78acd084f4c36f100f4583",
+      "source_name": "Mucsarnok / Kunsthalle",
+      "category": "gallery",
+      "discovered_at": "2026-11-23T18:10:39.657532+00:00",
+      "kind": "webpage"
+    },
+    {
+      "id": "862662bde73102a5f8ce2bbb8dea6a6f06d57fe345a6aa95d41d8acd2075afce",
+      "title": "Vibe Winter | Debrecen ❄️ Téli parádé & Élménylavina ❄️",
+      "url": "https://modemart.hu/program/vibe-winter-debrecen-%e2%9d%84%ef%b8%8f-teli-parade-elmenylavina-%e2%9d%84%ef%b8%8f",
+      "date_label": "",
+      "source_id": "source-12a47a7ca51d974fe4f9416f22723350",
+      "source_name": "MODEM Modern and Contemporary Arts Centre",
+      "category": "gallery",
+      "discovered_at": "2026-11-23T18:10:35.448784+00:00",
+      "kind": "webpage"
+    },
+    {
+      "id": "f7c7e06aaa2f059f429c7e8e2dccb438e00ef7602b6ebb0e539d1e4d0331f532",
+      "title": "Életművelők: Műemésztők – yo8vagyat vacsora a kiállításon",
+      "url": "https://modemart.hu/program/eletmuvelok-muemesztok-vacsora-a-kiallitason",
+      "date_label": "",
+      "source_id": "source-12a47a7ca51d974fe4f9416f22723350",
+      "source_name": "MODEM Modern and Contemporary Arts Centre",
+      "category": "gallery",
+      "discovered_at": "2026-11-23T18:10:35.448784+00:00",
+      "kind": "webpage"
+    },
+    {
+      "id": "3e7a3e6b952ff86240da93ad4681489c9abcc06453b7beb7baa3030e8022f375",
+      "title": "1. LÉT-KÉP BESZÉLGETÉSEK",
+      "url": "https://www.mke.hu/aktualis/index.php?mid=4jdqJsKohVKk4GE2TpBPZl",
+      "date_label": "",
+      "source_id": "source-c858414169146847638c107725cb572c",
+      "source_name": "Barcsay Hall / Hungarian Academy of Fine Arts",
+      "category": "gallery",
+      "discovered_at": "2026-11-23T18:10:30.184579+00:00",
+      "kind": "webpage"
+    },
     {
       "id": "ca3e5861a0f64cea2427355bca5b790b6a3a4c0bf9fa8f33dc6f7f815933078c",
       "title": "KÖNYVAJÁNLÓ 2026.12.10. 18:00–19:00 – Gulyás Miklós fotográfus tárlatvezetése René Maltête kiállításán",
@@ -2784,7 +2861,7 @@
     },
     {
       "id": "d155bebd17c960193bd2e3955921d8321e141ef135322e2cecdd9ca9324575c0",
-      "title": "Christina Kubisch: Előadás és artist talk 2026. december 2. 17.00–19.00",
+      "title": "17.00 Christina Kubisch: Előadás és artist talk",
       "url": "https://www.ludwigmuseum.hu/program/christina-kubisch-eloadas-es-artist-talk",
       "date_label": "",
       "source_id": "source-70a4ada1f349e92d6ab37c46c5c86a3d",
@@ -4225,7 +4302,7 @@
     },
     {
       "id": "54b2eb45191916d9865e62fcdaaf5af0b3247df618525445edb4dc51476fd6ab",
-      "title": "Bővebben a kiállításról",
+      "title": "CLAIRE - kurátori tárlatvezetés I 2026. december 3., csütörtök 16.30 óra Szeretettel várunk mindenkit Vörös Judit kurátor tárlatvezetésére a „CLAIRE – Átváltozások. Claire Vasarely",
       "url": "https://vasarely.hu/kiallitasok/claire-atvaltozasok",
       "date_label": "",
       "source_id": "source-c64fc57426005eb712603ec12701183f",
